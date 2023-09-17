@@ -13,13 +13,13 @@
     },
     {
         "courseIconLink": "./icons/courseIcons/database.svg",
-        "courseColor": "#bef1fc",
+        "courseColor": "#c7e1ff",
         "courseTitle": "Datenbanken",
         "courseLink": "datenbanken.html"
     },
     {
         "courseIconLink": "./icons/courseIcons/description.svg",
-        "courseColor": "#befcc8",
+        "courseColor": "#c7ecbc",
         "courseTitle": "Aufgaben",
         "courseLink": "aufgaben.html"
     }
