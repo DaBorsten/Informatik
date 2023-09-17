@@ -1,6 +1,7 @@
 
 
 let filterBtn = document.querySelectorAll('.filterBtn')
+let searchFailed = document.querySelector('.searchFailed')
 
 filterBtn.forEach(btn => {
     btn.addEventListener('click', (e) => {
@@ -23,6 +24,7 @@ function filterDifficulty(e) {
     let btnType = e.target.dataset.difficulty
     let coursePreviewCard = document.querySelectorAll('.coursePreviewCard')
 
+    let anySearchResults = false
 
     coursePreviewCard.forEach(card => {
         card.classList.add("hide")
@@ -36,9 +38,17 @@ function filterDifficulty(e) {
         if (cardType == btnType) {
             card.classList.remove("hide")
         }
+
+        if (!card.classList.contains("hide")) {
+            anySearchResults = true
+        }
     })
 
-
+    if (!anySearchResults) {
+        searchFailed.classList.remove("hide")
+    } else {
+        searchFailed.classList.add("hide")
+    }
 }
 
 filterBtn[0].addEventListener('click', (e) => {
@@ -49,5 +59,7 @@ filterBtn[0].addEventListener('click', (e) => {
     coursePreviewCard.forEach(card => {
         card.classList.remove("hide")
     })
+
+    searchFailed.classList.add("hide")
 })
 

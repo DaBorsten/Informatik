@@ -503,7 +503,7 @@ img {
     gap: 16px;
 }
 
-.coursesWrapper h3{
+.coursesWrapper h3 {
     user-select: none;
 }
 
@@ -629,7 +629,7 @@ img {
     gap: 16px;
 }
 
-.coursesList h3{
+.coursesList h3 {
     user-select: none;
 }
 
@@ -745,4 +745,39 @@ img {
     background-repeat: no-repeat;
     background-position: right;
     background-size: 24px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.searchFailed {
+    display: flex;
+    flex-direction: column;
+
+    width: fit-content;
+
+    align-self: center;
+
+    text-align: center;
+}
+
+.searchFailedIcon {
+    width: 140px;
+    aspect-ratio: 1;
+
+    background-image: url(../icons/searchFail.svg);
+    background-repeat: no-repeat;
 }
