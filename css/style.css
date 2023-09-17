@@ -207,6 +207,8 @@ a {
     cursor: pointer;
 
     -webkit-tap-highlight-color: transparent;
+
+    user-select: none;
 }
 
 .links li a::before {
@@ -302,22 +304,6 @@ section {
     margin-inline: auto;
 }
 
-/* .contentSection {
-    display: flex;
-    flex-direction: column;
-    padding-inline: 0px;
-    padding-block: 4vw;
-    gap: 4vw;
-
-
-    border-bottom: 2px solid var(--buttonFontColor);
-}
-
-.contentSection:last-of-type {
-    border-bottom: none;
-} */
-
-
 button.difficulty {
     width: -webkit-min-content;
     width: -moz-min-content;
@@ -331,6 +317,7 @@ button.difficulty {
 
     font-size: 14px;
     font-weight: 600;
+    user-select: none;
 }
 
 button.difficulty[data-difficulty="leicht"] {
@@ -459,6 +446,8 @@ img {
     padding: 5vw;
 
     border-end-end-radius: 32px;
+
+    user-select: none;
 }
 
 .courseTabName a {
@@ -467,6 +456,8 @@ img {
     font-weight: 700;
 
     text-decoration: none;
+
+    user-select: none;
 
     -webkit-tap-highlight-color: transparent;
 }
@@ -510,6 +501,10 @@ img {
     flex-direction: column;
 
     gap: 16px;
+}
+
+.coursesWrapper h3{
+    user-select: none;
 }
 
 .courseCard {
@@ -632,6 +627,10 @@ img {
     display: flex;
     flex-direction: column;
     gap: 16px;
+}
+
+.coursesList h3{
+    user-select: none;
 }
 
 
