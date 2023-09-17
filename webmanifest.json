@@ -2,18 +2,8 @@
     "name": "Informatik",
     "short_name": "Informatik",
     "lang": "de-DE",
-<<<<<<< HEAD
-<<<<<<< HEAD
     "id": "/informatik/",
     "start_url": "/informatik/",
-=======
-    "id": "/Informatik/",
-    "start_url": "/Informatik/",
->>>>>>> 379fc1dd53795e21d08ecd299db302bada5984ae
-=======
-    "id": "/Informatik/",
-    "start_url": "/Informatik/",
->>>>>>> 379fc1dd53795e21d08ecd299db302bada5984ae
     "description": "Übungen für HTML und JavaScript",
     "orientation": "any",
     "icons": [

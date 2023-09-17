@@ -5,4 +5,4 @@
 
 ---
 
-Diese [Webseite](https://daborsten.github.io/Informatik/) kann außerdem als App installiert werden und somit auch Offline verwendet werden.
+Diese [Webseite](https://daborsten.github.io/informatik/) kann außerdem als App installiert werden und somit auch Offline verwendet werden.
