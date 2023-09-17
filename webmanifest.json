@@ -22,5 +22,13 @@
     ],
     "theme_color": "#baa7fe",
     "background_color": "#baa7fe",
-    "display": "standalone"
+    "display": "standalone",
+    "screenshots": [
+        {
+                "src": "screenshots/home.jpg",
+                "sizes": "2307x1080",
+                "type": "image/jpg",
+                "label": "Homescreen von Informatik"
+        }
+    ]
 }
