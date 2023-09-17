@@ -1,6 +1,5 @@
 [
     {
-        "id": "musiktabelle",
         "title": "Musiktabelle",
         "description": "Dies ist eine Excel-Tabelle, die eine Musiksammlung enthält.",
         "difficulty": 1,
@@ -15,7 +14,6 @@
         }
     },
     {
-        "id": "aufgabe4",
         "title": "Datenbankbeziehungen",
         "description": "Diese Grafik erklärt den Zusammenhang zwischen Entität, Attribut und Beziehung.",
         "difficulty": 2,

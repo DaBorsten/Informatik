@@ -1,6 +1,5 @@
 [
     {
-        "id": "schraubenDiscount",
         "title": "Schrauben-Discount",
         "description": "Hier findet ihr den allgemeinen Aufbau von der \"Schrauben-Discount\" Aufgabe. Hierbei wurden die Aufgaben zwecks der Übersichtlichkeit nur in simpelster Form umgesetzt.",
         "difficulty": 2,
@@ -18,7 +17,6 @@
         }
     },
     {
-        "id": "BMI",
         "title": "BMI-Rechner mit Bedingungen",
         "description": "BMI-Rechner mit Bedingungen für Einstufung der WHO.",
         "difficulty": 1,
@@ -36,7 +34,6 @@
         }
     },
     {
-        "id": "quadrGl",
         "title": "Quadratische Gleichungen",
         "description": "Programm zum Lösen quadratischer Gleichungen.",
         "difficulty": 2,
@@ -54,7 +51,6 @@
         }
     },
     {
-        "id": "zahlenraten",
         "title": "Zahlenraten",
         "description": "Programm, bei dem man eine zufällig generierte Zahl erraten kann.",
         "difficulty": 2,
@@ -72,7 +68,6 @@
         }
     },
     {
-        "id": "collatz",
         "title": "Collatz",
         "description": "Collatz Zahlenreihe wird nach Eingabe einer Zahl ausgegeben.",
         "difficulty": 3,
@@ -90,7 +85,6 @@
         }
     },
     {
-        "id": "tabelle",
         "title": "Tabelle",
         "description": "Eine Tabelle wird dynamisch durch das Klicken auf einen Button erweitert.",
         "difficulty": 2,
@@ -108,7 +102,6 @@
         }
     },
     {
-        "id": "elefanten",
         "title": "Elefanten",
         "description": "Dieses Programm rechnet aus, wann der Afrikanische Savannenelefant ausstirbt.",
         "difficulty": 2,
@@ -126,7 +119,6 @@
         }
     },
     {
-        "id": "primzahlen",
         "title": "Primzahlen",
         "description": "Dieses Programm überprüft, ob die von Ihnen eingegebene Zahl eine Primzahl ist.",
         "difficulty": 3,
@@ -144,7 +136,6 @@
         }
     },
     {
-        "id": "tage_pro_monat",
         "title": "Tage pro Monat",
         "description": "Dieses Programm rechnet die Tage aller Monate zusammen, welche in einem Array vorliegen.",
         "difficulty": 1,
@@ -162,7 +153,6 @@
         }
     },
     {
-        "id": "sieb_des_eratosthenes",
         "title": "Sieb des Eratosthenes",
         "description": "Dieses Programm führt das \"Sieb des Eratosthenes\" aus.",
         "difficulty": 3,
