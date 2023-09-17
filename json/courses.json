@@ -1,24 +1,24 @@
 [
     {
-        "courseIconLink": "../icons/courseIcons/code.svg",
+        "courseIconLink": "./icons/courseIcons/code.svg",
         "courseColor": "#feb9a7",
         "courseTitle": "HTML",
         "courseLink": "html.html"
     },
     {
-        "courseIconLink": "../icons/courseIcons/dataObject.svg",
+        "courseIconLink": "./icons/courseIcons/dataObject.svg",
         "courseColor": "#fff490",
         "courseTitle": "JavaScript",
         "courseLink": "javascript.html"
     },
     {
-        "courseIconLink": "../icons/courseIcons/database.svg",
+        "courseIconLink": "./icons/courseIcons/database.svg",
         "courseColor": "#bef1fc",
         "courseTitle": "Datenbanken",
         "courseLink": "datenbanken.html"
     },
     {
-        "courseIconLink": "../icons/courseIcons/description.svg",
+        "courseIconLink": "./icons/courseIcons/description.svg",
         "courseColor": "#befcc8",
         "courseTitle": "Aufgaben",
         "courseLink": "aufgaben.html"
