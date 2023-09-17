@@ -85,7 +85,7 @@ body::-webkit-scrollbar {
     background-position: center;
     background-size: cover;
 
-    background-image: url(/icons/courseIcons/home.svg);
+    background-image: url(../icons/courseIcons/home.svg);
     border: none;
     padding: 0;
     z-index: 1002;
@@ -121,7 +121,7 @@ body::-webkit-scrollbar {
     background-position: center;
     background-size: cover;
 
-    background-image: url(/icons/menu.svg);
+    background-image: url(../icons/menu.svg);
     border: none;
     padding: 0;
     z-index: 1002;
@@ -144,7 +144,7 @@ body::-webkit-scrollbar {
 }
 
 .mobileMenu[data-active="true"]>.mobileMenuIcon {
-    background-image: url(/icons/close.svg);
+    background-image: url(../icons/close.svg);
 }
 
 .navbar {
@@ -240,7 +240,7 @@ body::-webkit-scrollbar {
     padding-left: 10px;
     width: 24px;
     aspect-ratio: 1;
-    background-image: url(/icons/download.svg);
+    background-image: url(./icons/download.svg);
     background-repeat: no-repeat;
     background-position: right;
     background-size: 24px;
@@ -391,7 +391,7 @@ img {
 .studyIcon {
     width: 20px;
     aspect-ratio: 1;
-    background-image: url(/icons/learn.svg);
+    background-image: url(./icons/learn.svg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 20px;
@@ -675,7 +675,7 @@ img {
     padding-left: 10px;
     width: 24px;
     aspect-ratio: 1;
-    background-image: url(/icons/download.svg);
+    background-image: url(./icons/download.svg);
     background-repeat: no-repeat;
     background-position: right;
     background-size: 24px;
