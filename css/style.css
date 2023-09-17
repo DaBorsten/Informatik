@@ -190,19 +190,11 @@ body::-webkit-scrollbar {
 }
 
 a {
-    position: relative;
-
     text-decoration: none;
-    text-align: center;
-    padding-block: 8px;
-
-    border-radius: 12px;
-    border: none;
 
     font-weight: 600;
     font-size: 16px;
     color: #4E4E4E;
-    background-color: transparent;
 
     cursor: pointer;
 
