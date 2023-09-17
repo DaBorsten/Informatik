@@ -73,19 +73,27 @@ const imagesToPrecache = [
     'database/Musiksammlung.xlsx',
     'database/Aufgabe 4.webp',
     // Icons
+    'icons/home.svg',
     'icons/close.svg',
     'icons/menu.svg',
-    'icons/arrow-up.svg',
-    'icons/settings.svg',
+    'icons/learn.svg',
     'icons/links.svg',
     'icons/download.svg',
+    'icons/searchFail.svg',
+    // Course Icons
+    'icons/courseIcons/code.svg',
+    'icons/courseIcons/database.svg',
+    'icons/courseIcons/dataObject.svg',
+    'icons/courseIcons/description.svg',
     // Favicons
     'favicons/favicon.svg',
     'favicons/favicon.ico',
     'favicons/favicon-16x16.png',
     'favicons/favicon-32x32.png',
     'favicons/android-chrome-192x192.png',
-    'favicons/android-chrome-512x512.png'
+    'favicons/android-chrome-512x512.png',
+    'favicons/android-chrome-192x192-2.png',
+    'favicons/android-chrome-512x512-2.png'
 ]
 
 self.addEventListener('install', event => {
