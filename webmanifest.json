@@ -25,22 +25,22 @@
     "display": "standalone",
     "screenshots": [
         {
-            "src": "screenshots/1.jpg",
+            "src": "screenshots/1.png",
             "sizes": "2095x1081",
-            "type": "image/jpg"
+            "type": "image/png"
         },
         {
-            "src": "screenshots/2.jpg",
+            "src": "screenshots/2.png",
             "sizes": "2095x1081",
-            "type": "image/jpg"
+            "type": "image/png"
         },        {
-            "src": "screenshots/3.jpg",
+            "src": "screenshots/3.png",
             "sizes": "2095x1081",
-            "type": "image/jpg"
+            "type": "image/png"
         },        {
-            "src": "screenshots/4.jpg",
+            "src": "screenshots/4.png",
             "sizes": "2095x1081",
-            "type": "image/jpg"
+            "type": "image/png"
         }
     ],
     "shortcuts": [
