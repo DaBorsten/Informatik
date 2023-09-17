@@ -298,20 +298,20 @@ button.difficulty {
 }
 
 button.difficulty[data-difficulty="leicht"] {
-    border: 1px solid #85AB82;
-    color: #85AB82;
+    border: 1px solid hsl(116, 20%, 40%);
+    color: hsl(116, 20%, 40%);
     background-color: #DBEBD9;
 }
 
 button.difficulty[data-difficulty="mittel"] {
-    border: 1px solid #E7AE59;
-    color: #E7AE59;
+    border: 1px solid hsl(36, 75%, 40%);
+    color: hsl(36, 75%, 40%);
     background-color: #FFF8DD;
 }
 
 button.difficulty[data-difficulty="schwer"] {
-    border: 1px solid #BC7D7D;
-    color: #BC7D7D;
+    border: 1px solid hsl(0, 32%, 40%);
+    color: hsl(0, 32%, 40%);
     background-color: #FFE2E2;
 }
 
