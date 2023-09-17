@@ -6,7 +6,7 @@
         "courseLink": "/html.html"
     },
     {
-        "courseIconLink": "../icons/courseIcons/data_object.svg",
+        "courseIconLink": "../icons/courseIcons/dataObject.svg",
         "courseColor": "#fff490",
         "courseTitle": "JavaScript",
         "courseLink": "/javascript.html"
