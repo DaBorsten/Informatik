@@ -1,0 +1,32 @@
+[
+    {
+        "id": "musiktabelle",
+        "title": "Musiktabelle",
+        "description": "Dies ist eine Excel-Tabelle, die eine Musiksammlung enthält.",
+        "difficulty": 1,
+        "picture": {
+            "src": "",
+            "alt": "",
+            "width": "",
+            "height": ""
+        },
+        "download": {
+            "button_link": "database/Musiksammlung.xlsx"
+        }
+    },
+    {
+        "id": "aufgabe4",
+        "title": "Datenbankbeziehungen",
+        "description": "Diese Grafik erklärt den Zusammenhang zwischen Entität, Attribut und Beziehung.",
+        "difficulty": 2,
+        "picture": {
+            "src": "database/Aufgabe 4.webp",
+            "alt": "Aufgabe 4 Grafik",
+            "width": "1920",
+            "height": "1080"
+        },
+        "download": {
+            "button_link": ""
+        }
+    }
+]

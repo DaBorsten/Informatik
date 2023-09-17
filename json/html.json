@@ -1,0 +1,39 @@
+
+[
+    {
+        "title": "HTML Aufbau",
+        "description": "Jedes HTML Dokument ist so aufgebaut:",
+        "difficulty": 1,
+        "learn_more": "https://www.w3schools.com/html/html_intro.asp",
+        "picture": {
+            "src": "pictures/HTML_Grundstruktur.webp",
+            "alt": "HTML Grundstruktur",
+            "width": "1520",
+            "height": "1158"
+        }
+    },
+    {
+        "title": "HTML Tags",
+        "description": "Hier sind ein paar HTML Tags vorgestellt:",
+        "difficulty": 1,
+        "learn_more": "https://www.w3schools.com/tags/default.asp",
+        "picture": {
+            "src": "pictures/HTML_Tags.webp",
+            "alt": "HTML Tags",
+            "width": "1520",
+            "height": "740"
+        }
+    },
+    {
+        "title": "HTML Tabelle",
+        "description": "Ein wichtiges Element sind Tabellen:",
+        "difficulty": 2,
+        "learn_more": "https://www.w3schools.com/html/html_tables.asp",
+        "picture": {
+            "src": "pictures/HTML_tabelle.webp",
+            "alt": "Tabelle",
+            "width": "1520",
+            "height": "1956"
+        }
+    }
+]

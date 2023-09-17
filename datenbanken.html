@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+=======
+>>>>>>> 379fc1dd53795e21d08ecd299db302bada5984ae
+=======
+>>>>>>> 379fc1dd53795e21d08ecd299db302bada5984ae
+    <link rel="preload" as="style" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Übungen für HTML und JavaScript">
+    <meta name="author" content="Boas Rautmann">
+    <title>Datenbanken</title>
+
+    <!-- Favicons -->
+    <link rel="icon" href="/favicons/favicon.svg" type="image/svg+xml">
+    <link rel="manifest" href="webmanifest.json" type="text/json">
+
+    <meta name="theme-color" content="#000000">
+
+<<<<<<< HEAD
+<<<<<<< HEAD
+    <link rel="canonical" href="https://daborsten.github.io/informatik/">
+=======
+    <link rel="canonical" href="https://daborsten.github.io/Merkblatt/">
+>>>>>>> 379fc1dd53795e21d08ecd299db302bada5984ae
+=======
+    <link rel="canonical" href="https://daborsten.github.io/Merkblatt/">
+>>>>>>> 379fc1dd53795e21d08ecd299db302bada5984ae
+
+    <script src="service-worker.js" type="text/javascript"></script>
+
+    <script src="pageConstructor/datenbanken.js" type="text/javascript" defer></script>
+
+    <script src="js/script.js" type="text/javascript" defer></script>
+
+    <script src="js/filterDifficulty.js" defer></script>
+
+    <script src="js/showCourses.js" defer></script>
+</head>
+
+<body>
+    <div class="mobileTopBar">
+
+        <button class="mobileTopBarButtons" onclick="window.location.href='/'" aria-label="Homebutton">
+            <div class="homeButtonIcon"></div>
+        </button>
+
+        <button class="mobileMenu mobileMenuRoundBackground" data-active="false" aria-label="Navigationsmenü">
+            <div class="mobileMenuIcon"></div>
+        </button>
+    </div>
+
+    <nav class="navbar" data-visible="false">
+        <div class="btns">
+<<<<<<< HEAD
+<<<<<<< HEAD
+            <button onclick="window.location.href='/html.html'" id="html" data-top-bar-name="HTML"
+                class="btn">HTML</button>
+
+            <button onclick="window.location.href='/javascript.html'" id="javascript" data-top-bar-name="JavaScript"
+                class="btn">JavaScript</button>
+
+            <button onclick="window.location.href='/aufgaben.html'" id="aufgaben" data-top-bar-name="Aufgaben"
+                class="btn">Aufgaben</button>
+
+            <button onclick="window.location.href='/datenbanken.html'" id="datenbanken" data-top-bar-name="Datenbanken"
+=======
+=======
+>>>>>>> 379fc1dd53795e21d08ecd299db302bada5984ae
+            <button onclick="window.location.href='html.html'" id="html" data-top-bar-name="HTML"
+                class="btn">HTML</button>
+
+            <button onclick="window.location.href='javascript.html'" id="javascript" data-top-bar-name="JavaScript"
+                class="btn">JavaScript</button>
+
+            <button onclick="window.location.href='aufgaben.html'" id="aufgaben" data-top-bar-name="Aufgaben"
+                class="btn">Aufgaben</button>
+
+            <button onclick="window.location.href='datenbanken.html'" id="datenbanken" data-top-bar-name="Datenbanken"
+<<<<<<< HEAD
+>>>>>>> 379fc1dd53795e21d08ecd299db302bada5984ae
+=======
+>>>>>>> 379fc1dd53795e21d08ecd299db302bada5984ae
+                class="btn">Datenbanken</button>
+        </div>
+    </nav>
+
+    <section data-tab-content>
+
+        <div class="courseTabName" style="background-color: #bef1fc;">
+            <a href="/datenbanken.html">Datenbanken</a>
+        </div>
+
+        <div class="contentSectionWrapper">
+
+            <div class="filterBtns" data-difficulty>
+                <button class="filterBtn activeFilter">Alle</button>
+                <button class="filterBtn" data-difficulty="leicht">Leicht</button>
+                <button class="filterBtn" data-difficulty="mittel">Mittel</button>
+                <button class="filterBtn" data-difficulty="schwer">Schwer</button>
+            </div>
+
+            <div class="coursesList">
+                <h2>Überblick</h2>
+            </div>
+
+
+
+
+
+
+        </div>
+    </section>
+
+    <!-- Kurskarte -->
+    <template id="course_template">
+        <div class="coursePreviewCard" data-difficulty onclick="showCourse(this)">
+            <div class="coursePreviewCardTitleAndDescription">
+                <h3 data-preview-card-title></h3>
+                <p data-preview-card-description></p>
+            </div>
+            <button data-difficulty class="difficulty"></button>
+        </div>
+    </template>
+
+    <!-- Kurskarte -->
+    <template id="detailed_course_template">
+        <div class="courseDetailedCard">
+            <div class="courseDetailedCardTitleAndDescription">
+                <h3 data-detailed-card-title>HTML</h3>
+                <p data-detailed-card-description>Bla Bla Bla</p>
+            </div>
+            <img data-detailed-card-image class="screenshots" src="" alt="">
+            <a class="download-btn" data-detailed-card-download></a>
+        </div>
+    </template>
+
+</body>
+
+</html>
