@@ -46,19 +46,19 @@
     "shortcuts": [
         {
             "name": "HTML",
-            "url": "/html.html"
+            "url": "html.html"
         },
         {
             "name": "JavaScript",
-            "url": "/javascript.html"
+            "url": "javascript.html"
         },
         {
             "name": "Datenbanken",
-            "url": "/datenbanken.html"
+            "url": "datenbanken.html"
         },
         {
             "name": "Aufgaben",
-            "url": "/aufgaben.html"
+            "url": "aufgaben.html"
         }
     ]
 }
