@@ -11,7 +11,7 @@
             "src": "favicons/android-chrome-192x192-2.png",
             "sizes": "192x192",
             "type": "image/png",
-            "purpose": "any"
+            "purpose": "maskable"
         },
         {
             "src": "favicons/android-chrome-512x512-2.png",
@@ -25,10 +25,40 @@
     "display": "standalone",
     "screenshots": [
         {
-                "src": "screenshots/home.jpg",
-                "sizes": "2307x1080",
-                "type": "image/jpg",
-                "label": "Homescreen von Informatik"
+            "src": "screenshots/1.jpg",
+            "sizes": "2095x1081",
+            "type": "image/jpg"
+        },
+        {
+            "src": "screenshots/2.jpg",
+            "sizes": "2095x1081",
+            "type": "image/jpg"
+        },        {
+            "src": "screenshots/3.jpg",
+            "sizes": "2095x1081",
+            "type": "image/jpg"
+        },        {
+            "src": "screenshots/4.jpg",
+            "sizes": "2095x1081",
+            "type": "image/jpg"
+        }
+    ],
+    "shortcuts": [
+        {
+            "name": "HTML",
+            "url": "/html.html"
+        },
+        {
+            "name": "JavaScript",
+            "url": "/javascript.html"
+        },
+        {
+            "name": "Datenbanken",
+            "url": "/datenbanken.html"
+        },
+        {
+            "name": "Aufgaben",
+            "url": "/aufgaben.html"
         }
     ]
 }
