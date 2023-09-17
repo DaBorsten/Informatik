@@ -46,19 +46,47 @@
     "shortcuts": [
         {
             "name": "HTML",
-            "url": "html.html"
+            "url": "html.html",
+            "icons": [
+                {
+                    "src": "shortcuts/html.png",
+                    "type": "image/png",
+                    "sizes": "96x96"
+                }
+            ]
         },
         {
             "name": "JavaScript",
-            "url": "javascript.html"
+            "url": "javascript.html",
+            "icons": [
+                {
+                    "src": "shortcuts/javascript.png",
+                    "type": "image/png",
+                    "sizes": "96x96"
+                }
+            ]
         },
         {
             "name": "Datenbanken",
-            "url": "datenbanken.html"
+            "url": "datenbanken.html",
+            "icons": [
+                {
+                    "src": "shortcuts/datenbanken.png",
+                    "type": "image/png",
+                    "sizes": "96x96"
+                }
+            ]
         },
         {
             "name": "Aufgaben",
-            "url": "aufgaben.html"
+            "url": "aufgaben.html",
+            "icons": [
+                {
+                    "src": "shortcuts/aufgaben.png",
+                    "type": "image/png",
+                    "sizes": "96x96"
+                }
+            ]
         }
     ]
 }
