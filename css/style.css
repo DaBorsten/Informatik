@@ -190,6 +190,10 @@ body::-webkit-scrollbar {
     list-style-type: none;
 }
 
+.links li {
+    position: relative;
+}
+
 a {
     text-decoration: none;
 
