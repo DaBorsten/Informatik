@@ -18,7 +18,7 @@
     --headingFourColor: #4E4E4E;
     --paragraphColor: #6E6E6E;
 
-    --button: transparent;
+    --button: white;
     --buttonHover: hsl(200, 11%, 32%);
     --buttonActive: hsl(206, 14%, 20%);
     --buttonActiveColor: hsl(0, 0%, 100%);
