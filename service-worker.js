@@ -122,36 +122,35 @@ self.addEventListener('fetch', event => {
         }
   
         try {
-          const networkResponse = await fetch(event.request);
+          const networkResponse = await fetch(event.request.clone()); // Clone the request
   
           if (!networkResponse || networkResponse.status !== 200 || networkResponse.type !== 'basic') {
-            // Falls die Antwort nicht gültig ist, z.B. 404, geben Sie sie direkt zurück
             return networkResponse;
           }
   
           const cacheToUse = imagesToPrecache.includes(event.request.url) ? cacheNameImages : cacheName;
   
-          // Überprüfen, ob die Ressource aktualisiert wurde
           const cachedLastModified = cachedResponse ? cachedResponse.headers.get('last-modified') : null;
           const networkLastModified = networkResponse.headers.get('last-modified');
   
           if (cachedLastModified !== networkLastModified) {
-            // Ressource hat sich geändert, also Cache aktualisieren
+            // Clone the network response before putting it in the cache
+            const clonedNetworkResponse = networkResponse.clone();
+  
             caches.open(cacheToUse).then(cache => {
-              // Clone the response only if it's not going to be consumed
-              if (!cachedResponse) {
-                cache.put(event.request, networkResponse.clone());
-              }
+              cache.put(event.request, clonedNetworkResponse);
             });
           }
   
           return networkResponse;
-        } catch {
+        } catch (error) {
+          console.error('Error fetching and caching:', error);
           return cachedResponse;
         }
       })
     );
   });
+  
   
   
 
