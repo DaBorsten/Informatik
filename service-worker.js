@@ -103,24 +103,70 @@ const imagesToPrecache = [
 self.addEventListener('install', event => {
     console.log('Service worker install event!')
     event.waitUntil(
-        caches.open(cacheName).then(cache => {
-            return cache.addAll(resourcesToPrecache)
-        }),
-        caches.open(cacheNameImages).then(cache => {
-            return cache.addAll(imagesToPrecache)
-        })
-    )
-})
+        Promise.all([
+            caches.open(cacheName).then(cache => {
+                return cache.addAll(resourcesToPrecache)
+            }),
+            caches.open(cacheNameImages).then(cache => {
+                return cache.addAll(imagesToPrecache)
+            })
+        ])
+    );
+});
 
+self.addEventListener('fetch', event => {
+    event.respondWith(
+        caches.match(event.request, { ignoreSearch: true })
+            .then(cachedResponse => {
+                if (cachedResponse) {
+                    return cachedResponse;
+                }
+
+                // Dynamische Ressourcen werden direkt vom Server abgerufen und im dynamischen Cache gespeichert
+                if (imagesToPrecache.includes(event.request.url)) {
+                    return fetch(event.request)
+                        .then(response => {
+                            const responseClone = response.clone();
+                            caches.open(cacheNameImages)
+                                .then(cache => {
+                                    cache.put(event.request, responseClone);
+                                });
+                            return response;
+                        });
+                }
+
+                // Die Anfrage an den Server senden und die Datei aktualisieren, falls geändert
+                return fetch(event.request)
+                    .then(response => {
+                        // Überprüfen, ob die Antwort gültig ist (HTTP-Status 200)
+                        if (!response || response.status !== 200 || response.type !== 'basic') {
+                            return response;
+                        }
+
+                        const responseToCache = response.clone();
+
+                        caches.open(cacheName)
+                            .then(cache => {
+                                cache.put(event.request, responseToCache);
+                            });
+
+                        return response;
+                    });
+            })
+    );
+});
 
 self.addEventListener('activate', event => {
     console.log('Activate event!')
-})
-
-self.addEventListener('fetch', event => {
-    event.respondWith(caches.match(event.request, { ignoreSearch: true })
-        .then(response => {
-            return response || fetch(event.request)
+    event.waitUntil(
+        caches.keys().then(cacheNames => {
+            return Promise.all(
+                cacheNames.map(cache => {
+                    if (cache !== cacheName && cache !== cacheNameImages) {
+                        return caches.delete(cache);
+                    }
+                })
+            );
         })
-    )
-})
+    );
+});
