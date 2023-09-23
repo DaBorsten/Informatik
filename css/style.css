@@ -247,7 +247,13 @@ a {
 
     -webkit-tap-highlight-color: transparent;
 
-    user-select: none;
+    -webkit-user-select: none;
+
+       -moz-user-select: none;
+
+        -ms-user-select: none;
+
+            user-select: none;
 }
 
 .links li a::before {
@@ -356,7 +362,10 @@ button.difficulty {
 
     font-size: 14px;
     font-weight: 600;
-    user-select: none;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
 }
 
 button.difficulty[data-difficulty="leicht"] {
@@ -486,7 +495,13 @@ img {
 
     border-end-end-radius: 32px;
 
-    user-select: none;
+    -webkit-user-select: none;
+
+       -moz-user-select: none;
+
+        -ms-user-select: none;
+
+            user-select: none;
 }
 
 .courseTabName a {
@@ -496,7 +511,13 @@ img {
 
     text-decoration: none;
 
-    user-select: none;
+    -webkit-user-select: none;
+
+       -moz-user-select: none;
+
+        -ms-user-select: none;
+
+            user-select: none;
 
     -webkit-tap-highlight-color: transparent;
 }
@@ -543,7 +564,10 @@ img {
 }
 
 .coursesWrapper h3 {
-    user-select: none;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
 }
 
 .courseCard {
@@ -669,7 +693,10 @@ img {
 }
 
 .coursesList h3 {
-    user-select: none;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
 }
 
 
@@ -805,6 +832,10 @@ img {
 .searchFailed {
     display: flex;
     flex-direction: column;
+
+    width: -webkit-fit-content;
+
+    width: -moz-fit-content;
 
     width: fit-content;
 
