@@ -21,6 +21,7 @@ const resourcesToPrecache = [
 
     'js/filterDifficulty.js',
     'js/showCourses.js',
+    'js/theme.js',
 
     'pageConstructor/courses.js',
     'pageConstructor/html.js',
