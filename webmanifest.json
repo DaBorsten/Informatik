@@ -26,20 +26,20 @@
     "screenshots": [
         {
             "src": "screenshots/1.png",
-            "sizes": "2095x1081",
+            "sizes": "1081x2095",
             "type": "image/png"
         },
         {
             "src": "screenshots/2.png",
-            "sizes": "2095x1081",
+            "sizes": "1081x2095",
             "type": "image/png"
         },        {
             "src": "screenshots/3.png",
-            "sizes": "2095x1081",
+            "sizes": "1081x2095",
             "type": "image/png"
         },        {
             "src": "screenshots/4.png",
-            "sizes": "2095x1081",
+            "sizes": "1081x2095",
             "type": "image/png"
         }
     ],
