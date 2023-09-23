@@ -116,48 +116,6 @@ self.addEventListener('install', event => {
 
 self.addEventListener('fetch', event => {
     event.respondWith(
-        caches.match(event.request, { ignoreSearch: true })
-            .then(cachedResponse => {
-                if (cachedResponse) {
-                    return cachedResponse;
-                }
-
-                // Dynamische Ressourcen werden direkt vom Server abgerufen und im dynamischen Cache gespeichert
-                if (imagesToPrecache.includes(event.request.url)) {
-                    return fetch(event.request)
-                        .then(response => {
-                            const responseClone = response.clone();
-                            caches.open(cacheNameImages)
-                                .then(cache => {
-                                    cache.put(event.request, responseClone);
-                                });
-                            return response;
-                        });
-                }
-
-                // Die Anfrage an den Server senden und die Datei aktualisieren, falls geändert
-                return fetch(event.request)
-                    .then(response => {
-                        // Überprüfen, ob die Antwort gültig ist (HTTP-Status 200)
-                        if (!response || response.status !== 200 || response.type !== 'basic') {
-                            return response;
-                        }
-
-                        const responseToCache = response.clone();
-
-                        caches.open(cacheName)
-                            .then(cache => {
-                                cache.put(event.request, responseToCache);
-                            });
-
-                        return response;
-                    });
-            })
-    );
-});
-
-self.addEventListener('fetch', event => {
-    event.respondWith(
         caches.match(event.request).then(async cachedResponse => {
             if (!navigator.onLine) {
                 return cachedResponse;
