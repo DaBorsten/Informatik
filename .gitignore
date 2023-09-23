@@ -1,5 +1,5 @@
 /ignoredFiles/
 
 # Ignore TypeScript files
-*.ts
-tsconfig.json
+# *.ts
+# tsconfig.json

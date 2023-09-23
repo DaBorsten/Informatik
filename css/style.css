@@ -23,6 +23,50 @@
     --buttonActive: hsl(206, 14%, 20%);
     --buttonActiveColor: hsl(0, 0%, 100%);
     --buttonFontColor: hsl(240, 9%, 58%);
+    --buttonBorderColor: #9c9c9c;
+
+    --buttonActiveBackgroundColor: #C4D9F8;
+    --buttonActiveFontColor: #5796F3;
+
+    --cardsBorderColor: #E3E3E3;
+
+    /* Difficulty */
+    --leichtBackgroundColor: #DBEBD9;
+    --leichtFontColor: hsl(116, 20%, 40%);
+
+    --mittelBackgroundColor: #FFF8DD;
+    --mittelFontColor: hsl(36, 75%, 40%);
+
+    --schwerBackgroundColor: #FFE2E2;
+    --schwerFontColor: hsl(0, 32%, 40%);
+}
+
+body[data-theme="dark"] {
+    --backgroundColor: #262626;
+    --headingTwoColor: #D3D3D3;
+    --headingThreeColor: #D3D3D3;
+    --paragraphColor: #BCBCBC;
+
+    --cardsBorderColor: #555555;
+
+
+    /* Difficulty */
+    --leichtBackgroundColor: #3A4339;
+    --leichtFontColor: #85AB82;
+
+    --mittelBackgroundColor: #5B553D;
+    --mittelFontColor: #E7AE59;
+
+    --schwerBackgroundColor: #493B3B;
+    --schwerFontColor: #BC7D7D;
+
+
+    --buttonFontColor: #afafaf;
+    --buttonBorderColor: #555555;
+
+    --buttonActiveBackgroundColor: #2f3e53;
+    --buttonActiveFontColor: #5796F3;
+
 }
 
 * {
@@ -66,8 +110,6 @@ body::-webkit-scrollbar {
     padding-bottom: 0px;
 
     gap: 8px;
-
-    z-index: 1001;
 
     background-color: transparent;
     -webkit-user-select: none;
@@ -318,21 +360,21 @@ button.difficulty {
 }
 
 button.difficulty[data-difficulty="leicht"] {
-    border: 1px solid hsl(116, 20%, 40%);
-    color: hsl(116, 20%, 40%);
-    background-color: #DBEBD9;
+    border: 1px solid var(--leichtFontColor);
+    color: var(--leichtFontColor);
+    background-color: var(--leichtBackgroundColor);
 }
 
 button.difficulty[data-difficulty="mittel"] {
-    border: 1px solid hsl(36, 75%, 40%);
-    color: hsl(36, 75%, 40%);
-    background-color: #FFF8DD;
+    border: 1px solid var(--mittelFontColor);
+    color: var(--mittelFontColor);
+    background-color: var(--mittelBackgroundColor);
 }
 
 button.difficulty[data-difficulty="schwer"] {
-    border: 1px solid hsl(0, 32%, 40%);
-    color: hsl(0, 32%, 40%);
-    background-color: #FFE2E2;
+    border: 1px solid var(--schwerFontColor);
+    color: var(--schwerFontColor);
+    background-color: var(--schwerBackgroundColor);
 }
 
 h1 {
@@ -386,10 +428,10 @@ img {
     font-size: 14px;
     padding-block: 8px;
     padding-inline: 16px;
-    background-color: white;
-    color: #4E4E4E;
+    background-color: var(--backgroundColor);
+    color: var(--buttonFontColor);
     text-decoration: none;
-    border: 2px solid #9c9c9c;
+    border: 2px solid var(--buttonBorderColor);
     font-weight: 600;
     cursor: pointer;
     border-radius: 50px;
@@ -406,13 +448,13 @@ img {
 }
 
 .learnMoreButton:hover {
-    background-color: hsl(202, 100%, 89%);
-    border: 2px solid hsl(202, 45%, 53%);
+    background-color: var(--buttonActiveBackgroundColor);
+    border: 2px solid var(--buttonActiveFontColor);
 }
 
 .learnMoreButton:active {
-    background-color: hsl(202, 100%, 89%);
-    border: 2px solid hsl(202, 45%, 53%);
+    background-color: var(--buttonActiveBackgroundColor);
+    border: 2px solid var(--buttonActiveFontColor);
 }
 
 .studyIcon {
@@ -516,9 +558,9 @@ img {
 
     border-radius: 16px;
 
-    border: 2px solid #E3E3E3;
+    border: 2px solid var(--cardsBorderColor);
 
-    background-color: white;
+    background-color: var(--backgroundColor);
 
     cursor: pointer;
 
@@ -580,8 +622,8 @@ img {
 }
 
 .filterBtn {
-    background-color: white;
-    border: 1px solid #E3E3E3;
+    background-color: var(--backgroundColor);
+    border: 1px solid var(--cardsBorderColor);
 
     border-radius: 24px;
 
@@ -591,7 +633,7 @@ img {
     font-size: 14px;
     font-weight: 600;
 
-    color: #4E4E4E;
+    color: var(--buttonFontColor);
 
     -webkit-user-select: none;
 
@@ -607,8 +649,8 @@ img {
 }
 
 .filterBtn.activeFilter {
-    background-color: #C4D9F8;
-    border: 1px solid #5796F3;
+    background-color: var(--buttonActiveBackgroundColor);
+    border: 1px solid var(--buttonActiveFontColor);
 }
 
 
@@ -636,8 +678,8 @@ img {
     display: flex;
     flex-direction: row;
 
-    background-color: white;
-    border: 2px solid #E3E3E3;
+    background-color: var(--backgroundColor);
+    border: 2px solid var(--cardsBorderColor);
 
     padding: 24px;
 
@@ -672,8 +714,8 @@ img {
     display: flex;
     flex-direction: column;
 
-    background-color: white;
-    border: 2px solid #E3E3E3;
+    background-color: var(--backgroundColor);
+    border: 2px solid var(--cardsBorderColor);
 
     padding: 24px;
 
@@ -701,10 +743,10 @@ img {
     padding-inline-start: 30px;
     -webkit-padding-end: 20px;
     padding-inline-end: 20px;
-    border: 2px solid #9c9c9c;
+    border: 2px solid var(--buttonBorderColor);
     border-radius: 16px;
-    background-color: white;
-    color: #4E4E4E;
+    background-color: var(--backgroundColor);
+    color: var(--buttonFontColor);
     cursor: pointer;
     -webkit-user-select: none;
     -moz-user-select: none;
@@ -722,13 +764,13 @@ img {
 }
 
 .download-btn:hover {
-    background-color: hsl(202, 100%, 89%);
-    border: 2px solid hsl(202, 45%, 53%);
+    background-color: var(--buttonActiveBackgroundColor);
+    border: 2px solid var(--buttonActiveFontColor);
 }
 
 .download-btn:active {
-    background-color: hsl(202, 100%, 89%);
-    border: 2px solid hsl(202, 45%, 53%);
+    background-color: var(--buttonActiveBackgroundColor);
+    border: 2px solid var(--buttonActiveFontColor);
 }
 
 .download-btn::after {
@@ -777,4 +819,48 @@ img {
 
     background-image: url(../icons/searchFail.svg);
     background-repeat: no-repeat;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.themeAndNavigation {
+    display: flex;
+    flex-direction: row;
+}
+
+.mobileThemeIcon {
+    display: block;
+    width: 24px;
+    height: 24px;
+    align-self: center;
+    aspect-ratio: 1;
+    margin: 12px;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    /* background-image: url(../icons/dark_mode.svg); */
+    border: none;
+    padding: 0;
+    z-index: 998;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.themeSwitcher[data-theme="light"]>.mobileThemeIcon {
+    background-image: url(../icons/dark_mode.svg);
+}
+
+.themeSwitcher[data-theme="dark"]>.mobileThemeIcon {
+    background-image: url(../icons/light_mode.svg);
 }

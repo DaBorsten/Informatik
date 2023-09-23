@@ -14,7 +14,7 @@
         }
     },
     {
-        "title": "Datenbankbeziehungen",
+        "title": "Datenbank-beziehungen",
         "description": "Diese Grafik erklärt den Zusammenhang zwischen Entität, Attribut und Beziehung.",
         "difficulty": 2,
         "picture": {

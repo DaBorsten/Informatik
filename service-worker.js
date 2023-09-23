@@ -85,6 +85,9 @@ const imagesToPrecache = [
     'icons/courseIcons/database.svg',
     'icons/courseIcons/dataObject.svg',
     'icons/courseIcons/description.svg',
+    // Theme
+    'icons/light_mode.svg',
+    'icons/dark_mode.svg',
     // Favicons
     'favicons/favicon.svg',
     'favicons/favicon.ico',

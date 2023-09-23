@@ -31,18 +31,28 @@
 
     <script src="js/showCourses.js" defer></script>
 
+    <script src="js/theme.js" type="text/javascript" defer></script>
+
 </head>
 
-<body>
+<body data-theme="dark">
     <div class="mobileTopBar">
 
         <button class="mobileTopBarButtons" onclick="window.location.href='./'" aria-label="Homebutton">
             <div class="homeButtonIcon"></div>
         </button>
 
-        <button class="mobileMenu mobileMenuRoundBackground" data-active="false" aria-label="Navigationsmenü">
-            <div class="mobileMenuIcon"></div>
-        </button>
+        <div class="themeAndNavigation">
+
+            <button class="themeSwitcher mobileTopBarButtons" aria-label="Theme ändern" data-theme>
+                <div class="mobileThemeIcon"></div>
+            </button>
+
+            <button class="mobileMenu mobileTopBarButtons" data-active="false" aria-label="Navigationsmenü">
+                <div class="mobileMenuIcon"></div>
+            </button>
+
+        </div>
     </div>
 
     <nav class="navbar" data-visible="false">
