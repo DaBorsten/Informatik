@@ -156,6 +156,42 @@ self.addEventListener('fetch', event => {
     );
 });
 
+self.addEventListener('fetch', event => {
+    event.respondWith(
+        caches.match(event.request).then(async cachedResponse => {
+            if (!navigator.onLine) {
+                return cachedResponse;
+            }
+
+            try {
+                const networkResponse = await fetch(event.request);
+
+                if (!networkResponse || networkResponse.status !== 200 || networkResponse.type !== 'basic') {
+                    // Falls die Antwort nicht gültig ist, z.B. 404, geben Sie sie direkt zurück
+                    return networkResponse;
+                }
+
+                const cacheToUse = imagesToPrecache.includes(event.request.url) ? cacheNameImages : cacheName;
+
+                // Überprüfen, ob die Ressource aktualisiert wurde
+                const cachedLastModified = cachedResponse.headers.get('last-modified');
+                const networkLastModified = networkResponse.headers.get('last-modified');
+
+                if (cachedLastModified !== networkLastModified) {
+                    // Ressource hat sich geändert, also Cache aktualisieren
+                    caches.open(cacheToUse).then(cache => {
+                        cache.put(event.request, networkResponse.clone());
+                    });
+                }
+
+                return networkResponse;
+            } catch {
+                return cachedResponse;
+            }
+        })
+    );
+});
+
 self.addEventListener('activate', event => {
     console.log('Activate event!')
     event.waitUntil(
