@@ -927,12 +927,10 @@ img {
     transition: all 250ms ease-in-out;
 
     background-color: hsla(0, 0%, 0%, 0);
-    backdrop-filter: blur(0px);
 }
 
 .navbar[data-visible="true"] ~ .backgroundBlur {
     visibility: visible;
-    backdrop-filter: blur(8px);
-    background-color: hsla(0, 0%, 0%, 0.4);
+    background-color: hsla(0, 0%, 0%, 0.75);
     transition: all 250ms ease-in-out;
 }
