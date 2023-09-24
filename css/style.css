@@ -933,4 +933,5 @@ img {
     visibility: visible;
     background-color: hsla(0, 0%, 0%, 0.75);
     transition: all 250ms ease-in-out;
+    backdrop-filter: blur(16px);
 }
