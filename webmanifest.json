@@ -37,10 +37,6 @@
             "src": "screenshots/3.png",
             "sizes": "1081x2095",
             "type": "image/png"
-        },        {
-            "src": "screenshots/4.png",
-            "sizes": "1081x2095",
-            "type": "image/png"
         }
     ],
     "shortcuts": [
