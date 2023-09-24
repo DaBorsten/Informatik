@@ -133,7 +133,7 @@ body::-webkit-scrollbar {
     background-image: url(../icons/home.svg);
     border: none;
     padding: 0;
-    z-index: 1002;
+    z-index: 1000;
     cursor: pointer;
     -webkit-tap-highlight-color: transparent;
 }
@@ -147,7 +147,7 @@ body::-webkit-scrollbar {
 
     border: none;
     padding: 0;
-    z-index: 1002;
+    z-index: 1004;
     -webkit-tap-highlight-color: transparent;
     vertical-align: middle;
 }
@@ -169,7 +169,7 @@ body::-webkit-scrollbar {
     background-image: url(../icons/menu.svg);
     border: none;
     padding: 0;
-    z-index: 1002;
+    z-index: 1005;
     cursor: pointer;
     -webkit-tap-highlight-color: transparent;
 }
@@ -192,6 +192,11 @@ body::-webkit-scrollbar {
     background-image: url(../icons/close.svg);
 }
 
+body[data-theme="dark"] .mobileMenu[data-active="true"]>.mobileMenuIcon {
+    background-image: url(../icons/close.svg);
+    filter: invert();
+}
+
 .navbar {
     position: fixed;
     display: flex;
@@ -204,13 +209,12 @@ body::-webkit-scrollbar {
     transform: translateX(100%);
     transition: transform 250ms ease-in-out;
 
-    background-color: rgb(255, 255, 255);
-    border-left: 2px solid rgb(168, 168, 168);
+    background-color: var(--backgroundColor);
 
     border-start-start-radius: 16px;
     border-end-start-radius: 16px;
 
-    z-index: 999;
+    z-index: 1003;
 
     width: clamp(100px, 70vw, 300px);
 }
@@ -241,7 +245,9 @@ a {
 
     font-weight: 600;
     font-size: 16px;
-    color: #4E4E4E;
+    color: var(--paragraphColor);
+
+    line-height: 200%;
 
     cursor: pointer;
 
@@ -249,17 +255,17 @@ a {
 
     -webkit-user-select: none;
 
-       -moz-user-select: none;
+    -moz-user-select: none;
 
-        -ms-user-select: none;
+    -ms-user-select: none;
 
-            user-select: none;
+    user-select: none;
 }
 
 .links li a::before {
     position: absolute;
     content: '';
-    background-color: #4E4E4E;
+    background-color: var(--headingTwoColor);
     height: 2px;
     width: 100%;
 
@@ -363,9 +369,9 @@ button.difficulty {
     font-size: 14px;
     font-weight: 600;
     -webkit-user-select: none;
-       -moz-user-select: none;
-        -ms-user-select: none;
-            user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 button.difficulty[data-difficulty="leicht"] {
@@ -497,11 +503,11 @@ img {
 
     -webkit-user-select: none;
 
-       -moz-user-select: none;
+    -moz-user-select: none;
 
-        -ms-user-select: none;
+    -ms-user-select: none;
 
-            user-select: none;
+    user-select: none;
 }
 
 .courseTabName a {
@@ -513,11 +519,11 @@ img {
 
     -webkit-user-select: none;
 
-       -moz-user-select: none;
+    -moz-user-select: none;
 
-        -ms-user-select: none;
+    -ms-user-select: none;
 
-            user-select: none;
+    user-select: none;
 
     -webkit-tap-highlight-color: transparent;
 }
@@ -565,9 +571,9 @@ img {
 
 .coursesWrapper h3 {
     -webkit-user-select: none;
-       -moz-user-select: none;
-        -ms-user-select: none;
-            user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 .courseCard {
@@ -694,9 +700,9 @@ img {
 
 .coursesList h3 {
     -webkit-user-select: none;
-       -moz-user-select: none;
-        -ms-user-select: none;
-            user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 
@@ -894,4 +900,39 @@ img {
 
 .themeSwitcher[data-theme="dark"]>.mobileThemeIcon {
     background-image: url(../icons/light_mode.svg);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.backgroundBlur {
+    visibility: hidden;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+
+    width: 100dvw;
+    height: 100dvh;
+    z-index: 1001;
+    transition: all 250ms ease-in-out;
+
+    background-color: hsla(0, 0%, 0%, 0);
+    backdrop-filter: blur(0px);
+}
+
+.navbar[data-visible="true"] ~ .backgroundBlur {
+    visibility: visible;
+    backdrop-filter: blur(8px);
+    background-color: hsla(0, 0%, 0%, 0.4);
+    transition: all 250ms ease-in-out;
 }
