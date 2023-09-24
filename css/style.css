@@ -42,7 +42,7 @@
 }
 
 body[data-theme="dark"] {
-    --backgroundColor: #262626;
+    --backgroundColor: #101010;
     --headingTwoColor: #D3D3D3;
     --headingThreeColor: #D3D3D3;
     --paragraphColor: #BCBCBC;
@@ -51,13 +51,13 @@ body[data-theme="dark"] {
 
 
     /* Difficulty */
-    --leichtBackgroundColor: #3A4339;
+    --leichtBackgroundColor: #1f2b1d;
     --leichtFontColor: #85AB82;
 
-    --mittelBackgroundColor: #5B553D;
+    --mittelBackgroundColor: #312b17;
     --mittelFontColor: #E7AE59;
 
-    --schwerBackgroundColor: #493B3B;
+    --schwerBackgroundColor: #271414;
     --schwerFontColor: #BC7D7D;
 
 
