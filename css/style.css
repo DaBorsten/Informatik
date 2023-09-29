@@ -25,6 +25,9 @@
     --buttonFontColor: hsl(240, 9%, 58%);
     --buttonBorderColor: #9c9c9c;
 
+    --buttonHoverBackgroundColor: #f1f1f1;
+    --buttonHoverFontColor: #818181;
+
     --buttonActiveBackgroundColor: #C4D9F8;
     --buttonActiveFontColor: #5796F3;
 
@@ -63,6 +66,9 @@ body[data-theme="dark"] {
 
     --buttonFontColor: #afafaf;
     --buttonBorderColor: #555555;
+
+    --buttonHoverBackgroundColor: #3d3d3d;
+    --buttonHoverFontColor: #a9a9a9;
 
     --buttonActiveBackgroundColor: #2f3e53;
     --buttonActiveFontColor: #5796F3;
@@ -679,6 +685,11 @@ img {
     -webkit-tap-highlight-color: transparent;
 }
 
+.filterBtn:hover {
+    background-color: var(--buttonHoverBackgroundColor);
+    border: 1px solid var(--buttonHoverFontColor);
+}
+
 .filterBtn.activeFilter {
     background-color: var(--buttonActiveBackgroundColor);
     border: 1px solid var(--buttonActiveFontColor);
@@ -930,7 +941,7 @@ img {
     background-color: hsla(0, 0%, 0%, 0);
 }
 
-.navbar[data-visible="true"] ~ .backgroundBlur {
+.navbar[data-visible="true"]~.backgroundBlur {
     visibility: visible;
     background-color: hsla(0, 0%, 0%, 0.75);
     transition: all 250ms ease-in-out;

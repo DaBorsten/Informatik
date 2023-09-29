@@ -4,7 +4,7 @@
         "description": "Variablen machen den Code dynamisch",
         "difficulty": 1,
         "learn_more": "https://www.w3schools.com/js/js_variables.asp",
-        "picture": {
+        "picture_1": {
             "src": "pictures/JS_Variablen.webp",
             "alt": "JavaScript Variablen",
             "width": "1520",
@@ -16,7 +16,7 @@
         "description": "Alle Daten haben Typen",
         "difficulty": 1,
         "learn_more": "https://www.w3schools.com/js/js_datatypes.asp",
-        "picture": {
+        "picture_1": {
             "src": "pictures/JS_Einfache_Datentypen.webp",
             "alt": "Einfache Datentypen",
             "width": "1520",
@@ -28,7 +28,7 @@
         "description": "Um logische Bedingungen zu nutzen brauchen wir logische Operatoren",
         "difficulty": 1,
         "learn_more": "https://www.w3schools.com/js/js_operators.asp",
-        "picture": {
+        "picture_1": {
             "src": "pictures/JS_logische_Operatoren.webp",
             "alt": "logische Operatoren",
             "width": "560",
@@ -40,7 +40,7 @@
         "description": "Mit if else Bedingungen können wir das Programm steuern",
         "difficulty": 2,
         "learn_more": "https://www.w3schools.com/js/js_if_else.asp",
-        "picture": {
+        "picture_1": {
             "src": "pictures/JS_if_else.webp",
             "alt": "if else",
             "width": "1520",
@@ -52,7 +52,7 @@
         "description": "Lerne den Unterschied vom Ort an dem eine Variable deklariert wird",
         "difficulty": 2,
         "learn_more": "https://www.w3schools.com/js/js_scope.asp",
-        "picture": {
+        "picture_1": {
             "src": "pictures/JS_locale_globale_var.webp",
             "alt": "lokale/globale Variablen",
             "width": "1520",
@@ -64,7 +64,7 @@
         "description": "Schleifen helfen dir dabei, dich nicht zu wiederholen",
         "difficulty": 3,
         "learn_more": "https://www.w3schools.com/js/js_loop_while.asp",
-        "picture": {
+        "picture_1": {
             "src": "pictures/JS_kopfgesteuerte_Schleifen.webp",
             "alt": "lokale/globale Variablen",
             "width": "1520",

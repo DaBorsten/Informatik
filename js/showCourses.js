@@ -1,266 +1,162 @@
 "use strict";
-let contentSectionWrapper = document.querySelector('.contentSectionWrapper');
+const contentSectionWrapper = document.querySelector('.contentSectionWrapper');
+const course_template = document.getElementById('detailed_course_template');
+function createCourseCard(url, index) {
+    if (contentSectionWrapper !== null) {
+        contentSectionWrapper.innerHTML = '';
+    }
+    fetch(url)
+        .then(response => response.json())
+        .then(data => {
+        const keys = Object.keys(data);
+        const selectedCourse = data[keys[index]];
+        // HTML-Tab HTML Karten
+        if (course_template !== null) {
+            const courseCard = course_template.content.cloneNode(true);
+            const title = courseCard.querySelector('[data-detailed-card-title]');
+            const description = courseCard.querySelector('[data-detailed-card-description]');
+            const picture_1_heading = courseCard.querySelector('[data-detailed-card-image-1-heading]');
+            const picture_1 = courseCard.querySelector('[data-detailed-card-image-1]');
+            const picture_2_heading = courseCard.querySelector('[data-detailed-card-image-2-heading]');
+            const picture_2 = courseCard.querySelector('[data-detailed-card-image-2]');
+            const download = courseCard.querySelector('[data-detailed-card-download]');
+            const learn_more = courseCard.querySelector('[data-detailed-card-learn-more]');
+            // Title
+            if (title !== null) {
+                if ("title" in selectedCourse) {
+                    if (selectedCourse.title === "") {
+                        title.remove();
+                    }
+                    else {
+                        title.textContent = selectedCourse.title;
+                    }
+                }
+                else {
+                    title.remove();
+                }
+            }
+            // Description
+            if (description !== null) {
+                if ("description" in selectedCourse) {
+                    if (selectedCourse.description === "") {
+                        description.remove();
+                    }
+                    else {
+                        description.textContent = selectedCourse.description;
+                    }
+                }
+                else {
+                    description.remove();
+                }
+            }
+            // Bild 1
+            if (picture_1 !== null) {
+                if ("picture_1" in selectedCourse) {
+                    if (selectedCourse.picture_1.src === "") {
+                        picture_1.remove();
+                    }
+                    else {
+                        if (picture_1_heading !== null) {
+                            if (selectedCourse.picture_1.heading !== undefined) {
+                                picture_1_heading.textContent = selectedCourse.picture_1.heading;
+                            }
+                            else {
+                                picture_1_heading.remove();
+                            }
+                        }
+                        picture_1.setAttribute("src", selectedCourse.picture_1.src);
+                        picture_1.setAttribute("alt", selectedCourse.picture_1.alt);
+                        picture_1.setAttribute("width", selectedCourse.picture_1.width);
+                        picture_1.setAttribute("height", selectedCourse.picture_1.height);
+                    }
+                }
+                else {
+                    picture_1.remove();
+                    if (picture_1_heading !== null) {
+                        picture_1_heading.remove();
+                    }
+                }
+            }
+            // Bild 2
+            if (picture_2 !== null) {
+                if ("picture_2" in selectedCourse) {
+                    if (selectedCourse.picture_2.src === "") {
+                        picture_2.remove();
+                    }
+                    else {
+                        if (picture_2_heading !== null) {
+                            if (selectedCourse.picture_2.heading !== undefined) {
+                                picture_2_heading.textContent = selectedCourse.picture_2.heading;
+                            }
+                            else {
+                                picture_2_heading.remove();
+                            }
+                        }
+                        picture_2.setAttribute("src", selectedCourse.picture_2.src);
+                        picture_2.setAttribute("alt", selectedCourse.picture_2.alt);
+                        picture_2.setAttribute("width", selectedCourse.picture_2.width);
+                        picture_2.setAttribute("height", selectedCourse.picture_2.height);
+                    }
+                }
+                else {
+                    picture_2.remove();
+                    if (picture_2_heading !== null) {
+                        picture_2_heading.remove();
+                    }
+                }
+            }
+            // Download Button
+            if (download !== null) {
+                if ("download" in selectedCourse) {
+                    if (selectedCourse.download.button_link === "") {
+                        download.remove();
+                    }
+                    else {
+                        download.setAttribute("href", selectedCourse.download.button_link);
+                        download.textContent = selectedCourse.download.button_link.split("/").pop();
+                    }
+                }
+                else {
+                    download.remove();
+                }
+            }
+            // Learn More Button
+            if (learn_more !== null) {
+                if ("learn_more" in selectedCourse) {
+                    if (selectedCourse.learn_more === "") {
+                        learn_more.remove();
+                    }
+                    else {
+                        learn_more.setAttribute("href", selectedCourse.learn_more);
+                    }
+                }
+                else {
+                    learn_more.remove();
+                }
+            }
+            if (contentSectionWrapper !== null) {
+                contentSectionWrapper.appendChild(courseCard);
+            }
+        }
+    })
+        .catch(error => console.error('Fehler beim Laden der JSON-Daten:', error));
+}
 function showCourse(e) {
     const target = e;
     if (target instanceof HTMLElement && target.dataset) {
         const index = target.dataset.index;
         if (index) {
             if (document.title == "HTML") {
-                if (contentSectionWrapper !== null) {
-                    contentSectionWrapper.innerHTML = '';
-                }
-                let html_template = document.getElementById('detailed_course_template');
-                fetch("json/html.json")
-                    .then(response => response.json())
-                    .then(data => {
-                    const keys = Object.keys(data);
-                    const selectedCourse = data[keys[index]];
-                    // HTML-Tab HTML Karten
-                    if (html_template !== null) {
-                        const htmlkarte = html_template.content.cloneNode(true);
-                        const title = htmlkarte.querySelector('[data-detailed-card-title]');
-                        const description = htmlkarte.querySelector('[data-detailed-card-description]');
-                        const picture = htmlkarte.querySelector('[data-detailed-card-image]');
-                        const learn_more = htmlkarte.querySelector('[data-detailed-card-learn-more]');
-                        // Title
-                        if (title !== null) {
-                            if (selectedCourse.title === "") {
-                                title.remove();
-                            }
-                            else {
-                                title.textContent = selectedCourse.title;
-                            }
-                            // Infos
-                            if (description !== null) {
-                                if (selectedCourse.description === "") {
-                                    description.remove();
-                                }
-                                else {
-                                    description.textContent = selectedCourse.description;
-                                }
-                            }
-                        }
-                        // HTML Bilder
-                        if (picture !== null) {
-                            if (selectedCourse.picture.src === "") {
-                                picture.remove();
-                            }
-                            else {
-                                picture.setAttribute("src", selectedCourse.picture.src);
-                                picture.setAttribute("alt", selectedCourse.picture.alt);
-                                picture.setAttribute("width", selectedCourse.picture.width);
-                                picture.setAttribute("height", selectedCourse.picture.height);
-                            }
-                        }
-                        // Learn More Button
-                        if (learn_more !== null) {
-                            if (selectedCourse.learn_more === "") {
-                                learn_more.remove();
-                            }
-                            else {
-                                learn_more.setAttribute("href", selectedCourse.learn_more);
-                            }
-                        }
-                        if (contentSectionWrapper !== null) {
-                            contentSectionWrapper.appendChild(htmlkarte);
-                        }
-                    }
-                })
-                    .catch(error => console.error('Fehler beim Laden der JSON-Daten:', error));
+                createCourseCard("json/html.json", index);
             }
             else if (document.title == "JavaScript") {
-                if (contentSectionWrapper !== null) {
-                    contentSectionWrapper.innerHTML = '';
-                }
-                let javascript_template = document.getElementById('detailed_course_template');
-                fetch("json/javascript.json")
-                    .then(response => response.json())
-                    .then(data => {
-                    const keys = Object.keys(data);
-                    const selectedCourse = data[keys[index]];
-                    // Javascript-Tab Javascript Karten
-                    const javascriptkarte = javascript_template.content.cloneNode(true);
-                    const title = javascriptkarte.querySelector('[data-detailed-card-title]');
-                    const description = javascriptkarte.querySelector('[data-detailed-card-description]');
-                    const picture = javascriptkarte.querySelector('[data-detailed-card-image]');
-                    const learn_more = javascriptkarte.querySelector('[data-detailed-card-learn-more]');
-                    // Infos
-                    if (title !== null) {
-                        if (selectedCourse.title === "") {
-                            title.remove();
-                        }
-                        else {
-                            title.textContent = selectedCourse.title;
-                        }
-                    }
-                    if (description !== null) {
-                        if (selectedCourse.description === "") {
-                            description.remove();
-                        }
-                        else {
-                            description.textContent = selectedCourse.description;
-                        }
-                    }
-                    // JavaScript Bilder
-                    if (picture !== null) {
-                        if (selectedCourse.picture.src === "") {
-                            picture.remove();
-                        }
-                        else {
-                            picture.setAttribute("src", selectedCourse.picture.src);
-                            picture.setAttribute("alt", selectedCourse.picture.alt);
-                            picture.setAttribute("width", selectedCourse.picture.width);
-                            picture.setAttribute("height", selectedCourse.picture.height);
-                        }
-                    }
-                    // Learn More Button
-                    if (learn_more !== null) {
-                        if (selectedCourse.learn_more === "") {
-                            learn_more.remove();
-                        }
-                        else {
-                            learn_more.setAttribute("href", selectedCourse.learn_more);
-                        }
-                    }
-                    if (contentSectionWrapper !== null) {
-                        contentSectionWrapper.appendChild(javascriptkarte);
-                    }
-                })
-                    .catch(error => console.error('Fehler beim Laden der JSON-Daten:', error));
+                createCourseCard("json/javascript.json", index);
             }
             else if (document.title == "Datenbanken") {
-                if (contentSectionWrapper !== null) {
-                    contentSectionWrapper.innerHTML = '';
-                }
-                const datenbanken_template = document.getElementById('detailed_course_template');
-                fetch("json/datenbanken.json")
-                    .then(response => response.json())
-                    .then(data => {
-                    const keys = Object.keys(data);
-                    const selectedCourse = data[keys[index]];
-                    // Datenbanken-Tab Datenbanken Karten
-                    const datenbankenkarte = datenbanken_template.content.cloneNode(true);
-                    const title = datenbankenkarte.querySelector('[data-detailed-card-title]');
-                    const description = datenbankenkarte.querySelector('[data-detailed-card-description]');
-                    const picture = datenbankenkarte.querySelector('[data-detailed-card-image]');
-                    const download = datenbankenkarte.querySelector('[data-detailed-card-download]');
-                    // Title
-                    if (title !== null) {
-                        if (selectedCourse.title === "") {
-                            title.remove();
-                        }
-                        else {
-                            title.textContent = selectedCourse.title;
-                        }
-                    }
-                    // Infos
-                    if (description !== null) {
-                        if (selectedCourse.description === "") {
-                            description.remove();
-                        }
-                        else {
-                            description.textContent = selectedCourse.description;
-                        }
-                    }
-                    // HTML Bilder
-                    if (picture !== null) {
-                        if (selectedCourse.picture.src === "") {
-                            picture.remove();
-                        }
-                        else {
-                            picture.setAttribute("src", selectedCourse.picture.src);
-                            picture.setAttribute("alt", selectedCourse.picture.alt);
-                            picture.setAttribute("width", selectedCourse.picture.width);
-                            picture.setAttribute("height", selectedCourse.picture.height);
-                        }
-                    }
-                    // Download Button
-                    if (download !== null) {
-                        if (selectedCourse.download.button_link === "") {
-                            download.remove();
-                        }
-                        else {
-                            download.setAttribute("href", selectedCourse.download.button_link);
-                            download.textContent = selectedCourse.download.button_link.split("/").pop();
-                        }
-                    }
-                    if (contentSectionWrapper !== null) {
-                        contentSectionWrapper.appendChild(datenbankenkarte);
-                    }
-                })
-                    .catch(error => console.error('Fehler beim Laden der JSON-Daten:', error));
+                createCourseCard("json/datenbanken.json", index);
             }
             else if (document.title == "Aufgaben") {
-                if (contentSectionWrapper !== null) {
-                    contentSectionWrapper.innerHTML = '';
-                }
-                const aufgaben_template = document.getElementById('detailed_course_template');
-                fetch("json/aufgaben.json")
-                    .then(response => response.json())
-                    .then(data => {
-                    const keys = Object.keys(data);
-                    const selectedCourse = data[keys[index]];
-                    // Aufgaben-Tab Aufgaben Karten
-                    const aufgabenkarte = aufgaben_template.content.cloneNode(true);
-                    const title = aufgabenkarte.querySelector('[data-detailed-card-title]');
-                    const description = aufgabenkarte.querySelector('[data-detailed-card-description]');
-                    const html_image_heading = aufgabenkarte.querySelector('[data-detailed-card-image-html-heading]');
-                    const html_image = aufgabenkarte.querySelector('[data-detailed-card-html-image]');
-                    const js_image_heading = aufgabenkarte.querySelector('[data-detailed-card-image-js-heading]');
-                    const js_image = aufgabenkarte.querySelector('[data-detailed-card-js-image]');
-                    // Title
-                    if (title !== null) {
-                        if (selectedCourse.title === "") {
-                            title.remove();
-                        }
-                        else {
-                            title.textContent = selectedCourse.title;
-                        }
-                    }
-                    // Infos
-                    if (description !== null) {
-                        if (selectedCourse.description === "") {
-                            description.remove();
-                        }
-                        else {
-                            description.textContent = selectedCourse.description;
-                        }
-                    }
-                    // HTML Bilder
-                    if (html_image !== null) {
-                        if (selectedCourse.html_teil.src === "") {
-                            html_image.remove();
-                            if (html_image_heading !== null) {
-                                html_image_heading.remove();
-                            }
-                        }
-                        else {
-                            html_image.setAttribute("src", selectedCourse.html_teil.src);
-                            html_image.setAttribute("alt", selectedCourse.html_teil.alt);
-                            html_image.setAttribute("width", selectedCourse.html_teil.width);
-                            html_image.setAttribute("height", selectedCourse.html_teil.height);
-                        }
-                    }
-                    // JS Bilder
-                    if (js_image !== null) {
-                        if (selectedCourse.js_teil.src === "") {
-                            js_image.remove();
-                            if (js_image_heading !== null) {
-                                js_image_heading.remove();
-                            }
-                        }
-                        else {
-                            js_image.setAttribute("src", selectedCourse.js_teil.src);
-                            js_image.setAttribute("alt", selectedCourse.js_teil.alt);
-                            js_image.setAttribute("width", selectedCourse.js_teil.width);
-                            js_image.setAttribute("height", selectedCourse.js_teil.height);
-                        }
-                    }
-                    if (contentSectionWrapper !== null) {
-                        contentSectionWrapper.appendChild(aufgabenkarte);
-                    }
-                })
-                    .catch(error => console.error('Fehler beim Laden der JSON-Daten:', error));
+                createCourseCard("json/aufgaben.json", index);
             }
         }
     }
