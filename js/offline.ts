@@ -1,26 +1,42 @@
-let popupShown = false
+
+let online = navigator.onLine
+let notificationShown = false
+
+window.addEventListener('online', () => {
+    updateStatus()
+})
+
+window.addEventListener('offline', () => {
+    updateStatus()
+})
+
+function updateStatus() {
+    online = navigator.onLine
+}
+
 
 document.addEventListener('click', (e) => {
+
     const target = e.target as HTMLElement
 
     if (target && target.classList.contains('actionButton')) {
-        const online = navigator.onLine
 
         if (!online) {
             e.preventDefault()
 
-            if (!popupShown) {
+            if (!notificationShown) {
                 const offlineNotification = document.querySelector('.offline') as HTMLElement
                 if (offlineNotification) {
                     offlineNotification.dataset.offline = online ? 'false' : 'true'
-                    popupShown = true
+                    notificationShown = true
 
                     setTimeout(() => {
                         offlineNotification.dataset.offline = 'false'
-                        popupShown = false
+                        notificationShown = false
                     }, 3000)
                 }
             }
         }
     }
 })
+

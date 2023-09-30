@@ -10,7 +10,7 @@ if ('serviceWorker' in navigator) {
 const cacheName = 'cache-v1'
 const cacheNameImages = 'cache-images-v1'
 const resourcesToPrecache = [
-  '/informatik/',
+  /* '/informatik/', */
   'index.html',
   'html.html',
   'javascript.html',
