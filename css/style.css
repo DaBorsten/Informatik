@@ -127,6 +127,21 @@ body::-webkit-scrollbar {
     user-select: none;
 }
 
+.mobileTopBarButtons {
+    display: flex;
+    vertical-align: middle;
+    align-self: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    transition: all 150ms ease-in-out;
+    background-color: transparent;
+    -webkit-tap-highlight-color: transparent;
+}
+
 .homeButtonIcon {
     display: block;
     width: 24px;
@@ -148,19 +163,12 @@ body::-webkit-scrollbar {
 }
 
 .mobileMenu {
-    display: block;
-    background-color: transparent;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-
-    border: none;
-    padding: 0;
     z-index: 1004;
-    -webkit-tap-highlight-color: transparent;
 }
 
-
+.mobileMenu[data-active="true"]>.mobileMenuIcon {
+    background-image: url(../icons/close.svg);
+}
 
 .mobileMenuIcon {
     display: block;
@@ -182,29 +190,10 @@ body::-webkit-scrollbar {
     -webkit-tap-highlight-color: transparent;
 }
 
-.mobileTopBarButtons {
-    display: flex;
-    vertical-align: middle;
-    align-self: center;
-    justify-content: center;
-    width: 48px;
-    height: 48px;
-    border: none;
-    cursor: pointer;
-    padding: 0;
-    transition: all 150ms ease-in-out;
-    background-color: transparent;
-    -webkit-tap-highlight-color: transparent;
-}
-
-.mobileMenu[data-active="true"]>.mobileMenuIcon {
-    background-image: url(../icons/close.svg);
-}
-
 body[data-theme="dark"] .mobileMenu[data-active="true"]>.mobileMenuIcon {
     background-image: url(../icons/close.svg);
     -webkit-filter: invert();
-            filter: invert();
+    filter: invert();
 }
 
 .navbar {
