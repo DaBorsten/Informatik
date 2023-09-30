@@ -13,7 +13,6 @@ fetch("json/courses.json")
         if (courseTitle !== null) {
             courseTitle.textContent = course.courseTitle;
         }
-        /* courseCounter.textContent = "10 Kurse" */
         if (courseCounter !== null) {
             if (course.courseTitle == "HTML") {
                 fetch("json/html.json")

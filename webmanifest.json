@@ -25,16 +25,16 @@
     "display": "standalone",
     "screenshots": [
         {
-            "src": "screenshots/1.png",
+            "src": "pwa/install/screenshots/1.png",
             "sizes": "1081x2095",
             "type": "image/png"
         },
         {
-            "src": "screenshots/2.png",
+            "src": "pwa/install/screenshots/2.png",
             "sizes": "1081x2095",
             "type": "image/png"
         },        {
-            "src": "screenshots/3.png",
+            "src": "pwa/install/screenshots/3.png",
             "sizes": "1081x2095",
             "type": "image/png"
         }
@@ -45,7 +45,7 @@
             "url": "html.html",
             "icons": [
                 {
-                    "src": "shortcuts/html.png",
+                    "src": "pwa/shortcuts/html.png",
                     "type": "image/png",
                     "sizes": "96x96"
                 }
@@ -56,7 +56,7 @@
             "url": "javascript.html",
             "icons": [
                 {
-                    "src": "shortcuts/javascript.png",
+                    "src": "pwa/shortcuts/javascript.png",
                     "type": "image/png",
                     "sizes": "96x96"
                 }
@@ -67,7 +67,7 @@
             "url": "datenbanken.html",
             "icons": [
                 {
-                    "src": "shortcuts/datenbanken.png",
+                    "src": "pwa/shortcuts/datenbanken.png",
                     "type": "image/png",
                     "sizes": "96x96"
                 }
@@ -78,7 +78,7 @@
             "url": "aufgaben.html",
             "icons": [
                 {
-                    "src": "shortcuts/aufgaben.png",
+                    "src": "pwa/shortcuts/aufgaben.png",
                     "type": "image/png",
                     "sizes": "96x96"
                 }

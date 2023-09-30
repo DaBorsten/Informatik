@@ -5,7 +5,7 @@
         "difficulty": 1,
         "learn_more": "https://www.w3schools.com/js/js_variables.asp",
         "picture_1": {
-            "src": "pictures/JS_Variablen.webp",
+            "src": "courses/javascript/pictures/JS_Variablen.webp",
             "alt": "JavaScript Variablen",
             "width": "1520",
             "height": "702"
@@ -17,7 +17,7 @@
         "difficulty": 1,
         "learn_more": "https://www.w3schools.com/js/js_datatypes.asp",
         "picture_1": {
-            "src": "pictures/JS_Einfache_Datentypen.webp",
+            "src": "courses/javascript/pictures/JS_Einfache_Datentypen.webp",
             "alt": "Einfache Datentypen",
             "width": "1520",
             "height": "702"
@@ -29,7 +29,7 @@
         "difficulty": 1,
         "learn_more": "https://www.w3schools.com/js/js_operators.asp",
         "picture_1": {
-            "src": "pictures/JS_logische_Operatoren.webp",
+            "src": "courses/javascript/pictures/JS_logische_Operatoren.webp",
             "alt": "logische Operatoren",
             "width": "560",
             "height": "630"
@@ -41,7 +41,7 @@
         "difficulty": 2,
         "learn_more": "https://www.w3schools.com/js/js_if_else.asp",
         "picture_1": {
-            "src": "pictures/JS_if_else.webp",
+            "src": "courses/javascript/pictures/JS_if_else.webp",
             "alt": "if else",
             "width": "1520",
             "height": "588"
@@ -53,7 +53,7 @@
         "difficulty": 2,
         "learn_more": "https://www.w3schools.com/js/js_scope.asp",
         "picture_1": {
-            "src": "pictures/JS_locale_globale_var.webp",
+            "src": "courses/javascript/pictures/JS_locale_globale_var.webp",
             "alt": "lokale/globale Variablen",
             "width": "1520",
             "height": "1652"
@@ -65,7 +65,7 @@
         "difficulty": 3,
         "learn_more": "https://www.w3schools.com/js/js_loop_while.asp",
         "picture_1": {
-            "src": "pictures/JS_kopfgesteuerte_Schleifen.webp",
+            "src": "courses/javascript/pictures/JS_kopfgesteuerte_Schleifen.webp",
             "alt": "lokale/globale Variablen",
             "width": "1520",
             "height": "1120"

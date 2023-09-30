@@ -5,14 +5,14 @@
         "difficulty": 2,
         "picture_1": {
             "heading": "HTML Teil",
-            "src": "pictures/A_schrauben_HTML.webp",
+            "src": "courses/aufgaben/pictures/A_schrauben_HTML.webp",
             "alt": "Schrauben HTML",
             "width": "1520",
             "height": "854"
         },
         "picture_2": {
             "heading": "JavaScript Teil",
-            "src": "pictures/A_schrauben_JS.webp",
+            "src": "courses/aufgaben/pictures/A_schrauben_JS.webp",
             "alt": "Schrauben JavaScript",
             "width": "1520",
             "height": "778"
@@ -24,14 +24,14 @@
         "difficulty": 1,
         "picture_1": {
             "heading": "HTML Teil",
-            "src": "pictures/A_BMI_If_Statements_HTML.webp",
+            "src": "courses/aufgaben/pictures/A_BMI_If_Statements_HTML.webp",
             "alt": "BMI HTML",
             "width": "1520",
             "height": "1044"
         },
         "picture_2": {
             "heading": "JavaScript Teil",
-            "src": "pictures/A_BMI_If_Statements_JS.webp",
+            "src": "courses/aufgaben/pictures/A_BMI_If_Statements_JS.webp",
             "alt": "BMI JavaScript",
             "width": "1520",
             "height": "1082"
@@ -43,14 +43,14 @@
         "difficulty": 2,
         "picture_1": {
             "heading": "HTML Teil",
-            "src": "pictures/A_quadratische_Gleichung_HTML.webp",
+            "src": "courses/aufgaben/pictures/A_quadratische_Gleichung_HTML.webp",
             "alt": "Quadratische Gleichungen HTML",
             "width": "1520",
             "height": "816"
         },
         "picture_2": {
             "heading": "JavaScript Teil",
-            "src": "pictures/A_quadratische_Gleichung_JS.webp",
+            "src": "courses/aufgaben/pictures/A_quadratische_Gleichung_JS.webp",
             "alt": "Quadratische Gleichungen JavaScript",
             "width": "1520",
             "height": "1424"
@@ -62,14 +62,14 @@
         "difficulty": 2,
         "picture_1": {
             "heading": "HTML Teil",
-            "src": "pictures/A_zahlenraten_HTML.webp",
+            "src": "courses/aufgaben/pictures/A_zahlenraten_HTML.webp",
             "alt": "Zahlenraten HTML",
             "width": "1520",
             "height": "588"
         },
         "picture_2": {
             "heading": "JavaScript Teil",
-            "src": "pictures/A_zahlenraten_JS.webp",
+            "src": "courses/aufgaben/pictures/A_zahlenraten_JS.webp",
             "alt": "Zahlenraten JavaScript",
             "width": "1520",
             "height": "2032"
@@ -81,14 +81,14 @@
         "difficulty": 3,
         "picture_1": {
             "heading": "HTML Teil",
-            "src": "pictures/A_Collatz_HTML.webp",
+            "src": "courses/aufgaben/pictures/A_Collatz_HTML.webp",
             "alt": "Collatz HTML",
             "width": "1520",
             "height": "512"
         },
         "picture_2": {
             "heading": "JavaScript Teil",
-            "src": "pictures/A_Collatz_JS.webp",
+            "src": "courses/aufgaben/pictures/A_Collatz_JS.webp",
             "alt": "Collatz JavaScript",
             "width": "1520",
             "height": "2678"
@@ -100,14 +100,14 @@
         "difficulty": 2,
         "picture_1": {
             "heading": "HTML Teil",
-            "src": "pictures/A_Tabelle_dynamisch_erstellen_HTML.webp",
+            "src": "courses/aufgaben/pictures/A_Tabelle_dynamisch_erstellen_HTML.webp",
             "alt": "Tabelle HTML",
             "width": "1520",
             "height": "474"
         },
         "picture_2": {
             "heading": "JavaScript Teil",
-            "src": "pictures/A_Tabelle_dynamisch_erstellen_JS.webp",
+            "src": "courses/aufgaben/pictures/A_Tabelle_dynamisch_erstellen_JS.webp",
             "alt": "Tabell JavaScript",
             "width": "1520",
             "height": "1082"
@@ -119,14 +119,14 @@
         "difficulty": 2,
         "picture_1": {
             "heading": "HTML Teil",
-            "src": "pictures/A_Elefanten_HTML.webp",
+            "src": "courses/aufgaben/pictures/A_Elefanten_HTML.webp",
             "alt": "Elefanten HTML",
             "width": "1520",
             "height": "436"
         },
         "picture_2": {
             "heading": "JavaScript Teil",
-            "src": "pictures/A_Elefanten_JS.webp",
+            "src": "courses/aufgaben/pictures/A_Elefanten_JS.webp",
             "alt": "Elefanten JavaScript",
             "width": "1520",
             "height": "1500"
@@ -138,14 +138,14 @@
         "difficulty": 3,
         "picture_1": {
             "heading": "HTML Teil",
-            "src": "pictures/A_Primzahlen_HTML.webp",
+            "src": "courses/aufgaben/pictures/A_Primzahlen_HTML.webp",
             "alt": "Primzahlen HTML",
             "width": "1520",
             "height": "550"
         },
         "picture_2": {
             "heading": "JavaScript Teil",
-            "src": "pictures/A_Primzahlen_JS.webp",
+            "src": "courses/aufgaben/pictures/A_Primzahlen_JS.webp",
             "alt": "Primzahlen JavaScript",
             "width": "1520",
             "height": "1652"
@@ -157,7 +157,7 @@
         "difficulty": 1,
         "picture_1": {
             "heading": "JavaScript Teil",
-            "src": "pictures/A_Tage_pro_Monat_JS.webp",
+            "src": "courses/aufgaben/pictures/A_Tage_pro_Monat_JS.webp",
             "alt": "Tage pro Jahr JavaScript",
             "width": "1520",
             "height": "740"
@@ -169,14 +169,14 @@
         "difficulty": 3,
         "picture_1": {
             "heading": "HTML Teil",
-            "src": "pictures/A_Sieb_des_Eratosthenes_HTML.webp",
+            "src": "courses/aufgaben/pictures/A_Sieb_des_Eratosthenes_HTML.webp",
             "alt": "Sieb des Eratosthenes HTML",
             "width": "1520",
             "height": "588"
         },
         "picture_2": {
             "heading": "JavaScript Teil",
-            "src": "pictures/A_Sieb_des_Eratosthenes_JS.webp",
+            "src": "courses/aufgaben/pictures/A_Sieb_des_Eratosthenes_JS.webp",
             "alt": "Sieb des Eratosthenes JavaScript",
             "width": "1520",
             "height": "1804"
