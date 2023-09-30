@@ -42,6 +42,8 @@
 
     --schwerBackgroundColor: #FFE2E2;
     --schwerFontColor: hsl(0, 32%, 40%);
+
+    --navbarBackgroundColor: hsl(0, 0%, 100%);
 }
 
 body[data-theme="dark"] {
@@ -73,6 +75,7 @@ body[data-theme="dark"] {
     --buttonActiveBackgroundColor: #2f3e53;
     --buttonActiveFontColor: #5796F3;
 
+    --navbarBackgroundColor: rgb(35, 35, 35);
 }
 
 * {
@@ -200,7 +203,8 @@ body::-webkit-scrollbar {
 
 body[data-theme="dark"] .mobileMenu[data-active="true"]>.mobileMenuIcon {
     background-image: url(../icons/close.svg);
-    filter: invert();
+    -webkit-filter: invert();
+            filter: invert();
 }
 
 .navbar {
@@ -215,7 +219,7 @@ body[data-theme="dark"] .mobileMenu[data-active="true"]>.mobileMenuIcon {
     transform: translateX(100%);
     transition: transform 250ms ease-in-out;
 
-    background-color: var(--backgroundColor);
+    background-color: var(--navbarBackgroundColor);
 
     border-start-start-radius: 16px;
     border-end-start-radius: 16px;
@@ -711,7 +715,7 @@ img {
     gap: 16px;
 }
 
-.coursePreviewCardTitleAndDescription p{
+.coursePreviewCardTitleAndDescription p {
     display: -webkit-box;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
@@ -890,7 +894,7 @@ img {
     position: fixed;
     bottom: 0px;
 
-    background-color: rgb(253, 255, 114);
+    background-color: rgb(255 179 64);
 
     font-weight: bold;
 
@@ -900,5 +904,5 @@ img {
 
 .offline[data-offline="true"] {
     transform: translateY(0%);
-    transition: all 300ms ease-in-out;  
+    transition: all 300ms ease-in-out;
 }
