@@ -10,12 +10,12 @@ function loadPreviewCourseCards(url: string) {
             data.forEach((course: any, i: string) => {
 
                 // Course Preview Card
-                const courseCard = course_preview_template.content.cloneNode(true)
+                const courseCard = course_preview_template.content.cloneNode(true) as HTMLElement
 
-                const coursePreviewCard = (courseCard as HTMLElement).querySelector('.coursePreviewCard') as HTMLElement
-                const title = (courseCard as HTMLElement).querySelector('[data-preview-card-title]')
-                const description = (courseCard as HTMLElement).querySelector('[data-preview-card-description]')
-                const difficulty = (courseCard as HTMLElement).querySelector('button[data-difficulty]') as HTMLElement
+                const coursePreviewCard = courseCard.querySelector('.coursePreviewCard') as HTMLElement
+                const title = courseCard.querySelector('[data-preview-card-title]')
+                const description = courseCard.querySelector('[data-preview-card-description]')
+                const difficulty = courseCard.querySelector('.difficultyBtn[data-difficulty]') as HTMLElement
 
                 coursePreviewCard.dataset.index = i
 

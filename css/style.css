@@ -307,7 +307,7 @@ section {
     margin-inline: auto;
 }
 
-button.difficulty {
+.difficultyBtn {
     width: -webkit-min-content;
     width: -moz-min-content;
     width: min-content;
@@ -326,19 +326,19 @@ button.difficulty {
     user-select: none;
 }
 
-button.difficulty[data-difficulty="leicht"] {
+.difficultyBtn[data-difficulty="leicht"] {
     border: 1px solid var(--leichtFontColor);
     color: var(--leichtFontColor);
     background-color: var(--leichtBackgroundColor);
 }
 
-button.difficulty[data-difficulty="mittel"] {
+.difficultyBtn[data-difficulty="mittel"] {
     border: 1px solid var(--mittelFontColor);
     color: var(--mittelFontColor);
     background-color: var(--mittelBackgroundColor);
 }
 
-button.difficulty[data-difficulty="schwer"] {
+.difficultyBtn[data-difficulty="schwer"] {
     border: 1px solid var(--schwerFontColor);
     color: var(--schwerFontColor);
     background-color: var(--schwerBackgroundColor);
@@ -711,6 +711,8 @@ img {
 .coursePreviewCardTitleAndDescription {
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
+    text-align: start;
     gap: 16px;
 }
 
@@ -822,7 +824,6 @@ img {
     background-position: center;
     background-size: cover;
 
-    /* background-image: url(../icons/dark_mode.svg); */
     border: none;
     padding: 0;
     z-index: 998;

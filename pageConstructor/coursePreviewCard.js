@@ -11,7 +11,7 @@ function loadPreviewCourseCards(url) {
             const coursePreviewCard = courseCard.querySelector('.coursePreviewCard');
             const title = courseCard.querySelector('[data-preview-card-title]');
             const description = courseCard.querySelector('[data-preview-card-description]');
-            const difficulty = courseCard.querySelector('button[data-difficulty]');
+            const difficulty = courseCard.querySelector('.difficultyBtn[data-difficulty]');
             coursePreviewCard.dataset.index = i;
             // Title
             if (title !== null) {

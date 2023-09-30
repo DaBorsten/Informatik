@@ -105,18 +105,18 @@
         </div>
     </section>
 
-    <!-- Kurskarte -->
+    <!-- Kurskarte Preview -->
     <template id="course_template">
-        <div class="coursePreviewCard" data-difficulty onclick="showCourse(this)">
+        <button class="coursePreviewCard" data-difficulty onclick="showCourse(this)" tabindex="0">
             <div class="coursePreviewCardTitleAndDescription">
                 <h3 data-preview-card-title></h3>
                 <p data-preview-card-description></p>
             </div>
-            <button data-difficulty class="difficulty"></button>
-        </div>
+            <div data-difficulty class="difficultyBtn"></div>
+        </button>
     </template>
 
-    <!-- Kurskarte -->
+    <!-- Kurskarte Detail -->
     <template id="detailed_course_template">
         <div class="courseDetailedCard">
             <div class="courseDetailedCardTitleAndDescription">
