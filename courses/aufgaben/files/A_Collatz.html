@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collatz-Folge</title>
+</head>
+
+<body>
+    <h1>Collatz-Folge</h1>
+    <p>Geben sie eine Zahl ein:</p>
+    <input type="text" id="zahl">
+    <button onclick="collatz()">Berechnen</button>
+
+    <table id="ausgabe">
+        <tr>
+            <th>Zahlenreihe</th>
+        </tr>
+    </table>
+
+    <script>
+        function collatz() {
+
+            let zahl = Number(document.getElementById('zahl').value)
+
+            let table = document.getElementById('ausgabe')
+            let row = table.insertRow()
+            let cell
+
+            if (zahl === 0) {
+                alert('Gib eine Zahl größer als 0 ein.')
+                return
+            }
+
+            if (zahl === 1) {
+                alert('Gib eine andere Zahl außer 1 ein.')
+                return
+            }
+
+            if (isNaN(zahl)) {
+                alert('Gib eine Zahl ein.')
+                return
+            }
+
+            if (zahl < 0) {
+                alert('Gib eine positive Zahl ein.')
+                return
+            }
+
+            while (table.rows.length > 1) {
+                table.deleteRow(1);
+            }
+
+            while (zahl !== 1) {
+
+                if (zahl % 2 === 0) {
+
+                    zahl /= 2
+
+                    row = table.insertRow()
+
+                    cell = row.insertCell()
+                    cell.innerHTML = zahl
+
+                } else {
+
+                    zahl = 3 * zahl + 1
+
+                    row = table.insertRow()
+
+                    cell = row.insertCell()
+                    cell.innerHTML = zahl
+
+                }
+            }
+        }
+    </script>
+
+</body>
+
+</html>

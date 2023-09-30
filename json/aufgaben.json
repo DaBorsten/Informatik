@@ -16,6 +16,9 @@
             "alt": "Schrauben JavaScript",
             "width": "1520",
             "height": "778"
+        },
+        "download": {
+            "button_link": "courses/aufgaben/files/A_Schrauben_Discount.html"
         }
     },
     {
@@ -35,6 +38,9 @@
             "alt": "BMI JavaScript",
             "width": "1520",
             "height": "1082"
+        },
+        "download": {
+            "button_link": "courses/aufgaben/files/A_BMI_Rechner.html"
         }
     },
     {
@@ -54,6 +60,9 @@
             "alt": "Quadratische Gleichungen JavaScript",
             "width": "1520",
             "height": "1424"
+        },
+        "download": {
+            "button_link": "courses/aufgaben/files/A_quadr_Gl.html"
         }
     },
     {
@@ -73,6 +82,9 @@
             "alt": "Zahlenraten JavaScript",
             "width": "1520",
             "height": "2032"
+        },
+        "download": {
+            "button_link": "courses/aufgaben/files/A_Zahlenraten.html"
         }
     },
     {
@@ -92,6 +104,9 @@
             "alt": "Collatz JavaScript",
             "width": "1520",
             "height": "2678"
+        },
+        "download": {
+            "button_link": "courses/aufgaben/files/A_Collatz.html"
         }
     },
     {
@@ -111,6 +126,9 @@
             "alt": "Tabell JavaScript",
             "width": "1520",
             "height": "1082"
+        },
+        "download": {
+            "button_link": "courses/aufgaben/files/A_Dynam_Tabelle.html"
         }
     },
     {
@@ -130,6 +148,9 @@
             "alt": "Elefanten JavaScript",
             "width": "1520",
             "height": "1500"
+        },
+        "download": {
+            "button_link": "courses/aufgaben/files/A_Elefanten.html"
         }
     },
     {
@@ -149,6 +170,9 @@
             "alt": "Primzahlen JavaScript",
             "width": "1520",
             "height": "1652"
+        },
+        "download": {
+            "button_link": "courses/aufgaben/files/A_Primzahlen.html"
         }
     },
     {
@@ -161,6 +185,9 @@
             "alt": "Tage pro Jahr JavaScript",
             "width": "1520",
             "height": "740"
+        },
+        "download": {
+            "button_link": "courses/aufgaben/files/A_Tage_Monat.html"
         }
     },
     {
@@ -180,6 +207,9 @@
             "alt": "Sieb des Eratosthenes JavaScript",
             "width": "1520",
             "height": "1804"
+        },
+        "download": {
+            "button_link": "courses/aufgaben/files/A_Sieb_des_Eratosthenes.html"
         }
     }
 ]

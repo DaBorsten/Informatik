@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primzahl</title>
+</head>
+
+<body>
+
+    <h1>Primzahl überprüfen</h1>
+
+    <p>Dieses Programm überprüft, ob die von Ihnen eingegebene Zahl eine Primzahl ist.</p>
+
+    <label for="eingabe">Zahl eingeben: </label>
+
+    <input type="text" id="eingabe">
+
+    <button onclick="testen()">Überprüfen</button>
+
+    <p>Das Ergebnis lautet: <span id="ergebnis"></span></p>
+
+
+    <script>
+        function testen() {
+            let eingabewert = document.getElementById('eingabe').value
+            let zahl = Number(eingabewert)
+            let prim = true
+            let ergebnis = document.getElementById('ergebnis')
+
+            if (eingabewert === "") {
+                return alert("Geben Sie einen Wert ein!")
+            }
+
+            if (isNaN(zahl)) {
+                return alert("Geben sie eine Zahl ein!")
+            }
+
+            if (zahl < 0) {
+                return alert("Es werden nur positive Zahlen akzeptiert!")
+            }
+
+            if (zahl === 0 || zahl === 1) {
+                return ergebnis.innerHTML = 'Falsch'
+            }
+
+
+            for (let i = 2; i * i <= zahl && prim === true; i++) {
+
+                if (zahl % i === 0) {
+                    prim = false
+                }
+
+            }
+
+            (prim === true) ? ergebnis.innerHTML = 'Wahr' : ergebnis.innerHTML = 'Falsch'
+        }
+    </script>
+</body>
+
+</html>

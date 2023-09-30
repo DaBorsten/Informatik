@@ -105,32 +105,38 @@ function createCourseCard(url: string, index: any) {
                         }
                     }
                 }
-                // Download Button
-                if (download !== null) {
-                    if ("download" in selectedCourse) {
-                        if (selectedCourse.download.button_link === "") {
+
+                if ("learn_more" in selectedCourse || "download" in selectedCourse) {
+                    // Download Button
+                    if (download !== null) {
+                        if ("download" in selectedCourse) {
+                            if (selectedCourse.download.button_link === "") {
+                                download.remove();
+                            }
+                            else {
+                                download.setAttribute("href", selectedCourse.download.button_link);
+                                download.textContent = selectedCourse.download.button_link.split("/").pop();
+                                download.setAttribute("download", selectedCourse.download.button_link.split("/").pop());
+                            }
+                        } else {
                             download.remove();
                         }
-                        else {
-                            download.setAttribute("href", selectedCourse.download.button_link);
-                            download.textContent = selectedCourse.download.button_link.split("/").pop();
-                        }
-                    } else {
-                        download.remove();
                     }
-                }
-                // Learn More Button
-                if (learn_more !== null) {
-                    if ("learn_more" in selectedCourse) {
-                        if (selectedCourse.learn_more === "") {
-                            learn_more.remove();
+                    // Learn More Button
+                    if (learn_more !== null) {
+                        if ("learn_more" in selectedCourse) {
+                            if (selectedCourse.learn_more === "") {
+                                learn_more.remove();
+                            }
+                            else {
+                                learn_more.setAttribute("href", selectedCourse.learn_more);
+                            }
+                        } else {
+                            learn_more.remove()
                         }
-                        else {
-                            learn_more.setAttribute("href", selectedCourse.learn_more);
-                        }
-                    } else {
-                        learn_more.remove()
                     }
+                } else {
+                    courseCard.querySelector('.courseActionButtons')?.remove()
                 }
 
                 if (contentSectionWrapper !== null) {

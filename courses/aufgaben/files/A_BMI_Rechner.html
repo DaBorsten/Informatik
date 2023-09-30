@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Rechner</title>
+
+    <script>
+        function berechnen() {
+            let groesse = Number(document.getElementById('heightInput').value)
+            let masse = Number(document.getElementById('massInput').value)
+            let bmi = document.getElementById('bmi')
+            let einstufung = document.getElementById('who')
+
+            let bmiRechnung = masse / Math.pow(groesse, 2)
+
+            bmi.innerHTML = bmiRechnung.toFixed(2)
+
+            if (bmiRechnung < 18.5) {
+                einstufung.innerHTML = 'Untergewicht.'
+            } else if (bmiRechnung < 25) {
+                einstufung.innerHTML = 'Normalgewicht.'
+            } else if (bmiRechnung < 30) {
+                einstufung.innerHTML = 'Übergewicht.'
+            } else {
+                einstufung.innerHTML = 'Adipositas.'
+            }
+        }
+    </script>
+</head>
+
+<body>
+
+    <h1>Berechnung des Body Mass Index</h1>
+
+    <p>Bitte geben Sie Ihre Größe und Ihr Gewicht an:</p>
+
+    <table>
+        <tr>
+            <td>Größe (in m):</td>
+            <td><input id="heightInput"></td>
+        </tr>
+        <tr>
+            <td>Masse (in kg):</td>
+            <td><input id="massInput"></td>
+        </tr>
+        <tr>
+            <td>BMI:</td>
+            <td><span id="bmi"></span></td>
+        </tr>
+        <tr>
+            <td>Einstufung WHO:</td>
+            <td><span id="who"></span></td>
+        </tr>
+    </table>
+
+    <button onclick="berechnen()">Berechnen</button>
+
+</body>
+
+</html>

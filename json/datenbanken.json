@@ -10,7 +10,7 @@
             "height": ""
         },
         "download": {
-            "button_link": "courses/datenbanken/files/Musiksammlung.xlsx"
+            "button_link": "courses/datenbanken/files/DB_Musiksammlung.xlsx"
         }
     },
     {
@@ -18,10 +18,13 @@
         "description": "Diese Grafik erklärt den Zusammenhang zwischen Entität, Attribut und Beziehung.",
         "difficulty": 2,
         "picture_1": {
-            "src": "courses/datenbanken/pictures/Aufgabe 4.webp",
+            "src": "courses/datenbanken/pictures/DB_Beziehungen.webp",
             "alt": "Aufgabe 4 Grafik",
             "width": "1920",
             "height": "1080"
+        },
+        "download": {
+            "button_link": "courses/datenbanken/pictures/DB_Beziehungen.webp"
         }
     }
 ]

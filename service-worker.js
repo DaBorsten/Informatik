@@ -10,7 +10,7 @@ if ('serviceWorker' in navigator) {
 const cacheName = 'cache-v1'
 const cacheNameImages = 'cache-images-v1'
 const resourcesToPrecache = [
-    '/informatik/',
+  /* '/informatik/', */
     'index.html',
     'html.html',
     'javascript.html',
@@ -21,6 +21,7 @@ const resourcesToPrecache = [
     'js/script.js',
     'js/filterDifficulty.js',
     'js/showCourses.js',
+    'js/offline.js',
     'js/theme.js',
 
     'pageConstructor/courses.js',
@@ -68,8 +69,8 @@ const imagesToPrecache = [
     'courses/aufgaben/pictures/A_Sieb_des_Eratosthenes_HTML.webp',
     'courses/aufgaben/pictures/A_Sieb_des_Eratosthenes_JS.webp',
     //Datenbanken
-    'courses/datenbanken/files/Musiksammlung.xlsx',
-    'courses/datenbanken/pictures/Aufgabe 4.webp',
+    'courses/datenbanken/files/DB_Musiksammlung.xlsx',
+    'courses/datenbanken/pictures/DB_Beziehungen.webp',
     // Icons
     'icons/home.svg',
     'icons/close.svg',

@@ -30,6 +30,8 @@
 
     <script src="js/showCourses.js" defer></script>
 
+    <script src="js/offline.js" defer></script>
+
     <script src="js/theme.js" type="text/javascript" defer></script>
 
 </head>
@@ -128,16 +130,16 @@
             <h3 data-detailed-card-image-2-heading></h3>
             <img data-detailed-card-image-2 class="screenshots" src="" alt="">
 
-            <a class="learnMoreButton" target="_blank" data-detailed-card-learn-more>
-                <div>Mehr erfahren</div>
-                <div class="studyIcon"></div>
-            </a>
+            <div class="courseActionButtons">
+                <a class="actionButton" data-detailed-card-download></a>
 
-            <a class="download-btn" data-detailed-card-download></a>
+                <a class="actionButton" target="_blank" data-detailed-card-learn-more>Mehr erfahren</a>
+            </div>
 
         </div>
     </template>
 
+    <div class="offline" data-offline="false">Du bist offline</div>
     <div class="backgroundBlur"></div>
 
 </body>

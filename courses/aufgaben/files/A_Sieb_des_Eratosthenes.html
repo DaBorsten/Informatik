@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primzahlen - Sieb des Eratosthenes</title>
+
+</head>
+
+<body>
+
+    <h1>Sieb des Eratosthenes</h1>
+
+    <p>
+        Dieses Programm führt das "Sieb des Eratosthenes" aus.
+    </p>
+
+    <label for="eingabe">Ende der Reihe eingeben: </label>
+
+    <input type="text" id="eingabe" autofocus>
+
+    <button onclick="ausfuehren()">Starten</button>
+
+    <p id="anzahlErgebnisse"></p>
+
+    <p>
+        Die Ergebnisse lauteten:
+    </p>
+    <textarea id="ergebnisse" rows="10" cols="50" readonly></textarea>
+
+    <script>
+        function ausfuehren() {
+            let eingabe = Number(document.getElementById('eingabe').value)
+
+            let ergebnisse = document.getElementById('ergebnisse')
+            let ergebnisseArray = []
+            let anzahlErgebnisse = document.getElementById('anzahlErgebnisse')
+
+            if (isNaN(eingabe) || !Number.isInteger(eingabe) || eingabe < 2) {
+                return alert("Es sind nur positive ganzzahlige Zahlen über 2 erlaubt.")
+            }
+
+            anzahlErgebnisse.innerHTML = ''
+            ergebnisse.innerHTML = ''
+
+            siebDesEratosthenes(eingabe)
+
+            function siebDesEratosthenes(zahl) {
+
+                let primzahl = new Array(zahl + 1).fill(true)
+
+                primzahl[0] = false
+                primzahl[1] = false
+
+                for (let i = 2; i * i <= zahl; i++) {
+
+                    if (primzahl[i] == true) {
+
+                        for (let vielfache = i * i; vielfache <= zahl; vielfache += i) {
+                            primzahl[vielfache] = false
+                        }
+                    }
+                }
+
+                for (let i = 2; i <= zahl; i++) {
+                    if (primzahl[i]) {
+                        ergebnisseArray.push(i)
+                    }
+                }
+
+                anzahlErgebnisse.innerHTML = "Es gibt " + ergebnisseArray.length + " Ergebnisse."
+
+                ergebnisse.innerHTML = ergebnisseArray.join(", ")
+            }
+        }
+    </script>
+
+</body>
+
+</html>

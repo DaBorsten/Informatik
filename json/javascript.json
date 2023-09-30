@@ -9,6 +9,9 @@
             "alt": "JavaScript Variablen",
             "width": "1520",
             "height": "702"
+        },
+        "download": {
+            "button_link": "courses/javascript/files/JS_Variablen.html"
         }
     },
     {
@@ -21,6 +24,9 @@
             "alt": "Einfache Datentypen",
             "width": "1520",
             "height": "702"
+        },
+        "download": {
+            "button_link": "courses/javascript/files/JS_Datentypen.html"
         }
     },
     {
@@ -33,6 +39,9 @@
             "alt": "logische Operatoren",
             "width": "560",
             "height": "630"
+        },
+        "download": {
+            "button_link": "courses/javascript/pictures/JS_logische_Operatoren.webp"
         }
     },
     {
@@ -45,6 +54,9 @@
             "alt": "if else",
             "width": "1520",
             "height": "588"
+        },
+        "download": {
+            "button_link": "courses/javascript/files/JS_if_else.html"
         }
     },
     {
@@ -57,6 +69,9 @@
             "alt": "lokale/globale Variablen",
             "width": "1520",
             "height": "1652"
+        },
+        "download": {
+            "button_link": "courses/javascript/files/JS_lok_vs_glob_var.html"
         }
     },
     {
@@ -69,6 +84,9 @@
             "alt": "lokale/globale Variablen",
             "width": "1520",
             "height": "1120"
+        },
+        "download": {
+            "button_link": "courses/javascript/files/JS_kopfgest_schleifen.html"
         }
     }
 ]

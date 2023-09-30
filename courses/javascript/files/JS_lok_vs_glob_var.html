@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lokale vs globale Variablen</title>
+
+    <script>
+
+        let globaleVar = 6
+
+        function multiplizieren() {
+
+            let localeVar = 3
+
+            console.log(globaleVar * localeVar)
+
+            function test() {
+                console.log(globaleVar * localeVar * 2)
+            }
+
+            test()
+        }
+
+        function dividieren() {
+
+            console.log(globaleVar / localeVar)
+            // Uncaught ReferenceError: localeVar is not defined
+
+        }
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

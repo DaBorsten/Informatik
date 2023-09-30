@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quadratische Gleichung</title>
+</head>
+
+<body>
+
+    <h1>Quadratische Gleichungen</h1>
+
+    <p>Geben Sie die Werte für a, b und c ein, um die Lösungen für die
+        quadratische Gleichung ax<sup>2</sup> + bx + c = 0 zu berechnen:</p>
+
+    <span>a:</span>
+    <input id="a"><br>
+
+    <span>b:</span>
+    <input id="b"><br>
+
+    <span>c:</span>
+    <input id="c"><br><br>
+
+    <button onclick="loesen()">Berechnen</button>
+
+    <p>Lösungen:</p>
+    <p id="Ergebnisse"></p>
+
+    <script>
+        function loesen() {
+            const a = Number(document.getElementById('a').value)
+            const b = Number(document.getElementById('b').value)
+            const c = Number(document.getElementById('c').value)
+
+            const ergebnisse = document.getElementById('Ergebnisse')
+
+            const diskriminante = b * b - 4 * a * c
+
+            let x1
+            let x2
+
+            if (diskriminante > 0) {
+                x1 = (-b + Math.sqrt(diskriminante)) / (2 * a)
+                x2 = (-b - Math.sqrt(diskriminante)) / (2 * a)
+
+                ergebnisse.innerHTML = `x1 = ${x1}<br>x2 = ${x2}`
+
+            } else if (diskriminante === 0) {
+                x1 = -b / (2 * a)
+                ergebnisse.innerHTML = `x = ${x1}`
+
+            } else {
+                ergebnisse.innerHTML = 'Diese Gleichung hat keine Lösungen.'
+            }
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scrhauben Discount</title>
+
+    <script>
+
+        function gesamtbetrag() {
+            let schrauben = Number(document.getElementById('schrauben').value)
+            let muttern = Number(document.getElementById('muttern').value)
+            let unterlegscheiben = Number(document.getElementById('unterlegscheiben').value)
+
+            if (schrauben > muttern) {
+                alert('Warnung! Sie bestellen mehr Schrauben als Muttern')
+            }
+
+            let ergebnis = (schrauben * 0.05 + muttern * 0.03 + unterlegscheiben * 0.01).toFixed(2)
+            document.getElementById('ergebnis').innerHTML = ergebnis + "  &euro;"
+        }
+
+    </script>
+
+</head>
+
+<body>
+
+    <p>Schrauben</p>
+    <input id="schrauben">
+
+    <p>Muttern</p>
+    <input id="muttern">
+
+    <p>Unterlegscheiben</p>
+    <input id="unterlegscheiben">
+
+    <br><br>
+
+    <button onclick="gesamtbetrag()">Kaufen</button>
+
+    <p>Der Gesamtbetrag beträgt: <span id="ergebnis"></span></p>
+
+</body>
+
+</html>

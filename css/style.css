@@ -285,64 +285,6 @@ a {
     transform: scaleX(1);
 }
 
-
-
-
-
-
-
-
-
-
-
-.download-btn {
-    font-size: var(--buttonFontSize);
-    padding-block: 15px;
-    -webkit-padding-start: 30px;
-    padding-inline-start: 30px;
-    -webkit-padding-end: 20px;
-    padding-inline-end: 20px;
-    border: none;
-    border-radius: var(--borderRadiusBig);
-    background-color: var(--button);
-    color: var(--buttonFontColor);
-    cursor: pointer;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    vertical-align: middle;
-    user-select: none;
-
-    -webkit-tap-highlight-color: transparent;
-    text-decoration: none;
-    width: -webkit-max-content;
-    width: -moz-max-content;
-    width: max-content;
-    margin-inline: auto;
-}
-
-.download-btn:hover {
-    background-color: var(--buttonHover);
-}
-
-.download-btn:active {
-    background-color: var(--buttonActive);
-}
-
-.download-btn::after {
-    content: '';
-    display: inline-block;
-    vertical-align: middle;
-    padding-left: 10px;
-    width: 24px;
-    aspect-ratio: 1;
-    background-image: url(../icons/download.svg);
-    background-repeat: no-repeat;
-    background-position: right;
-    background-size: 24px;
-}
-
 section {
     position: relative;
     left: 50%;
@@ -438,7 +380,7 @@ img {
     /*     filter: invert() hue-rotate(180deg); */
 }
 
-.learnMoreButton {
+.actionButton {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -468,17 +410,32 @@ img {
     transition: all 150ms ease-in-out;
 }
 
-.learnMoreButton:hover {
+.actionButton:hover {
     background-color: var(--buttonActiveBackgroundColor);
     border: 2px solid var(--buttonActiveFontColor);
 }
 
-.learnMoreButton:active {
+.actionButton:active {
     background-color: var(--buttonActiveBackgroundColor);
     border: 2px solid var(--buttonActiveFontColor);
 }
 
-.studyIcon {
+.actionButton[data-detailed-card-download]::after {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    width: 20px;
+    aspect-ratio: 1;
+    background-image: url(../icons/download.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 20px;
+}
+
+.actionButton[data-detailed-card-learn-more]::after {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
     width: 20px;
     aspect-ratio: 1;
     background-image: url(../icons/learn.svg);
@@ -754,6 +711,13 @@ img {
     gap: 16px;
 }
 
+.coursePreviewCardTitleAndDescription p{
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
 
 .courseDetailedCard {
     display: flex;
@@ -778,58 +742,15 @@ img {
     gap: 16px;
 }
 
+.courseActionButtons {
+    display: flex;
+    flex-direction: row;
 
-
-
-.download-btn {
-    font-size: var(--buttonFontSize);
-    padding-block: 15px;
-    -webkit-padding-start: 30px;
-    padding-inline-start: 30px;
-    -webkit-padding-end: 20px;
-    padding-inline-end: 20px;
-    border: 2px solid var(--buttonBorderColor);
-    border-radius: 16px;
-    background-color: var(--backgroundColor);
-    color: var(--buttonFontColor);
-    cursor: pointer;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    vertical-align: middle;
-    user-select: none;
-
-    -webkit-tap-highlight-color: transparent;
-    text-decoration: none;
-    width: -webkit-max-content;
-    width: -moz-max-content;
-    width: max-content;
-    margin-inline: auto;
+    gap: 12px;
+    flex-wrap: wrap;
 }
 
-.download-btn:hover {
-    background-color: var(--buttonActiveBackgroundColor);
-    border: 2px solid var(--buttonActiveFontColor);
-}
 
-.download-btn:active {
-    background-color: var(--buttonActiveBackgroundColor);
-    border: 2px solid var(--buttonActiveFontColor);
-}
-
-.download-btn::after {
-    content: '';
-    display: inline-block;
-    vertical-align: middle;
-    padding-left: 10px;
-    width: 24px;
-    aspect-ratio: 1;
-    background-image: url(../icons/download.svg);
-    background-repeat: no-repeat;
-    background-position: right;
-    background-size: 24px;
-}
 
 
 
@@ -945,4 +866,39 @@ img {
     visibility: visible;
     background-color: hsla(0, 0%, 0%, 0.75);
     transition: all 250ms ease-in-out;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.offline {
+    display: flex;
+    width: 100dvw;
+    justify-content: center;
+    padding-block: 4px;
+
+    position: fixed;
+    bottom: 0px;
+
+    background-color: rgb(253, 255, 114);
+
+    font-weight: bold;
+
+    transform: translateY(100%);
+    transition: all 300ms ease-in-out;
+}
+
+.offline[data-offline="true"] {
+    transform: translateY(0%);
+    transition: all 300ms ease-in-out;  
 }
