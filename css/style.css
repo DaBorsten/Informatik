@@ -378,10 +378,9 @@ img {
 
 .screenshots {
     width: auto;
-    max-width: -webkit-fill-available;
+    max-width: 100%;
     height: auto;
     border-radius: var(--borderRadiusBig);
-    /*     filter: invert() hue-rotate(180deg); */
 }
 
 .actionButton {
