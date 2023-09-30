@@ -116,7 +116,7 @@ function createCourseCard(url, index) {
                         else {
                             download.setAttribute("href", selectedCourse.download.button_link);
                             download.textContent = selectedCourse.download.button_link.split("/").pop();
-                            download.setAttribute("download", selectedCourse.download.button_link.split("/").pop());
+                            download.setAttribute("download", "");
                         }
                     }
                     else {
