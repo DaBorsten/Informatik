@@ -16,10 +16,7 @@ function createCourseCard(url, index) {
             const courseCard = course_template.content.cloneNode(true);
             const title = courseCard.querySelector('[data-detailed-card-title]');
             const description = courseCard.querySelector('[data-detailed-card-description]');
-            const picture_1_heading = courseCard.querySelector('[data-detailed-card-image-1-heading]');
-            const picture_1 = courseCard.querySelector('[data-detailed-card-image-1]');
-            const picture_2_heading = courseCard.querySelector('[data-detailed-card-image-2-heading]');
-            const picture_2 = courseCard.querySelector('[data-detailed-card-image-2]');
+            const picturesWrapper = courseCard.querySelector('[data-detailed-card-pictures-wrapper]');
             const download = courseCard.querySelector('[data-detailed-card-download]');
             const learn_more = courseCard.querySelector('[data-detailed-card-learn-more]');
             // Title
@@ -50,60 +47,37 @@ function createCourseCard(url, index) {
                     description.remove();
                 }
             }
-            // Bild 1
-            if (picture_1 !== null) {
-                if ("picture_1" in selectedCourse) {
-                    if (selectedCourse.picture_1.src === "") {
-                        picture_1.remove();
-                    }
-                    else {
-                        if (picture_1_heading !== null) {
-                            if (selectedCourse.picture_1.heading !== undefined) {
-                                picture_1_heading.textContent = selectedCourse.picture_1.heading;
+            // Bilder
+            if (picturesWrapper !== null) {
+                if ("pictures" in selectedCourse && selectedCourse.pictures.length > 0) {
+                    selectedCourse.pictures.forEach((picture) => {
+                        let pictureWrapper = document.createElement('div');
+                        pictureWrapper.classList.add('pictureWrapper');
+                        if (picture.src === "") {
+                            return;
+                        }
+                        else {
+                            let pictureHeading = document.createElement('h3');
+                            let pictureImage = document.createElement('img');
+                            if (picture.heading !== undefined) {
+                                pictureHeading.textContent = picture.heading;
+                                pictureWrapper.appendChild(pictureHeading);
                             }
                             else {
-                                picture_1_heading.remove();
+                                pictureHeading.remove();
                             }
+                            pictureImage.classList.add('screenshots');
+                            pictureImage.setAttribute("src", picture.src);
+                            pictureImage.setAttribute("alt", picture.alt);
+                            pictureImage.setAttribute("width", picture.width);
+                            pictureImage.setAttribute("height", picture.height);
+                            pictureWrapper.appendChild(pictureImage);
+                            picturesWrapper.appendChild(pictureWrapper);
                         }
-                        picture_1.setAttribute("src", selectedCourse.picture_1.src);
-                        picture_1.setAttribute("alt", selectedCourse.picture_1.alt);
-                        picture_1.setAttribute("width", selectedCourse.picture_1.width);
-                        picture_1.setAttribute("height", selectedCourse.picture_1.height);
-                    }
+                    });
                 }
                 else {
-                    picture_1.remove();
-                    if (picture_1_heading !== null) {
-                        picture_1_heading.remove();
-                    }
-                }
-            }
-            // Bild 2
-            if (picture_2 !== null) {
-                if ("picture_2" in selectedCourse) {
-                    if (selectedCourse.picture_2.src === "") {
-                        picture_2.remove();
-                    }
-                    else {
-                        if (picture_2_heading !== null) {
-                            if (selectedCourse.picture_2.heading !== undefined) {
-                                picture_2_heading.textContent = selectedCourse.picture_2.heading;
-                            }
-                            else {
-                                picture_2_heading.remove();
-                            }
-                        }
-                        picture_2.setAttribute("src", selectedCourse.picture_2.src);
-                        picture_2.setAttribute("alt", selectedCourse.picture_2.alt);
-                        picture_2.setAttribute("width", selectedCourse.picture_2.width);
-                        picture_2.setAttribute("height", selectedCourse.picture_2.height);
-                    }
-                }
-                else {
-                    picture_2.remove();
-                    if (picture_2_heading !== null) {
-                        picture_2_heading.remove();
-                    }
+                    picturesWrapper.remove();
                 }
             }
             if ("learn_more" in selectedCourse || "download" in selectedCourse) {

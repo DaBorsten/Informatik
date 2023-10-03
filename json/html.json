@@ -4,12 +4,14 @@
         "description": "Jedes HTML Dokument ist so aufgebaut:",
         "difficulty": 1,
         "learn_more": "https://www.w3schools.com/html/html_intro.asp",
-        "picture_1": {
-            "src": "courses/html/pictures/HTML_Grundstruktur.webp",
-            "alt": "HTML Grundstruktur",
-            "width": "1520",
-            "height": "1158"
-        },
+        "pictures": [
+            {
+                "src": "courses/html/pictures/HTML_Grundstruktur.webp",
+                "alt": "HTML Grundstruktur",
+                "width": "1520",
+                "height": "1158"
+            }
+        ],
         "download": {
             "button_link": "courses/html/files/HTML_Aufbau.html"
         }
@@ -19,12 +21,14 @@
         "description": "Hier sind ein paar HTML Tags vorgestellt:",
         "difficulty": 1,
         "learn_more": "https://www.w3schools.com/tags/default.asp",
-        "picture_1": {
-            "src": "courses/html/pictures/HTML_Tags.webp",
-            "alt": "HTML Tags",
-            "width": "1520",
-            "height": "740"
-        },
+        "pictures": [
+            {
+                "src": "courses/html/pictures/HTML_Tags.webp",
+                "alt": "HTML Tags",
+                "width": "1520",
+                "height": "740"
+            }
+        ],
         "download": {
             "button_link": "courses/html/files/HTML_Tags.html"
         }
@@ -34,12 +38,14 @@
         "description": "Ein wichtiges Element sind Tabellen:",
         "difficulty": 2,
         "learn_more": "https://www.w3schools.com/html/html_tables.asp",
-        "picture_1": {
-            "src": "courses/html/pictures/HTML_tabelle.webp",
-            "alt": "Tabelle",
-            "width": "1520",
-            "height": "1956"
-        },
+        "pictures": [
+            {
+                "src": "courses/html/pictures/HTML_tabelle.webp",
+                "alt": "Tabelle",
+                "width": "1520",
+                "height": "1956"
+            }
+        ],
         "download": {
             "button_link": "courses/html/files/HTML_Tabelle.html"
         }

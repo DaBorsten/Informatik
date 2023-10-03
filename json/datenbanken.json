@@ -3,12 +3,7 @@
         "title": "Musiktabelle",
         "description": "Dies ist eine Excel-Tabelle, die eine Musiksammlung enthält.",
         "difficulty": 1,
-        "picture_1": {
-            "src": "",
-            "alt": "",
-            "width": "",
-            "height": ""
-        },
+        "pictures": [],
         "download": {
             "button_link": "courses/datenbanken/files/DB_Musiksammlung.xlsx"
         }
@@ -17,12 +12,14 @@
         "title": "Datenbank-beziehungen",
         "description": "Diese Grafik erklärt den Zusammenhang zwischen Entität, Attribut und Beziehung.",
         "difficulty": 2,
-        "picture_1": {
-            "src": "courses/datenbanken/pictures/DB_Beziehungen.webp",
-            "alt": "Aufgabe 4 Grafik",
-            "width": "1920",
-            "height": "1080"
-        },
+        "pictures": [
+            {
+                "src": "courses/datenbanken/pictures/DB_Beziehungen.webp",
+                "alt": "Aufgabe 4 Grafik",
+                "width": "1920",
+                "height": "1080"
+            }
+        ],
         "download": {
             "button_link": "courses/datenbanken/pictures/DB_Beziehungen.webp"
         }

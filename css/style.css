@@ -894,3 +894,43 @@ img {
     transform: translateY(0%);
     transition: all 300ms ease-in-out;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.picturesWrapper {
+    display: flex;
+    flex-direction: column;
+
+    gap: 24px;
+}
+
+.pictureWrapper {
+    display: flex;
+    flex-direction: column;
+
+    gap: 12px;
+}

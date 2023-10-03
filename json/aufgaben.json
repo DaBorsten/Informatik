@@ -3,20 +3,22 @@
         "title": "Schrauben-Discount",
         "description": "Hier findet ihr den allgemeinen Aufbau von der \"Schrauben-Discount\" Aufgabe. Hierbei wurden die Aufgaben zwecks der Übersichtlichkeit nur in simpelster Form umgesetzt.",
         "difficulty": 2,
-        "picture_1": {
-            "heading": "HTML Teil",
-            "src": "courses/aufgaben/pictures/A_schrauben_HTML.webp",
-            "alt": "Schrauben HTML",
-            "width": "1520",
-            "height": "854"
-        },
-        "picture_2": {
-            "heading": "JavaScript Teil",
-            "src": "courses/aufgaben/pictures/A_schrauben_JS.webp",
-            "alt": "Schrauben JavaScript",
-            "width": "1520",
-            "height": "778"
-        },
+        "pictures": [
+            {
+                "heading": "HTML Teil",
+                "src": "courses/aufgaben/pictures/A_schrauben_HTML.webp",
+                "alt": "Schrauben HTML",
+                "width": "1520",
+                "height": "854"
+            },
+            {
+                "heading": "JavaScript Teil",
+                "src": "courses/aufgaben/pictures/A_schrauben_JS.webp",
+                "alt": "Schrauben JavaScript",
+                "width": "1520",
+                "height": "778"
+            }
+        ],
         "download": {
             "button_link": "courses/aufgaben/files/A_Schrauben_Discount.html"
         }
@@ -25,20 +27,22 @@
         "title": "BMI-Rechner mit Bedingungen",
         "description": "BMI-Rechner mit Bedingungen für Einstufung der WHO.",
         "difficulty": 1,
-        "picture_1": {
-            "heading": "HTML Teil",
-            "src": "courses/aufgaben/pictures/A_BMI_If_Statements_HTML.webp",
-            "alt": "BMI HTML",
-            "width": "1520",
-            "height": "1044"
-        },
-        "picture_2": {
-            "heading": "JavaScript Teil",
-            "src": "courses/aufgaben/pictures/A_BMI_If_Statements_JS.webp",
-            "alt": "BMI JavaScript",
-            "width": "1520",
-            "height": "1082"
-        },
+        "pictures": [
+            {
+                "heading": "HTML Teil",
+                "src": "courses/aufgaben/pictures/A_BMI_If_Statements_HTML.webp",
+                "alt": "BMI HTML",
+                "width": "1520",
+                "height": "1044"
+            },
+            {
+                "heading": "JavaScript Teil",
+                "src": "courses/aufgaben/pictures/A_BMI_If_Statements_JS.webp",
+                "alt": "BMI JavaScript",
+                "width": "1520",
+                "height": "1082"
+            }
+        ],
         "download": {
             "button_link": "courses/aufgaben/files/A_BMI_Rechner.html"
         }
@@ -47,20 +51,22 @@
         "title": "Quadratische Gleichungen",
         "description": "Programm zum Lösen quadratischer Gleichungen.",
         "difficulty": 2,
-        "picture_1": {
-            "heading": "HTML Teil",
-            "src": "courses/aufgaben/pictures/A_quadratische_Gleichung_HTML.webp",
-            "alt": "Quadratische Gleichungen HTML",
-            "width": "1520",
-            "height": "816"
-        },
-        "picture_2": {
-            "heading": "JavaScript Teil",
-            "src": "courses/aufgaben/pictures/A_quadratische_Gleichung_JS.webp",
-            "alt": "Quadratische Gleichungen JavaScript",
-            "width": "1520",
-            "height": "1424"
-        },
+        "pictures": [
+            {
+                "heading": "HTML Teil",
+                "src": "courses/aufgaben/pictures/A_quadratische_Gleichung_HTML.webp",
+                "alt": "Quadratische Gleichungen HTML",
+                "width": "1520",
+                "height": "816"
+            },
+            {
+                "heading": "JavaScript Teil",
+                "src": "courses/aufgaben/pictures/A_quadratische_Gleichung_JS.webp",
+                "alt": "Quadratische Gleichungen JavaScript",
+                "width": "1520",
+                "height": "1424"
+            }
+        ],
         "download": {
             "button_link": "courses/aufgaben/files/A_quadr_Gl.html"
         }
@@ -69,20 +75,22 @@
         "title": "Zahlenraten",
         "description": "Programm, bei dem man eine zufällig generierte Zahl erraten kann.",
         "difficulty": 2,
-        "picture_1": {
-            "heading": "HTML Teil",
-            "src": "courses/aufgaben/pictures/A_zahlenraten_HTML.webp",
-            "alt": "Zahlenraten HTML",
-            "width": "1520",
-            "height": "588"
-        },
-        "picture_2": {
-            "heading": "JavaScript Teil",
-            "src": "courses/aufgaben/pictures/A_zahlenraten_JS.webp",
-            "alt": "Zahlenraten JavaScript",
-            "width": "1520",
-            "height": "2032"
-        },
+        "pictures": [
+            {
+                "heading": "HTML Teil",
+                "src": "courses/aufgaben/pictures/A_zahlenraten_HTML.webp",
+                "alt": "Zahlenraten HTML",
+                "width": "1520",
+                "height": "588"
+            },
+            {
+                "heading": "JavaScript Teil",
+                "src": "courses/aufgaben/pictures/A_zahlenraten_JS.webp",
+                "alt": "Zahlenraten JavaScript",
+                "width": "1520",
+                "height": "2032"
+            }
+        ],
         "download": {
             "button_link": "courses/aufgaben/files/A_Zahlenraten.html"
         }
@@ -91,20 +99,22 @@
         "title": "Collatz",
         "description": "Collatz Zahlenreihe wird nach Eingabe einer Zahl ausgegeben.",
         "difficulty": 3,
-        "picture_1": {
-            "heading": "HTML Teil",
-            "src": "courses/aufgaben/pictures/A_Collatz_HTML.webp",
-            "alt": "Collatz HTML",
-            "width": "1520",
-            "height": "512"
-        },
-        "picture_2": {
-            "heading": "JavaScript Teil",
-            "src": "courses/aufgaben/pictures/A_Collatz_JS.webp",
-            "alt": "Collatz JavaScript",
-            "width": "1520",
-            "height": "2678"
-        },
+        "pictures": [
+            {
+                "heading": "HTML Teil",
+                "src": "courses/aufgaben/pictures/A_Collatz_HTML.webp",
+                "alt": "Collatz HTML",
+                "width": "1520",
+                "height": "512"
+            },
+            {
+                "heading": "JavaScript Teil",
+                "src": "courses/aufgaben/pictures/A_Collatz_JS.webp",
+                "alt": "Collatz JavaScript",
+                "width": "1520",
+                "height": "2678"
+            }
+        ],
         "download": {
             "button_link": "courses/aufgaben/files/A_Collatz.html"
         }
@@ -113,20 +123,22 @@
         "title": "Tabelle",
         "description": "Eine Tabelle wird dynamisch durch das Klicken auf einen Button erweitert.",
         "difficulty": 2,
-        "picture_1": {
-            "heading": "HTML Teil",
-            "src": "courses/aufgaben/pictures/A_Tabelle_dynamisch_erstellen_HTML.webp",
-            "alt": "Tabelle HTML",
-            "width": "1520",
-            "height": "474"
-        },
-        "picture_2": {
-            "heading": "JavaScript Teil",
-            "src": "courses/aufgaben/pictures/A_Tabelle_dynamisch_erstellen_JS.webp",
-            "alt": "Tabell JavaScript",
-            "width": "1520",
-            "height": "1082"
-        },
+        "pictures": [
+            {
+                "heading": "HTML Teil",
+                "src": "courses/aufgaben/pictures/A_Tabelle_dynamisch_erstellen_HTML.webp",
+                "alt": "Tabelle HTML",
+                "width": "1520",
+                "height": "474"
+            },
+            {
+                "heading": "JavaScript Teil",
+                "src": "courses/aufgaben/pictures/A_Tabelle_dynamisch_erstellen_JS.webp",
+                "alt": "Tabell JavaScript",
+                "width": "1520",
+                "height": "1082"
+            }
+        ],
         "download": {
             "button_link": "courses/aufgaben/files/A_Dynam_Tabelle.html"
         }
@@ -135,20 +147,22 @@
         "title": "Elefanten",
         "description": "Dieses Programm rechnet aus, wann der Afrikanische Savannenelefant ausstirbt.",
         "difficulty": 2,
-        "picture_1": {
-            "heading": "HTML Teil",
-            "src": "courses/aufgaben/pictures/A_Elefanten_HTML.webp",
-            "alt": "Elefanten HTML",
-            "width": "1520",
-            "height": "436"
-        },
-        "picture_2": {
-            "heading": "JavaScript Teil",
-            "src": "courses/aufgaben/pictures/A_Elefanten_JS.webp",
-            "alt": "Elefanten JavaScript",
-            "width": "1520",
-            "height": "1500"
-        },
+        "pictures": [
+            {
+                "heading": "HTML Teil",
+                "src": "courses/aufgaben/pictures/A_Elefanten_HTML.webp",
+                "alt": "Elefanten HTML",
+                "width": "1520",
+                "height": "436"
+            },
+            {
+                "heading": "JavaScript Teil",
+                "src": "courses/aufgaben/pictures/A_Elefanten_JS.webp",
+                "alt": "Elefanten JavaScript",
+                "width": "1520",
+                "height": "1500"
+            }
+        ],
         "download": {
             "button_link": "courses/aufgaben/files/A_Elefanten.html"
         }
@@ -157,20 +171,22 @@
         "title": "Primzahlen",
         "description": "Dieses Programm überprüft, ob die von Ihnen eingegebene Zahl eine Primzahl ist.",
         "difficulty": 3,
-        "picture_1": {
-            "heading": "HTML Teil",
-            "src": "courses/aufgaben/pictures/A_Primzahlen_HTML.webp",
-            "alt": "Primzahlen HTML",
-            "width": "1520",
-            "height": "550"
-        },
-        "picture_2": {
-            "heading": "JavaScript Teil",
-            "src": "courses/aufgaben/pictures/A_Primzahlen_JS.webp",
-            "alt": "Primzahlen JavaScript",
-            "width": "1520",
-            "height": "1652"
-        },
+        "pictures": [
+            {
+                "heading": "HTML Teil",
+                "src": "courses/aufgaben/pictures/A_Primzahlen_HTML.webp",
+                "alt": "Primzahlen HTML",
+                "width": "1520",
+                "height": "550"
+            },
+            {
+                "heading": "JavaScript Teil",
+                "src": "courses/aufgaben/pictures/A_Primzahlen_JS.webp",
+                "alt": "Primzahlen JavaScript",
+                "width": "1520",
+                "height": "1652"
+            }
+        ],
         "download": {
             "button_link": "courses/aufgaben/files/A_Primzahlen.html"
         }
@@ -179,13 +195,15 @@
         "title": "Tage pro Monat",
         "description": "Dieses Programm rechnet die Tage aller Monate zusammen, welche in einem Array vorliegen.",
         "difficulty": 1,
-        "picture_1": {
-            "heading": "JavaScript Teil",
-            "src": "courses/aufgaben/pictures/A_Tage_pro_Monat_JS.webp",
-            "alt": "Tage pro Jahr JavaScript",
-            "width": "1520",
-            "height": "740"
-        },
+        "pictures": [
+            {
+                "heading": "JavaScript Teil",
+                "src": "courses/aufgaben/pictures/A_Tage_pro_Monat_JS.webp",
+                "alt": "Tage pro Jahr JavaScript",
+                "width": "1520",
+                "height": "740"
+            }
+        ],
         "download": {
             "button_link": "courses/aufgaben/files/A_Tage_Monat.html"
         }
@@ -194,20 +212,22 @@
         "title": "Sieb des Eratosthenes",
         "description": "Dieses Programm führt das \"Sieb des Eratosthenes\" aus.",
         "difficulty": 3,
-        "picture_1": {
-            "heading": "HTML Teil",
-            "src": "courses/aufgaben/pictures/A_Sieb_des_Eratosthenes_HTML.webp",
-            "alt": "Sieb des Eratosthenes HTML",
-            "width": "1520",
-            "height": "588"
-        },
-        "picture_2": {
-            "heading": "JavaScript Teil",
-            "src": "courses/aufgaben/pictures/A_Sieb_des_Eratosthenes_JS.webp",
-            "alt": "Sieb des Eratosthenes JavaScript",
-            "width": "1520",
-            "height": "1804"
-        },
+        "pictures": [
+            {
+                "heading": "HTML Teil",
+                "src": "courses/aufgaben/pictures/A_Sieb_des_Eratosthenes_HTML.webp",
+                "alt": "Sieb des Eratosthenes HTML",
+                "width": "1520",
+                "height": "588"
+            },
+            {
+                "heading": "JavaScript Teil",
+                "src": "courses/aufgaben/pictures/A_Sieb_des_Eratosthenes_JS.webp",
+                "alt": "Sieb des Eratosthenes JavaScript",
+                "width": "1520",
+                "height": "1804"
+            }
+        ],
         "download": {
             "button_link": "courses/aufgaben/files/A_Sieb_des_Eratosthenes.html"
         }
