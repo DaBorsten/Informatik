@@ -11,7 +11,13 @@
     --borderRadiusBig: 8px;
     --borderRadiusSmall: 4px;
 
-    --backgroundColor: hsl(0, 0%, 100%);
+    --backgroundColor: #f0f4f7;
+    --secondaryBackgroundColor: #ffffff;
+    --tertiaryBackgroundColor: #ffffff;
+
+    --cardBorderColor: #d7d7d7;
+    --lightModeCardBorderHoverColor: grey;
+
     --headingOneColor: #2E2E2E;
     --headingTwoColor: #4E4E4E;
     --headingThreeColor: #4E4E4E;
@@ -31,8 +37,6 @@
     --buttonActiveBackgroundColor: #C4D9F8;
     --buttonActiveFontColor: #5796F3;
 
-    --cardsBorderColor: #E3E3E3;
-
     /* Difficulty */
     --leichtBackgroundColor: #DBEBD9;
     --leichtFontColor: hsl(116, 20%, 40%);
@@ -47,12 +51,16 @@
 }
 
 body[data-theme="dark"] {
-    --backgroundColor: #101010;
+    --backgroundColor: #141718;
+    --secondaryBackgroundColor: #232627;
+    --tertiaryBackgroundColor: #313435;
+
+    --cardBorderColor: transparent;
+    --lightModeCardBorderHoverColor: transparent;
+
     --headingTwoColor: #D3D3D3;
     --headingThreeColor: #D3D3D3;
     --paragraphColor: #BCBCBC;
-
-    --cardsBorderColor: #555555;
 
 
     /* Difficulty */
@@ -139,6 +147,7 @@ body::-webkit-scrollbar {
     padding: 0;
     background-color: transparent;
     -webkit-tap-highlight-color: transparent;
+    z-index: 1000;
 }
 
 .homeButtonIcon {
@@ -382,10 +391,10 @@ img {
     font-size: 14px;
     padding-block: 8px;
     padding-inline: 16px;
-    background-color: var(--backgroundColor);
+    background-color: var(--tertiaryBackgroundColor);
     color: var(--buttonFontColor);
     text-decoration: none;
-    border: 2px solid var(--buttonBorderColor);
+    border: 1px solid var(--buttonBorderColor);
     font-weight: 600;
     cursor: pointer;
     border-radius: 50px;
@@ -403,12 +412,7 @@ img {
 
 .actionButton:hover {
     background-color: var(--buttonActiveBackgroundColor);
-    border: 2px solid var(--buttonActiveFontColor);
-}
-
-.actionButton:active {
-    background-color: var(--buttonActiveBackgroundColor);
-    border: 2px solid var(--buttonActiveFontColor);
+    border: 1px solid var(--buttonActiveFontColor);
 }
 
 .actionButton[data-detailed-card-download]::after {
@@ -543,9 +547,9 @@ img {
 
     border-radius: 16px;
 
-    border: 2px solid var(--cardsBorderColor);
+    border: 1px solid var(--cardBorderColor);
 
-    background-color: var(--backgroundColor);
+    background-color: var(--secondaryBackgroundColor);
 
     cursor: pointer;
 
@@ -554,10 +558,9 @@ img {
     transition: all 100ms ease-in-out;
 }
 
-.courseCard:hover,
-.courseCard:active,
-.courseCard:focus {
-    border: 2px solid #bbbbbb;
+.courseCard:hover {
+    background-color: var(--tertiaryBackgroundColor);
+    border: 1px solid var(--lightModeCardBorderHoverColor);
 }
 
 .courseSymbol {
@@ -607,8 +610,8 @@ img {
 }
 
 .filterBtn {
-    background-color: var(--backgroundColor);
-    border: 1px solid var(--cardsBorderColor);
+    background-color: var(--secondaryBackgroundColor);
+    border: 1px solid var(--cardBorderColor);
 
     border-radius: 24px;
 
@@ -631,6 +634,8 @@ img {
     cursor: pointer;
 
     -webkit-tap-highlight-color: transparent;
+
+    transition: all 150ms ease-in-out;
 }
 
 .filterBtn:hover {
@@ -671,8 +676,8 @@ img {
     display: flex;
     flex-direction: row;
 
-    background-color: var(--backgroundColor);
-    border: 2px solid var(--cardsBorderColor);
+    background-color: var(--secondaryBackgroundColor);
+    border: 1px solid var(--cardBorderColor);
 
     padding: 24px;
 
@@ -690,10 +695,9 @@ img {
     transition: all 100ms ease-in-out;
 }
 
-.coursePreviewCard:hover,
-.coursePreviewCard:active,
-.coursePreviewCard:focus {
-    border: 2px solid #bbbbbb;
+.coursePreviewCard:hover {
+    background-color: var(--tertiaryBackgroundColor);
+    border: 1px solid var(--lightModeCardBorderHoverColor);
 }
 
 .coursePreviewCardTitleAndDescription {
@@ -716,8 +720,8 @@ img {
     display: flex;
     flex-direction: column;
 
-    background-color: var(--backgroundColor);
-    border: 2px solid var(--cardsBorderColor);
+    background-color: var(--secondaryBackgroundColor);
+    border: 1px solid var(--cardBorderColor);
 
     padding: 24px;
 

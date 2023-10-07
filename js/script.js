@@ -14,8 +14,16 @@ function openMenu() {
             navbar.setAttribute('data-visible', "true");
             mobileMenu.setAttribute('data-active', "true");
             document.body.style.overflow = "hidden";
+            enableNavbarTabAccess();
         }
     }
+}
+function enableNavbarTabAccess() {
+    const navbarLinks = document.querySelectorAll('.link');
+    navbarLinks.forEach(link => {
+        const anchorElement = link;
+        anchorElement.tabIndex = 0;
+    });
 }
 window.addEventListener('touchend', (e) => {
     endX = e.changedTouches[0].clientX;
@@ -43,8 +51,16 @@ function closeMenu() {
             navbar.setAttribute('data-visible', "false");
             mobileMenu.setAttribute('data-active', "false");
             document.body.style.overflow = "scroll";
+            disableNavbarTabAccess();
         }
     }
+}
+function disableNavbarTabAccess() {
+    const navbarLinks = document.querySelectorAll('.link');
+    navbarLinks.forEach(link => {
+        const anchorElement = link;
+        anchorElement.tabIndex = -1;
+    });
 }
 /*********************************************************************/
 // Menü öffnen / schließen bei Klick auf Hamburgermenü

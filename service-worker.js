@@ -2,8 +2,11 @@
 // Registriere die Funktion als Dienstarbeiter
 if ('serviceWorker' in navigator) {
   navigator.serviceWorker.register('service-worker.js')
-    .then(registration => {
+/*     .then(registration => {
       console.log('Registrierung erfolgreich. Der Scope ist ' + registration.scope)
+    }) */
+    .catch(err => {
+      console.log(err)
     })
 }
 

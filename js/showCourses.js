@@ -8,7 +8,6 @@ function createCourseCard(url, index) {
     fetch(url)
         .then(response => response.json())
         .then(data => {
-        var _a;
         const keys = Object.keys(data);
         const selectedCourse = data[keys[index]];
         // HTML-Tab HTML Karten
@@ -113,7 +112,7 @@ function createCourseCard(url, index) {
                 }
             }
             else {
-                (_a = courseCard.querySelector('.courseActionButtons')) === null || _a === void 0 ? void 0 : _a.remove();
+                courseCard.querySelector('.courseActionButtons')?.remove();
             }
             if (contentSectionWrapper !== null) {
                 contentSectionWrapper.appendChild(courseCard);
