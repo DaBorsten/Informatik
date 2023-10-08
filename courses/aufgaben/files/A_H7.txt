@@ -1,0 +1,35 @@
+Compiler:
+Übersetzt den geschriebenen Quellcode in Maschinencode (Binär) und optimiert ihn für Leistung.
+
+Interpreter:
+Übersetzt den Quellcode Zeile für Zeile zur Runtime (während der Ausführung) in Maschinencode.
+
+HTML:
+HTML steht für "Hypertext Markup Language". Es ist die Sprache zur Strukturierung von Webseiten.
+
+Plaintext:
+Plaintext ist Text, der nicht verschlüsselt und formatiert ist. Er ist von Menschen lesbar.
+
+Tag:
+Tags sind grundlegende Bausteine zum strukturieren und formatieren von Webseiten.
+
+CSS:
+CSS steht für "Cascading Style Sheets". Mit CSS kann man das Aussehen von Webseiten beeinflussen.
+
+Browser:
+Ein Browser ist ein Client zum Anzeigen von Webseiten.
+
+Parent Node:
+Tags sind meist verschachtelt. Ein Tag ist für den Tag, den er beinhaltet, ein Parent Node.
+
+Child Node:
+Child Nodes sind Tags, die sich in einem Parent Node befinden.
+
+Meta Information:
+Meta Informationen enthalten Informationen über die Webseite und werden in den Head geschrieben.
+
+Head:
+Der Head enthält Metadaten, Links zu CSS und Skripten und wird vor dem Body gelesen.
+
+Body:
+Der Body enhält alles Sichtbare auf der Webseite.

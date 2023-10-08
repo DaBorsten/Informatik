@@ -1,5 +1,124 @@
 [
     {
+        "title": "(H1) Meine erste Seite",
+        "description": "In dieser Datei erstellen wir eine Überschrift und einen Absatz.",
+        "difficulty": 1,
+        "pictures": [
+            {
+                "heading": "HTML Teil",
+                "src": "courses/aufgaben/pictures/A_H1.webp",
+                "alt": "Meine erste Seite HTML",
+                "width": "1520",
+                "height": "778"
+            }
+        ],
+        "download": {
+            "button_link": "courses/aufgaben/files/A_H1.html"
+        }
+    },
+    {
+        "title": "(H2) Wikipedia",
+        "description": "In dieser Datei haben wir Wikipedia verlinkt und das Logo eingefügt.",
+        "difficulty": 1,
+        "pictures": [
+            {
+                "heading": "HTML Teil",
+                "src": "courses/aufgaben/pictures/A_H2.webp",
+                "alt": "Wikipedia HTML",
+                "width": "1520",
+                "height": "930"
+            }
+        ],
+        "download": {
+            "button_link": "courses/aufgaben/files/A_H2.html"
+        }
+    },
+    {
+        "title": "(H3) Buttons einfügen",
+        "description": "In dieser Datei haben wir vier Buttons eingefügt und durch <br> in zwei Reihen aufgeteilt.",
+        "difficulty": 1,
+        "pictures": [
+            {
+                "heading": "HTML Teil",
+                "src": "courses/aufgaben/pictures/A_H3.webp",
+                "alt": "Buttons einfügen HTML",
+                "width": "1520",
+                "height": "968"
+            }
+        ],
+        "download": {
+            "button_link": "courses/aufgaben/files/A_H3.html"
+        }
+    },
+    {
+        "title": "(H4) Tabelle",
+        "description": "Hier erstellen wir eine Tabelle mit einer Kopfzeile und zwei Zeilen.",
+        "difficulty": 1,
+        "pictures": [
+            {
+                "heading": "HTML Teil",
+                "src": "courses/aufgaben/pictures/A_H4.webp",
+                "alt": "Tabelle HTML",
+                "width": "1520",
+                "height": "1576"
+            }
+        ],
+        "download": {
+            "button_link": "courses/aufgaben/files/A_H4.html"
+        }
+    },
+    {
+        "title": "(H5) HTML Head vervollständigen",
+        "description": "Der Head der Aufgabe H2 wird hier vervollständigt.",
+        "difficulty": 1,
+        "pictures": [
+            {
+                "heading": "HTML Teil",
+                "src": "courses/aufgaben/pictures/A_H5.webp",
+                "alt": "HTML Head vervollständigen HTML",
+                "width": "1520",
+                "height": "1006"
+            }
+        ],
+        "download": {
+            "button_link": "courses/aufgaben/files/A_H5.html"
+        }
+    },
+    {
+        "title": "(H6) Baumdiagramm H5",
+        "description": "Hier ist der Seitenaufbau von H5 grafisch in einem Baumdiagramm dargestellt.",
+        "difficulty": 1,
+        "pictures": [
+            {
+                "heading": "HTML Teil",
+                "src": "courses/aufgaben/pictures/A_H6.webp",
+                "alt": "H5 Baumdiagramm HTML",
+                "width": "760",
+                "height": "760"
+            }
+        ],
+        "download": {
+            "button_link": "courses/aufgaben/files/A_H6.webp"
+        }
+    },
+    {
+        "title": "(H7) Begriffe klären",
+        "description": "Die wichtigsten Begriffe der Webentwicklung werden hier geklärt.",
+        "difficulty": 2,
+        "pictures": [
+            {
+                "heading": "Begriffe",
+                "src": "courses/aufgaben/pictures/A_H7.webp",
+                "alt": "Begriffe",
+                "width": "1520",
+                "height": "1842"
+            }
+        ],
+        "download": {
+            "button_link": "courses/aufgaben/files/A_H7.txt"
+        }
+    },
+    {
         "title": "Schrauben-Discount",
         "description": "Hier findet ihr den allgemeinen Aufbau von der \"Schrauben-Discount\" Aufgabe. Hierbei wurden die Aufgaben zwecks der Übersichtlichkeit nur in simpelster Form umgesetzt.",
         "difficulty": 2,

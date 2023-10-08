@@ -2,9 +2,9 @@
 // Registriere die Funktion als Dienstarbeiter
 if ('serviceWorker' in navigator) {
   navigator.serviceWorker.register('service-worker.js')
-/*     .then(registration => {
-      console.log('Registrierung erfolgreich. Der Scope ist ' + registration.scope)
-    }) */
+    /*     .then(registration => {
+          console.log('Registrierung erfolgreich. Der Scope ist ' + registration.scope)
+        }) */
     .catch(err => {
       console.log(err)
     })
@@ -52,6 +52,13 @@ const imagesToPrecache = [
   'courses/javascript/pictures/JS_locale_globale_var.webp',
   'courses/javascript/pictures/JS_kopfgesteuerte_Schleifen.webp',
   // Aufgaben
+  'courses/aufgaben/pictures/A_H1.webp',
+  'courses/aufgaben/pictures/A_H2.webp',
+  'courses/aufgaben/pictures/A_H3.webp',
+  'courses/aufgaben/pictures/A_H4.webp',
+  'courses/aufgaben/pictures/A_H5.webp',
+  'courses/aufgaben/pictures/A_H6.webp',
+  'courses/aufgaben/pictures/A_H7.webp',
   'courses/aufgaben/pictures/A_schrauben_HTML.webp',
   'courses/aufgaben/pictures/A_schrauben_JS.webp',
   'courses/aufgaben/pictures/A_BMI_If_Statements_HTML.webp',
