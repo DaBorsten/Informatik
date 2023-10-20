@@ -150,6 +150,11 @@ body::-webkit-scrollbar {
     z-index: 1000;
 }
 
+.homeAndBackButton {
+    display: flex;
+    flex-direction: row;
+}
+
 .homeButtonIcon {
     display: block;
     width: 24px;
@@ -162,12 +167,36 @@ body::-webkit-scrollbar {
     background-position: center;
     background-size: cover;
 
-    background-image: url(../icons/home.svg);
+    background-image: url(../icons/cards.svg);
     border: none;
     padding: 0;
     z-index: 1000;
     cursor: pointer;
     -webkit-tap-highlight-color: transparent;
+}
+
+.BackButtonIcon {
+    display: block;
+    width: 24px;
+    height: 24px;
+    align-self: center;
+    aspect-ratio: 1;
+    margin: 12px;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    background-image: url(../icons/back.svg);
+    border: none;
+    padding: 0;
+    z-index: 1000;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.backButton {
+    display: none;
 }
 
 .mobileMenu {

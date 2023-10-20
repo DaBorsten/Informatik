@@ -1,6 +1,9 @@
 "use strict";
 const contentSectionWrapper = document.querySelector('.contentSectionWrapper');
 const course_template = document.getElementById('detailed_course_template');
+let courseOpen = false;
+const homeButton = document.querySelector('.homeButton');
+const backButton = document.querySelector('.backButton');
 function createCourseCard(url, index) {
     if (contentSectionWrapper !== null) {
         contentSectionWrapper.innerHTML = '';
@@ -117,6 +120,7 @@ function createCourseCard(url, index) {
             if (contentSectionWrapper !== null) {
                 contentSectionWrapper.appendChild(courseCard);
             }
+            courseOpen = true;
         }
     })
         .catch(error => console.error('Fehler beim Laden der JSON-Daten:', error));
@@ -128,16 +132,45 @@ function showCourse(e) {
         if (index) {
             if (document.title == "HTML") {
                 createCourseCard("json/html.json", index);
+                courseOpen = true;
+                changeNavigation(courseOpen);
             }
             else if (document.title == "JavaScript") {
                 createCourseCard("json/javascript.json", index);
+                courseOpen = true;
+                changeNavigation(courseOpen);
             }
             else if (document.title == "Datenbanken") {
                 createCourseCard("json/datenbanken.json", index);
+                courseOpen = true;
+                changeNavigation(courseOpen);
             }
             else if (document.title == "Aufgaben") {
                 createCourseCard("json/aufgaben.json", index);
+                courseOpen = true;
+                changeNavigation(courseOpen);
             }
+        }
+    }
+}
+changeNavigation(courseOpen);
+function changeNavigation(courseOpen) {
+    if (courseOpen) {
+        // Show Back Button and hide Home Button
+        if (homeButton != null) {
+            homeButton.style.display = 'none';
+        }
+        if (backButton != null) {
+            backButton.style.display = 'flex';
+        }
+    }
+    else {
+        // Show Home Button and hide Back Button
+        if (homeButton != null) {
+            homeButton.style.display = 'flex';
+        }
+        if (backButton != null) {
+            backButton.style.display = 'none';
         }
     }
 }

@@ -40,9 +40,17 @@
 <body data-theme="dark">
     <div class="mobileTopBar">
 
-        <button class="mobileTopBarButtons" onclick="window.location.href='./'" aria-label="Homebutton">
-            <div class="homeButtonIcon"></div>
-        </button>
+        <div class="homeAndBackButton">
+
+            <button class="mobileTopBarButtons homeButton" onclick="window.location.href='./'" aria-label="Homebutton">
+                <div class="homeButtonIcon"></div>
+            </button>
+
+            <button class="mobileTopBarButtons backButton" onclick="window.location.reload()" aria-label="Backbutton">
+                <div class="BackButtonIcon"></div>
+            </button>
+
+        </div>
 
         <div class="themeAndNavigation">
 

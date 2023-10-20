@@ -82,13 +82,14 @@ const imagesToPrecache = [
   'courses/datenbanken/files/DB_Musiksammlung.xlsx',
   'courses/datenbanken/pictures/DB_Beziehungen.webp',
   // Icons
-  'icons/home.svg',
   'icons/close.svg',
   'icons/menu.svg',
   'icons/learn.svg',
   'icons/links.svg',
   'icons/download.svg',
   'icons/searchFail.svg',
+  'icons/back.svg',
+  'icons/cards.svg',
   // Course Icons
   'icons/courseIcons/code.svg',
   'icons/courseIcons/database.svg',
