@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vor- und Nachname</title>
+    <link rel="stylesheet" type="text/css" href="default.css">
+
+    <script>
+        function namenZusammensetzten() {
+            let vorname = document.getElementById('vorname');
+            let nachname = document.getElementById('nachname');
+
+            let anzahlZeichen = document.getElementById('anzahlZeichen');
+            let nameZusammengesetzt = document.getElementById('nameZusammengesetzt');
+
+            // Das Komma soll nur da sein, wenn bei beiden Feldern etwas drin steht
+            if (vorname.value != '' && nachname.value != '') {
+                nameZusammengesetzt.innerText = `${nachname.value}, ${vorname.value}`;
+            } else if (vorname.value != '') {
+                nameZusammengesetzt.innerText = `${vorname.value}`;
+            } else {
+                nameZusammengesetzt.innerText = `${nachname.value}`;
+            }
+        }
+    </script>
+</head>
+
+<body>
+
+    <h1>Vor- und Nachname</h1>
+
+    <p>Bitte geben Sie Ihren Vor- und Nachnamen an:</p>
+
+    <table>
+        <tr>
+            <td>Vorname:</td>
+            <td><input type="text" id="vorname" oninput="namenZusammensetzten()"></td>
+        </tr>
+        <tr>
+            <td>Nachname:</td>
+            <td><input type="text" id="nachname" oninput="namenZusammensetzten()"></td>
+        </tr>
+        <tr>
+            <td>Name:</td>
+            <td>
+                <span id="nameZusammengesetzt"></span>
+            </td>
+        </tr>
+    </table>
+
+</body>
+
+</html>

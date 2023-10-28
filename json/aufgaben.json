@@ -119,6 +119,108 @@
         }
     },
     {
+        "title": "(D1) Variablen",
+        "description": "In Variablen können Daten mit verschiedenen Datentypen gespeichert werden.",
+        "difficulty": 1,
+        "pictures": [
+            {
+                "heading": "HTML Teil",
+                "src": "courses/aufgaben/pictures/A_D1.webp",
+                "alt": "Variablen",
+                "width": "1520",
+                "height": "854"
+            }
+        ],
+        "download": {
+            "button_link": "courses/aufgaben/files/A_D1.html"
+        }
+    },
+    {
+        "title": "(D2) Variablen",
+        "description": "Variablen können verändert werden und zum Rechnen verwendet werden.",
+        "difficulty": 1,
+        "pictures": [
+            {
+                "heading": "HTML Teil",
+                "src": "courses/aufgaben/pictures/A_D2.webp",
+                "alt": "Variablen",
+                "width": "1520",
+                "height": "1158"
+            }
+        ],
+        "download": {
+            "button_link": "courses/aufgaben/files/A_D2.html"
+        }
+    },
+    {
+        "title": "(D3) Mathematische Berechnungen",
+        "description": "Anwendungsbeispiele von Math.sqrt und Math.pow",
+        "difficulty": 2,
+        "pictures": [
+            {
+                "heading": "HTML Teil",
+                "src": "courses/aufgaben/pictures/A_D3.webp",
+                "alt": "Math Funktionen",
+                "width": "1520",
+                "height": "1462"
+            }
+        ],
+        "download": {
+            "button_link": "courses/aufgaben/files/A_D3.html"
+        }
+    },
+    {
+        "title": "(D4) Würfelspiel",
+        "description": "Beim Drücken auf würfeln wird eine zufällige Zahl ausgegeben.",
+        "difficulty": 2,
+        "pictures": [
+            {
+                "heading": "HTML Teil",
+                "src": "courses/aufgaben/pictures/A_D4.webp",
+                "alt": "Math Funktionen",
+                "width": "1520",
+                "height": "1272"
+            }
+        ],
+        "download": {
+            "button_link": "courses/aufgaben/files/A_D4.html"
+        }
+    },
+    {
+        "title": "(D5) BMI Rechner",
+        "description": "Programm zum Ausrechnen des BMI.",
+        "difficulty": 2,
+        "pictures": [
+            {
+                "heading": "HTML Teil",
+                "src": "courses/aufgaben/pictures/A_D5.webp",
+                "alt": "Math Funktionen",
+                "width": "1520",
+                "height": "1956"
+            }
+        ],
+        "download": {
+            "button_link": "courses/aufgaben/files/A_D5.html"
+        }
+    },
+    {
+        "title": "(D6) Vor- und Nachname",
+        "description": "Setzt zwei Strings zusammen.",
+        "difficulty": 1,
+        "pictures": [
+            {
+                "heading": "HTML Teil",
+                "src": "courses/aufgaben/pictures/A_D6.webp",
+                "alt": "Math Funktionen",
+                "width": "1520",
+                "height": "2222"
+            }
+        ],
+        "download": {
+            "button_link": "courses/aufgaben/files/A_D6.html"
+        }
+    },
+    {
         "title": "Schrauben-Discount",
         "description": "Hier findet ihr den allgemeinen Aufbau von der \"Schrauben-Discount\" Aufgabe. Hierbei wurden die Aufgaben zwecks der Übersichtlichkeit nur in simpelster Form umgesetzt.",
         "difficulty": 2,

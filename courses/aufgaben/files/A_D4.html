@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Benutzereingabe - Beispiel</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="default.css">
+	<script>
+		function zufall() {
+			let a = Math.floor(6 * Math.random()) + 1;
+			document.getElementById('zahl').innerHTML = a;
+		}
+
+		// Damit man die Aktualisierung der Zahl sieht
+		// falls die Zahl gleich bleibt
+		function loesche() {
+			document.getElementById('zahl').innerHTML = '';
+		}
+	</script>
+</head>
+
+<body>
+
+	<p>Drücken sie auf "würfeln" und eine Zahl zu würfeln</p>
+	<button onclick="zufall()" onmousedown="loesche()">würfeln</button>
+	<p>Augenzahl: <span id="zahl"></span></p>
+
+</body>
+
+</html>
