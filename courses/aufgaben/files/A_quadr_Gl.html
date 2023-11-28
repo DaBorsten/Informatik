@@ -29,30 +29,40 @@
     <p id="Ergebnisse"></p>
 
     <script>
-        function loesen() {
-            const a = Number(document.getElementById('a').value)
-            const b = Number(document.getElementById('b').value)
-            const c = Number(document.getElementById('c').value)
+        function loesen()
+        {
+            const a = Number(document.getElementById('a').value);
+            const b = Number(document.getElementById('b').value);
+            const c = Number(document.getElementById('c').value);
 
-            const ergebnisse = document.getElementById('Ergebnisse')
+            const ergebnisse = document.getElementById('Ergebnisse');
 
-            const diskriminante = b * b - 4 * a * c
+            let x1;
+            let x2;
 
-            let x1
-            let x2
+            if (a === 0)
+            {
+                x1 = (-c) / b;
+                return ergebnisse.innerHTML = `x = ${x1}`;
+            }
 
-            if (diskriminante > 0) {
-                x1 = (-b + Math.sqrt(diskriminante)) / (2 * a)
-                x2 = (-b - Math.sqrt(diskriminante)) / (2 * a)
+            const diskriminante = b * b - 4 * a * c;
 
-                ergebnisse.innerHTML = `x1 = ${x1}<br>x2 = ${x2}`
+            if (diskriminante > 0)
+            {
+                x1 = (-b + Math.sqrt(diskriminante)) / (2 * a);
+                x2 = (-b - Math.sqrt(diskriminante)) / (2 * a);
 
-            } else if (diskriminante === 0) {
-                x1 = -b / (2 * a)
-                ergebnisse.innerHTML = `x = ${x1}`
+                ergebnisse.innerHTML = `x1 = ${x1}<br>x2 = ${x2}`;
 
-            } else {
-                ergebnisse.innerHTML = 'Diese Gleichung hat keine Lösungen.'
+            } else if (diskriminante === 0)
+            {
+                x1 = -b / (2 * a);
+                ergebnisse.innerHTML = `x = ${x1}`;
+
+            } else
+            {
+                ergebnisse.innerHTML = 'Diese Gleichung hat keine Lösungen.';
             }
         }
     </script>
