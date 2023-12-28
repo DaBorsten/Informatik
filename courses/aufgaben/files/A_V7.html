@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quadratische Gleichung</title>
+</head>
+
+<body>
+
+    <h1>Quadratische Gleichungen</h1>
+
+    <p>Geben Sie die Werte für a, b und c ein, um die Lösungen für die
+        quadratische Gleichung ax<sup>2</sup> + bx + c = 0 zu berechnen:</p>
+
+    <span>a:</span>
+    <input id="a"><br>
+
+    <span>b:</span>
+    <input id="b"><br>
+
+    <span>c:</span>
+    <input id="c"><br><br>
+
+    <button onclick="loesen()">Berechnen</button>
+
+    <p>Lösungen: <span id="Ergebnisse"></span></p>
+
+    <script>
+        function loesen() {
+            const a = Number(document.getElementById('a').value);
+            const b = Number(document.getElementById('b').value);
+            const c = Number(document.getElementById('c').value);
+
+            const ergebnisse = document.getElementById('Ergebnisse');
+
+            let x1;
+            let x2;
+
+
+            if (a === 0 && b === 0 && c === 0) {
+                // Überprüfe ob unendlich viele Lösungen
+                ergebnisse.innerText = 'ℝ';
+                return;
+
+            } else if (a === 0 && b === 0) {
+                // Überprüfe ob Gleichung mit x
+                ergebnisse.innerText = '{}';
+                return;
+
+            } else if (a === 0) {
+                // Überprüfe ob keine quadratische Gleichung
+                x1 = -c / b;
+                ergebnisse.innerText = `{${(x1 <= 0 ? "" : "+") + x1}}`;
+                return;
+            }
+
+            const diskriminante = b * b - 4 * a * c;
+
+            if (diskriminante > 0) {
+                x1 = (-b + Math.sqrt(diskriminante)) / (2 * a);
+                x2 = (-b - Math.sqrt(diskriminante)) / (2 * a);
+
+                if (x1 < x2) {
+                    // Schreibe '+' vor positive Zahlen
+                    // mit Ternary Operator: Bedingung ? wenn richtig : sonst
+                    ergebnisse.innerText = `{${(x1 <= 0 ? "" : "+") + x1}; 
+                                            ${(x2 <= 0 ? "" : "+") + x2}}`;
+                } else {
+                    ergebnisse.innerText = `{${(x2 <= 0 ? "" : "+") + x2}; 
+                                            ${(x1 <= 0 ? "" : "+") + x1}}`;
+                }
+
+            } else if (diskriminante === 0) {
+                x1 = -b / (2 * a);
+                ergebnisse.innerText = `{${(x1 <= 0 ? "" : "+") + x1}}`;
+
+            } else {
+                ergebnisse.innerText = '{}';
+            }
+        }
+    </script>
+
+</body>
+
+</html>

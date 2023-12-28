@@ -124,7 +124,7 @@
         "difficulty": 1,
         "pictures": [
             {
-                "heading": "HTML Teil",
+                "heading": "Code",
                 "src": "courses/aufgaben/pictures/A_D1.webp",
                 "alt": "Variablen",
                 "width": "1520",
@@ -141,7 +141,7 @@
         "difficulty": 1,
         "pictures": [
             {
-                "heading": "HTML Teil",
+                "heading": "Code",
                 "src": "courses/aufgaben/pictures/A_D2.webp",
                 "alt": "Variablen",
                 "width": "1520",
@@ -158,7 +158,7 @@
         "difficulty": 2,
         "pictures": [
             {
-                "heading": "HTML Teil",
+                "heading": "Code",
                 "src": "courses/aufgaben/pictures/A_D3.webp",
                 "alt": "Math Funktionen",
                 "width": "1520",
@@ -175,7 +175,7 @@
         "difficulty": 2,
         "pictures": [
             {
-                "heading": "HTML Teil",
+                "heading": "Code",
                 "src": "courses/aufgaben/pictures/A_D4.webp",
                 "alt": "Math Funktionen",
                 "width": "1520",
@@ -192,9 +192,9 @@
         "difficulty": 2,
         "pictures": [
             {
-                "heading": "HTML Teil",
+                "heading": "Code",
                 "src": "courses/aufgaben/pictures/A_D5.webp",
-                "alt": "Math Funktionen",
+                "alt": "BMI Rechner",
                 "width": "1520",
                 "height": "1956"
             }
@@ -209,9 +209,9 @@
         "difficulty": 1,
         "pictures": [
             {
-                "heading": "HTML Teil",
+                "heading": "Code",
                 "src": "courses/aufgaben/pictures/A_D6.webp",
-                "alt": "Math Funktionen",
+                "alt": "Vor- und Nachname",
                 "width": "1520",
                 "height": "2222"
             }
@@ -221,75 +221,136 @@
         }
     },
     {
-        "title": "Schrauben-Discount",
+        "title": "(V1) BMI-Rechner mit Warnung",
+        "description": "Zeigt eine Warnung an, wenn der BMI über 24 ist.",
+        "difficulty": 1,
+        "pictures": [
+            {
+                "heading": "Code",
+                "src": "courses/aufgaben/pictures/A_V1.webp",
+                "alt": "BMI-Rechner mit Warnung",
+                "width": "1520",
+                "height": "2108"
+            }
+        ],
+        "download": {
+            "button_link": "courses/aufgaben/files/A_V1.html"
+        }
+    },
+    {
+        "title": "(V2) Schrauben-Discount",
         "description": "Hier findet ihr den allgemeinen Aufbau von der \"Schrauben-Discount\" Aufgabe. Hierbei wurden die Aufgaben zwecks der Übersichtlichkeit nur in simpelster Form umgesetzt.",
         "difficulty": 2,
         "pictures": [
             {
                 "heading": "HTML Teil",
-                "src": "courses/aufgaben/pictures/A_schrauben_HTML.webp",
+                "src": "courses/aufgaben/pictures/A_V2_HTML.webp",
                 "alt": "Schrauben HTML",
                 "width": "1520",
                 "height": "854"
             },
             {
                 "heading": "JavaScript Teil",
-                "src": "courses/aufgaben/pictures/A_schrauben_JS.webp",
+                "src": "courses/aufgaben/pictures/A_V2_JS.webp",
                 "alt": "Schrauben JavaScript",
                 "width": "1520",
                 "height": "778"
             }
         ],
         "download": {
-            "button_link": "courses/aufgaben/files/A_Schrauben_Discount.html"
+            "button_link": "courses/aufgaben/files/A_V2.html"
         }
     },
     {
-        "title": "BMI-Rechner mit Bedingungen",
+        "title": "(V3) Radizieren",
+        "description": "Berechnet die Wurzel von einer positiven Zahl.",
+        "difficulty": 1,
+        "pictures": [
+            {
+                "heading": "Code",
+                "src": "courses/aufgaben/pictures/A_V3.webp",
+                "alt": "Radizieren",
+                "width": "1520",
+                "height": "1690"
+            }
+        ],
+        "download": {
+            "button_link": "courses/aufgaben/files/A_V3.html"
+        }
+    },
+    {
+        "title": "(V4) Y2K Problem",
+        "description": "Berechnet das Alter durch das Geburtsjahr und das aktuelle Jahr.",
+        "difficulty": 2,
+        "pictures": [
+            {
+                "heading": "Code",
+                "src": "courses/aufgaben/pictures/A_V4.webp",
+                "alt": "Y2K Problem",
+                "width": "1520",
+                "height": "2146"
+            }
+        ],
+        "download": {
+            "button_link": "courses/aufgaben/files/A_V4.html"
+        }
+    },
+    {
+        "title": "(V5) Tanken in Osterreich",
+        "description": "Berechnet, ob sich das Tanken in Österreich lohnt.",
+        "difficulty": 2,
+        "pictures": [
+            {
+                "heading": "Code",
+                "src": "courses/aufgaben/pictures/A_V5.webp",
+                "alt": "Tanken in Osterreich",
+                "width": "1520",
+                "height": "3172"
+            }
+        ],
+        "download": {
+            "button_link": "courses/aufgaben/files/A_V5.html"
+        }
+    },
+    {
+        "title": "(V6) BMI-Rechner mit Einstufungen",
         "description": "BMI-Rechner mit Bedingungen für Einstufung der WHO.",
         "difficulty": 1,
         "pictures": [
             {
                 "heading": "HTML Teil",
-                "src": "courses/aufgaben/pictures/A_BMI_If_Statements_HTML.webp",
+                "src": "courses/aufgaben/pictures/A_V6_HTML.webp",
                 "alt": "BMI HTML",
                 "width": "1520",
                 "height": "1044"
             },
             {
                 "heading": "JavaScript Teil",
-                "src": "courses/aufgaben/pictures/A_BMI_If_Statements_JS.webp",
+                "src": "courses/aufgaben/pictures/A_V6_JS.webp",
                 "alt": "BMI JavaScript",
                 "width": "1520",
                 "height": "1082"
             }
         ],
         "download": {
-            "button_link": "courses/aufgaben/files/A_BMI_Rechner.html"
+            "button_link": "courses/aufgaben/files/A_V6.html"
         }
     },
     {
-        "title": "Quadratische Gleichungen",
+        "title": "(V7) Quadratische Gleichungen",
         "description": "Programm zum Lösen quadratischer Gleichungen.",
         "difficulty": 2,
         "pictures": [
             {
-                "heading": "HTML Teil",
-                "src": "courses/aufgaben/pictures/A_quadratische_Gleichung_HTML.webp",
-                "alt": "Quadratische Gleichungen HTML",
+                "heading": "Code",
+                "src": "courses/aufgaben/pictures/A_V7.webp",
+                "alt": "Quadratische Gleichungen",
                 "width": "1520",
-                "height": "816"
-            },
-            {
-                "heading": "JavaScript Teil",
-                "src": "courses/aufgaben/pictures/A_quadratische_Gleichung_JS.webp",
-                "alt": "Quadratische Gleichungen JavaScript",
-                "width": "1520",
-                "height": "1424"
+                "height": "3438"
             }
         ],
         "download": {
-            "button_link": "courses/aufgaben/files/A_quadr_Gl.html"
+            "button_link": "courses/aufgaben/files/A_V7.html"
         }
     },
     {

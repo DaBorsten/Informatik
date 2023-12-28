@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radizieren</title>
+
+    <script>
+
+        function wurzelBerechnen() {
+            let zahl = Number(document.getElementById('zahl').value);
+            let ausgabe = document.getElementById('ausgabe');
+
+
+            if (zahl < 0) {
+                ausgabe.innerHTML = '';
+                alert('Die Zahl ist negativ.');
+            } else {
+                ausgabe.innerHTML = (Math.sqrt(zahl)).toFixed(2).replace('.', ',');
+            }
+        }
+
+    </script>
+
+</head>
+
+<body>
+
+    <h1>Wurzel berechen</h1>
+
+    <input id="zahl" placeholder="Zahl eingeben">
+    <br><br>
+    <button onclick="wurzelBerechnen()">Wurzel berechnen</button>
+
+    <p>Die Wurzel von der Zahl ist: <span id="ausgabe"></span></p>
+
+</body>
+
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Y2K Problem</title>
+
+    <script>
+        function berechneAlter() {
+            const geburtsjahr = Number(document.getElementById('geburtsjahr').value);
+            const aktuellesjahr = Number(document.getElementById('aktuellesjahr').value);
+            const alterAusgabe = document.getElementById('alter');
+            let alter;
+
+            if (geburtsjahr < 0 || aktuellesjahr < 0) {
+                alert('Bitte geben Sie nur positive Zahlen ein!');
+                alterAusgabe.innerHTML = '';
+                return;
+            }
+
+            if (geburtsjahr.toString().length > 2 || aktuellesjahr.toString().length > 2) {
+                alert('Bitte geben Sie nur die letzten zwei Ziffern ein!');
+                alterAusgabe.innerHTML = '';
+                return;
+            }
+
+            if (geburtsjahr < aktuellesjahr) {
+                alter = aktuellesjahr - geburtsjahr;
+            } else {
+                alter = aktuellesjahr + 100 - geburtsjahr;
+            }
+
+            alterAusgabe.innerHTML = alter;
+        }
+    </script>
+
+</head>
+
+<body>
+
+    <label for="geburtsjahr">Geburtsjahr (letzten 2 Ziffern): </label>
+    <input type="number" id="geburtsjahr" min="0" max="99">
+    <br>
+    <label for="aktuellesjahr">Aktuelles Jahr (letzten 2 Ziffern): </label>
+    <input type="number" id="aktuellesjahr" min="0" max="99">
+    <br>
+    <button onclick="berechneAlter()">Alter berechnen</button>
+    <p>Dein Alter ist: <span id="alter"></span></p>
+
+</body>
+
+</html>

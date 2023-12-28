@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Günstig Tanken</title>
+
+    <script>
+        function prüfen() {
+            let literPreisDe = Number(document.getElementById('literPreisDe').value.replace(',', '.'));
+            let literPreisAt = Number(document.getElementById('literPreisAt').value.replace(',', '.'));
+            let verbrauch = Number(document.getElementById('verbrauch').value.replace(',', '.'));
+            let umweg = Number(document.getElementById('umweg').value.replace(',', '.'));
+            let tankmenge = Number(document.getElementById('tankmenge').value.replace(',', '.'));
+
+            let ergebnis = document.getElementById('ergebnis');
+
+            if (literPreisDe && literPreisAt && verbrauch && umweg && tankmenge > 0) {
+                if (literPreisDe < literPreisAt) {
+                    ergebnis.innerHTML = 'Lohnt sich preislich nicht.';
+                } else if (verbrauch / 100 * umweg > tankmenge) {
+                    ergebnis.innerHTML = 'Lohnt sich nicht, da man wenn man dort tankt weniger im Tank hat als gerade.';
+                } else {
+                    let gespart = (literPreisDe * tankmenge) - (literPreisAt * tankmenge);
+                    ergebnis.innerHTML = `Lohnt sich. Sie können ${gespart.toFixed(2)} € einsparen.`;
+                }
+            } return;
+        }
+    </script>
+
+</head>
+
+<body>
+    <h1>Billiger Tanken</h1>
+
+    <p>Bitte geben Sie folgende Größen an:</p>
+
+    <table>
+        <tr>
+            <th>Preis pro Liter in DE</th>
+            <td><input id="literPreisDe"></td>
+        </tr>
+
+        <tr>
+            <th>Preis pro Liter in AT</th>
+            <td><input id="literPreisAt"></td>
+        </tr>
+
+        <tr>
+            <th>Verbrauch in l/ 100km</th>
+            <td><input id="verbrauch"></td>
+        </tr>
+
+        <tr>
+            <th>Umweg Tanken AT in km</th>
+            <td><input id="umweg"></td>
+        </tr>
+
+        <tr>
+            <th>Tankmenge in l</th>
+            <td><input id="tankmenge"></td>
+        </tr>
+    </table>
+
+    <button onclick="prüfen()">prüfen</button>
+
+    <p id="ergebnis"></p>
+
+</body>
+
+</html>
