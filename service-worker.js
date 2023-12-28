@@ -6,12 +6,12 @@ if ('serviceWorker' in navigator) {
           console.log('Registrierung erfolgreich. Der Scope ist ' + registration.scope)
         }) */
     .catch(err => {
-      console.log(err)
-    })
+      console.log(err);
+    });
 }
 
-const cacheName = 'cache-v1'
-const cacheNameImages = 'cache-images-v1'
+const cacheName = 'cache-v1';
+const cacheNameImages = 'cache-images-v1';
 const resourcesToPrecache = [
   /* '/informatik/', */
   'index.html',
@@ -37,7 +37,7 @@ const resourcesToPrecache = [
   'json/datenbanken.json',
 
   'webmanifest.json'
-]
+];
 const imagesToPrecache = [
   // HTML
   'courses/html/pictures/HTML_Grundstruktur.webp',
@@ -59,12 +59,24 @@ const imagesToPrecache = [
   'courses/aufgaben/pictures/A_H5.webp',
   'courses/aufgaben/pictures/A_H6.webp',
   'courses/aufgaben/pictures/A_H7.webp',
-  'courses/aufgaben/pictures/A_schrauben_HTML.webp',
-  'courses/aufgaben/pictures/A_schrauben_JS.webp',
-  'courses/aufgaben/pictures/A_BMI_If_Statements_HTML.webp',
-  'courses/aufgaben/pictures/A_BMI_If_Statements_JS.webp',
-  'courses/aufgaben/pictures/A_quadratische_Gleichung_HTML.webp',
-  'courses/aufgaben/pictures/A_quadratische_Gleichung_JS.webp',
+
+  'courses/aufgaben/pictures/A_D1.webp',
+  'courses/aufgaben/pictures/A_D2.webp',
+  'courses/aufgaben/pictures/A_D3.webp',
+  'courses/aufgaben/pictures/A_D4.webp',
+  'courses/aufgaben/pictures/A_D5.webp',
+  'courses/aufgaben/pictures/A_D6.webp',
+
+  'courses/aufgaben/pictures/A_V1.webp',
+  'courses/aufgaben/pictures/A_V2_HTML.webp',
+  'courses/aufgaben/pictures/A_V2_JS.webp',
+  'courses/aufgaben/pictures/A_V3.webp',
+  'courses/aufgaben/pictures/A_V4.webp',
+  'courses/aufgaben/pictures/A_V5.webp',
+  'courses/aufgaben/pictures/A_V6_HTML.webp',
+  'courses/aufgaben/pictures/A_V6_JS.webp',
+  'courses/aufgaben/pictures/A_V7.webp',
+
   'courses/aufgaben/pictures/A_zahlenraten_HTML.webp',
   'courses/aufgaben/pictures/A_zahlenraten_JS.webp',
   'courses/aufgaben/pictures/A_Collatz_HTML.webp',
@@ -107,17 +119,17 @@ const imagesToPrecache = [
   'favicons/android-chrome-512x512.png',
   'favicons/android-chrome-192x192-2.png',
   'favicons/android-chrome-512x512-2.png'
-]
+];
 
 self.addEventListener('install', event => {
-  console.log('Service worker install event!')
+  console.log('Service worker install event!');
   event.waitUntil(
     Promise.all([
       caches.open(cacheName).then(cache => {
-        return cache.addAll(resourcesToPrecache)
+        return cache.addAll(resourcesToPrecache);
       }),
       caches.open(cacheNameImages).then(cache => {
-        return cache.addAll(imagesToPrecache)
+        return cache.addAll(imagesToPrecache);
       })
     ])
   );
@@ -164,7 +176,7 @@ self.addEventListener('fetch', event => {
 
 
 self.addEventListener('activate', event => {
-  console.log('Activate event!')
+  console.log('Activate event!');
   event.waitUntil(
     caches.keys().then(cacheNames => {
       return Promise.all(
