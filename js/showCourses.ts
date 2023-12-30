@@ -25,7 +25,7 @@ function createCourseCard(url: string, index: any) {
 
                 const picturesWrapper = courseCard.querySelector('[data-detailed-card-pictures-wrapper]');
 
-                const download = courseCard.querySelector('[data-detailed-card-download]');
+                const downloadWrapper = courseCard.querySelector('[data-detailed-card-download-wrapper]');
                 const learn_more = courseCard.querySelector('[data-detailed-card-learn-more]');
 
                 // Title
@@ -97,18 +97,27 @@ function createCourseCard(url: string, index: any) {
 
                 if ("learn_more" in selectedCourse || "download" in selectedCourse) {
                     // Download Button
-                    if (download !== null) {
+                    if (downloadWrapper !== null) {
                         if ("download" in selectedCourse) {
-                            if (selectedCourse.download.button_link === "") {
-                                download.remove();
-                            }
-                            else {
-                                download.setAttribute("href", selectedCourse.download.button_link);
-                                download.textContent = selectedCourse.download.button_link.split("/").pop();
-                                download.setAttribute("download", "");
-                            }
+
+                            selectedCourse.download.forEach((downloadLink: any) => {
+                                if (downloadLink === "") {
+                                    /* download.remove(); */
+                                    return
+                                }
+                                else {
+                                    let downloadButton = document.createElement("a")
+                                    downloadButton.classList.add('actionButton')
+                                    downloadButton.setAttribute("data-detailed-card-download", "")
+                                    downloadButton.setAttribute("href", downloadLink);
+                                    downloadButton.textContent = downloadLink.split("/").pop();
+                                    downloadButton.setAttribute("download", "");
+                                    downloadWrapper.appendChild(downloadButton)
+                                }
+                            });
+
                         } else {
-                            download.remove();
+                            downloadWrapper.remove();
                         }
                     }
                     // Learn More Button

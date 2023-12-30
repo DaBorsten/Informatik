@@ -12,9 +12,9 @@
                 "height": "702"
             }
         ],
-        "download": {
-            "button_link": "courses/javascript/files/JS_Variablen.html"
-        }
+        "download": [
+            "courses/javascript/files/JS_Variablen.html"
+        ]
     },
     {
         "title": "Einfache Datentypen",
@@ -29,9 +29,9 @@
                 "height": "702"
             }
         ],
-        "download": {
-            "button_link": "courses/javascript/files/JS_Datentypen.html"
-        }
+        "download": [
+            "courses/javascript/files/JS_Datentypen.html"
+        ]
     },
     {
         "title": "Logische Operatoren",
@@ -46,9 +46,9 @@
                 "height": "630"
             }
         ],
-        "download": {
-            "button_link": "courses/javascript/pictures/JS_logische_Operatoren.webp"
-        }
+        "download": [
+            "courses/javascript/pictures/JS_logische_Operatoren.webp"
+        ]
     },
     {
         "title": "if else (Bedingungen)",
@@ -63,9 +63,9 @@
                 "height": "588"
             }
         ],
-        "download": {
-            "button_link": "courses/javascript/files/JS_if_else.html"
-        }
+        "download": [
+            "courses/javascript/files/JS_if_else.html"
+        ]
     },
     {
         "title": "lokale vs. globale Variablen",
@@ -80,9 +80,9 @@
                 "height": "1652"
             }
         ],
-        "download": {
-            "button_link": "courses/javascript/files/JS_lok_vs_glob_var.html"
-        }
+        "download": [
+            "courses/javascript/files/JS_lok_vs_glob_var.html"
+        ]
     },
     {
         "title": "kopfgesteuerte Schleifen (while)",
@@ -97,8 +97,8 @@
                 "height": "1120"
             }
         ],
-        "download": {
-            "button_link": "courses/javascript/files/JS_kopfgest_schleifen.html"
-        }
+        "download": [
+            "courses/javascript/files/JS_kopfgest_schleifen.html"
+        ]
     }
 ]

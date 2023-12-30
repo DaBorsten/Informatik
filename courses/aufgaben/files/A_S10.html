@@ -24,39 +24,41 @@
 
 
     <script>
+
         function testen() {
-            let eingabewert = document.getElementById('eingabe').value
-            let zahl = Number(eingabewert)
-            let prim = true
-            let ergebnis = document.getElementById('ergebnis')
+            let eingabewert = document.getElementById('eingabe').value;
+            let zahl = Number(eingabewert);
+            let prim = true;
+            let ergebnis = document.getElementById('ergebnis');
 
             if (eingabewert === "") {
-                return alert("Geben Sie einen Wert ein!")
+                return alert("Geben Sie einen Wert ein!");
             }
 
             if (isNaN(zahl)) {
-                return alert("Geben sie eine Zahl ein!")
+                return alert("Geben sie eine Zahl ein!");
             }
 
             if (zahl < 0) {
-                return alert("Es werden nur positive Zahlen akzeptiert!")
+                return alert("Es werden nur positive Zahlen akzeptiert!");
             }
 
             if (zahl === 0 || zahl === 1) {
-                return ergebnis.innerHTML = 'Falsch'
+                return ergebnis.innerHTML = 'Falsch';
             }
 
 
             for (let i = 2; i * i <= zahl && prim === true; i++) {
 
                 if (zahl % i === 0) {
-                    prim = false
+                    prim = false;
                 }
 
             }
 
-            (prim === true) ? ergebnis.innerHTML = 'Wahr' : ergebnis.innerHTML = 'Falsch'
+            (prim === true) ? ergebnis.innerHTML = 'Wahr' : ergebnis.innerHTML = 'Falsch';
         }
+
     </script>
 </body>
 

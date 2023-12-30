@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fakultät</title>
+
+    <script>
+        function berechen() {
+            let zahl = Number(document.getElementById('eingabe').value);
+            let fakultät = document.getElementById('fakultät');
+            let zusammengerechnet = 1;
+
+            if (zahl < 0) {
+                fakultät.innerHTML = '';
+                return alert('Bitte nur Natürliche Zahlen eingeben!');
+            }
+
+            for (let i = zahl; i > 0; i--) {
+                zusammengerechnet *= i;
+            }
+
+            fakultät.innerHTML = zusammengerechnet;
+        }
+    </script>
+
+</head>
+
+<body>
+
+    <h1>Fakultät berechnen</h1>
+
+    <p>Bitte geben Sie eine natürliche Zahl ein. </p>
+
+    <input id="eingabe" type="text" placeholder="Natürliche Zahl">
+
+    <button onclick="berechen()">Fakultät berechnen</button>
+
+    <p>Die Fakultät ist: <span id="fakultät"></span></p>
+
+</body>
+
+</html>

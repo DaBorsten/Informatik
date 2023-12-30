@@ -4,9 +4,9 @@
         "description": "Dies ist eine Excel-Tabelle, die eine Musiksammlung enthält.",
         "difficulty": 1,
         "pictures": [],
-        "download": {
-            "button_link": "courses/datenbanken/files/DB_Musiksammlung.xlsx"
-        }
+        "download": [
+            "courses/datenbanken/files/DB_Musiksammlung.xlsx"
+        ]
     },
     {
         "title": "Datenbank-beziehungen",
@@ -20,8 +20,8 @@
                 "height": "1080"
             }
         ],
-        "download": {
-            "button_link": "courses/datenbanken/pictures/DB_Beziehungen.webp"
-        }
+        "download": [
+            "courses/datenbanken/pictures/DB_Beziehungen.webp"
+        ]
     }
 ]

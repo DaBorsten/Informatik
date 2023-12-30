@@ -468,7 +468,13 @@ img {
     background-size: 20px;
 }
 
+[data-detailed-card-download-wrapper] {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 
+    gap: 12px;
+}
 
 
 

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Summe über Zahlen</title>
+    <script>
+
+        function berechnen() {
+            const zahl1 = Number(document.getElementById("num1").value);
+            const zahl2 = Number(document.getElementById("num2").value);
+
+            let ausgabe = [];
+
+            const zahlenreihe = document.getElementById("zahlenreihe");
+            const summeDerZahlenreihe = document.getElementById("summeDerZahlenreihe");
+
+            if (isNaN(zahl1) || isNaN(zahl2)) {
+                return alert("Bitte geben Sie gültige Zahlen ein.");
+            }
+
+            if (zahl1 === zahl2) {
+                zahlenreihe.innerHTML = 'Die Zahlen: ' + zahl1 + ', ' + zahl2;
+                summeDerZahlenreihe.innerHTML = 'Summe: ' + zahl1 * 2;
+                return;
+            }
+
+            let kleinereZahl;
+            let groessereZahl;
+
+            if (zahl1 < zahl2) {
+                kleinereZahl = zahl1;
+                groessereZahl = zahl2;
+            } else {
+                kleinereZahl = zahl2;
+                groessereZahl = zahl1;
+            }
+
+            while (kleinereZahl <= groessereZahl) {
+                ausgabe.push(kleinereZahl);
+
+                kleinereZahl++;
+            }
+
+            let summe = ausgabe.reduce((teilsumme, a) => teilsumme + a, 0);
+
+            zahlenreihe.innerHTML = 'Die Zahlen: ' + ausgabe.join(', ');
+            summeDerZahlenreihe.innerHTML = 'Summe: ' + summe;
+        }
+
+    </script>
+
+</head>
+
+<body>
+    <label for="num1">Erste Zahl:</label><br>
+    <input type="text" id="num1"><br><br>
+
+    <label for="num2">Zweite Zahl:</label><br>
+    <input type="text" id="num2"><br><br>
+
+    <button onclick="berechnen()">Berechnen</button>
+
+    <p id="zahlenreihe"></p>
+    <p id="summeDerZahlenreihe"></p>
+</body>
+
+</html>

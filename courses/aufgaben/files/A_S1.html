@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zahlen addieren</title>
+</head>
+
+<body>
+
+    <h1>Nacheinander eingegebenen Zahlen addiert</h1>
+
+    <input type="text" id="eingabe">
+    <button onclick="addieren()">Addieren</button>
+
+    <p>Ergebnis: <span id="ergebnis">0</span></p>
+
+    <button onclick="reset()">Zurücksetzen</button>
+
+</body>
+
+<script>
+
+    let ergebnis = document.getElementById('ergebnis');
+    let summe = 0;
+
+    function addieren() {
+        let eingabe = Number(document.getElementById('eingabe').value);
+
+        if (isNaN(eingabe)) {
+            document.getElementById('eingabe').value = '';
+            return;
+        }
+
+        summe += eingabe;
+
+        document.getElementById('eingabe').value = '';
+
+        ergebnis.innerHTML = summe;
+    }
+
+    function reset() {
+        summe = 0;
+        ergebnis.innerHTML = 0;
+    }
+
+</script>
+
+</html>

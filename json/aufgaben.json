@@ -12,9 +12,9 @@
                 "height": "778"
             }
         ],
-        "download": {
-            "button_link": "courses/aufgaben/files/A_H1.html"
-        }
+        "download": [
+            "courses/aufgaben/files/A_H1.html"
+        ]
     },
     {
         "title": "(H2) Wikipedia",
@@ -29,9 +29,9 @@
                 "height": "930"
             }
         ],
-        "download": {
-            "button_link": "courses/aufgaben/files/A_H2.html"
-        }
+        "download": [
+            "courses/aufgaben/files/A_H2.html"
+        ]
     },
     {
         "title": "(H3) Buttons einfügen",
@@ -46,9 +46,9 @@
                 "height": "968"
             }
         ],
-        "download": {
-            "button_link": "courses/aufgaben/files/A_H3.html"
-        }
+        "download": [
+            "courses/aufgaben/files/A_H3.html"
+        ]
     },
     {
         "title": "(H4) Tabelle",
@@ -63,9 +63,9 @@
                 "height": "1576"
             }
         ],
-        "download": {
-            "button_link": "courses/aufgaben/files/A_H4.html"
-        }
+        "download": [
+            "courses/aufgaben/files/A_H4.html"
+        ]
     },
     {
         "title": "(H5) HTML Head vervollständigen",
@@ -80,9 +80,9 @@
                 "height": "1006"
             }
         ],
-        "download": {
-            "button_link": "courses/aufgaben/files/A_H5.html"
-        }
+        "download": [
+            "courses/aufgaben/files/A_H5.html"
+        ]
     },
     {
         "title": "(H6) Baumdiagramm H5",
@@ -97,9 +97,9 @@
                 "height": "760"
             }
         ],
-        "download": {
-            "button_link": "courses/aufgaben/files/A_H6.webp"
-        }
+        "download": [
+            "courses/aufgaben/files/A_H6.webp"
+        ]
     },
     {
         "title": "(H7) Begriffe klären",
@@ -114,9 +114,9 @@
                 "height": "1842"
             }
         ],
-        "download": {
-            "button_link": "courses/aufgaben/files/A_H7.txt"
-        }
+        "download": [
+            "courses/aufgaben/files/A_H7.txt"
+        ]
     },
     {
         "title": "(D1) Variablen",
@@ -131,9 +131,9 @@
                 "height": "854"
             }
         ],
-        "download": {
-            "button_link": "courses/aufgaben/files/A_D1.html"
-        }
+        "download": [
+            "courses/aufgaben/files/A_D1.html"
+        ]
     },
     {
         "title": "(D2) Variablen",
@@ -148,9 +148,9 @@
                 "height": "1158"
             }
         ],
-        "download": {
-            "button_link": "courses/aufgaben/files/A_D2.html"
-        }
+        "download": [
+            "courses/aufgaben/files/A_D2.html"
+        ]
     },
     {
         "title": "(D3) Mathematische Berechnungen",
@@ -165,9 +165,9 @@
                 "height": "1462"
             }
         ],
-        "download": {
-            "button_link": "courses/aufgaben/files/A_D3.html"
-        }
+        "download": [
+            "courses/aufgaben/files/A_D3.html"
+        ]
     },
     {
         "title": "(D4) Würfelspiel",
@@ -182,9 +182,9 @@
                 "height": "1272"
             }
         ],
-        "download": {
-            "button_link": "courses/aufgaben/files/A_D4.html"
-        }
+        "download": [
+            "courses/aufgaben/files/A_D4.html"
+        ]
     },
     {
         "title": "(D5) BMI Rechner",
@@ -199,9 +199,9 @@
                 "height": "1956"
             }
         ],
-        "download": {
-            "button_link": "courses/aufgaben/files/A_D5.html"
-        }
+        "download": [
+            "courses/aufgaben/files/A_D5.html"
+        ]
     },
     {
         "title": "(D6) Vor- und Nachname",
@@ -216,9 +216,9 @@
                 "height": "2222"
             }
         ],
-        "download": {
-            "button_link": "courses/aufgaben/files/A_D6.html"
-        }
+        "download": [
+            "courses/aufgaben/files/A_D6.html"
+        ]
     },
     {
         "title": "(V1) BMI-Rechner mit Warnung",
@@ -233,9 +233,9 @@
                 "height": "2108"
             }
         ],
-        "download": {
-            "button_link": "courses/aufgaben/files/A_V1.html"
-        }
+        "download": [
+            "courses/aufgaben/files/A_V1.html"
+        ]
     },
     {
         "title": "(V2) Schrauben-Discount",
@@ -257,9 +257,9 @@
                 "height": "778"
             }
         ],
-        "download": {
-            "button_link": "courses/aufgaben/files/A_V2.html"
-        }
+        "download": [
+            "courses/aufgaben/files/A_V2.html"
+        ]
     },
     {
         "title": "(V3) Radizieren",
@@ -274,9 +274,9 @@
                 "height": "1690"
             }
         ],
-        "download": {
-            "button_link": "courses/aufgaben/files/A_V3.html"
-        }
+        "download": [
+            "courses/aufgaben/files/A_V3.html"
+        ]
     },
     {
         "title": "(V4) Y2K Problem",
@@ -291,9 +291,9 @@
                 "height": "2146"
             }
         ],
-        "download": {
-            "button_link": "courses/aufgaben/files/A_V4.html"
-        }
+        "download": [
+            "courses/aufgaben/files/A_V4.html"
+        ]
     },
     {
         "title": "(V5) Tanken in Osterreich",
@@ -308,9 +308,9 @@
                 "height": "3172"
             }
         ],
-        "download": {
-            "button_link": "courses/aufgaben/files/A_V5.html"
-        }
+        "download": [
+            "courses/aufgaben/files/A_V5.html"
+        ]
     },
     {
         "title": "(V6) BMI-Rechner mit Einstufungen",
@@ -332,9 +332,9 @@
                 "height": "1082"
             }
         ],
-        "download": {
-            "button_link": "courses/aufgaben/files/A_V6.html"
-        }
+        "download": [
+            "courses/aufgaben/files/A_V6.html"
+        ]
     },
     {
         "title": "(V7) Quadratische Gleichungen",
@@ -349,169 +349,231 @@
                 "height": "3438"
             }
         ],
-        "download": {
-            "button_link": "courses/aufgaben/files/A_V7.html"
-        }
+        "download": [
+            "courses/aufgaben/files/A_V7.html"
+        ]
     },
     {
-        "title": "Zahlenraten",
+        "title": "BMI PAP",
+        "description": "Programmablaufplan für BMI-Rechner.",
+        "difficulty": 1,
+        "pictures": [
+            {
+                "heading": "PAP",
+                "src": "courses/aufgaben/pictures/A_BMI_PAP.svg",
+                "alt": "BMI PAP"
+            }
+        ],
+        "download": [
+            "courses/aufgaben/pictures/A_BMI_PAP.webp"
+        ]
+    },
+    {
+        "title": "(S1) Summieren",
+        "description": "Addiert die eingegebene Zahl zur Summe der Vorrechnung.",
+        "difficulty": 2,
+        "pictures": [
+            {
+                "heading": "Code",
+                "src": "courses/aufgaben/pictures/A_S1.webp",
+                "alt": "Summieren",
+                "width": "1520",
+                "height": "2184"
+            }
+        ],
+        "download": [
+            "courses/aufgaben/files/A_S1.html"
+        ]
+    },
+    {
+        "title": "(S2) Zahlenraten",
         "description": "Programm, bei dem man eine zufällig generierte Zahl erraten kann.",
         "difficulty": 2,
         "pictures": [
             {
-                "heading": "HTML Teil",
-                "src": "courses/aufgaben/pictures/A_zahlenraten_HTML.webp",
-                "alt": "Zahlenraten HTML",
+                "heading": "Code",
+                "src": "courses/aufgaben/pictures/A_S2.webp",
+                "alt": "Zahlenraten",
                 "width": "1520",
-                "height": "588"
+                "height": "3210"
             },
             {
-                "heading": "JavaScript Teil",
-                "src": "courses/aufgaben/pictures/A_zahlenraten_JS.webp",
-                "alt": "Zahlenraten JavaScript",
-                "width": "1520",
-                "height": "2032"
+                "heading": "PAP",
+                "src": "courses/aufgaben/pictures/A_S2_PAP.svg",
+                "alt": "Zahlenraten PAP"
             }
         ],
-        "download": {
-            "button_link": "courses/aufgaben/files/A_Zahlenraten.html"
-        }
+        "download": [
+            "courses/aufgaben/files/A_S2.html",
+            "courses/aufgaben/pictures/A_S2_PAP.webp"
+        ]
     },
     {
-        "title": "Collatz",
-        "description": "Collatz Zahlenreihe wird nach Eingabe einer Zahl ausgegeben.",
+        "title": "(S3) Summe über Zahlen",
+        "description": "Addiert die Zahlen zwischen zwei Zahlen.",
         "difficulty": 3,
         "pictures": [
             {
-                "heading": "HTML Teil",
-                "src": "courses/aufgaben/pictures/A_Collatz_HTML.webp",
-                "alt": "Collatz HTML",
+                "heading": "Code",
+                "src": "courses/aufgaben/pictures/A_S3.webp",
+                "alt": "Summe über Zahlen",
                 "width": "1520",
-                "height": "512"
-            },
-            {
-                "heading": "JavaScript Teil",
-                "src": "courses/aufgaben/pictures/A_Collatz_JS.webp",
-                "alt": "Collatz JavaScript",
-                "width": "1520",
-                "height": "2678"
+                "height": "3172"
             }
         ],
-        "download": {
-            "button_link": "courses/aufgaben/files/A_Collatz.html"
-        }
+        "download": [
+            "courses/aufgaben/files/A_S3.html"
+        ]
     },
     {
-        "title": "Tabelle",
-        "description": "Eine Tabelle wird dynamisch durch das Klicken auf einen Button erweitert.",
+        "title": "(S4) Tabellen",
+        "description": "Erzeuge dynamisch Tabellenreihen beim Klick auf einen Button.",
         "difficulty": 2,
         "pictures": [
             {
-                "heading": "HTML Teil",
-                "src": "courses/aufgaben/pictures/A_Tabelle_dynamisch_erstellen_HTML.webp",
-                "alt": "Tabelle HTML",
+                "heading": "Code",
+                "src": "courses/aufgaben/pictures/A_S4.webp",
+                "alt": "Tabellen",
                 "width": "1520",
-                "height": "474"
-            },
-            {
-                "heading": "JavaScript Teil",
-                "src": "courses/aufgaben/pictures/A_Tabelle_dynamisch_erstellen_JS.webp",
-                "alt": "Tabell JavaScript",
-                "width": "1520",
-                "height": "1082"
+                "height": "2260"
             }
         ],
-        "download": {
-            "button_link": "courses/aufgaben/files/A_Dynam_Tabelle.html"
-        }
+        "download": [
+            "courses/aufgaben/files/A_S4.html"
+        ]
     },
     {
-        "title": "Elefanten",
-        "description": "Dieses Programm rechnet aus, wann der Afrikanische Savannenelefant ausstirbt.",
+        "title": "(S5) Summe Über Zahlen mit Tabelle",
+        "description": "Erzeuge dynamisch Tabellenreihen beim Klick auf einen Button und gibt die Einzelschritte in einer Tabelle aus.",
         "difficulty": 2,
         "pictures": [
             {
-                "heading": "HTML Teil",
-                "src": "courses/aufgaben/pictures/A_Elefanten_HTML.webp",
-                "alt": "Elefanten HTML",
+                "heading": "Code",
+                "src": "courses/aufgaben/pictures/A_S5.webp",
+                "alt": "Summe uber Zahlen mit Tabelle",
                 "width": "1520",
-                "height": "436"
-            },
-            {
-                "heading": "JavaScript Teil",
-                "src": "courses/aufgaben/pictures/A_Elefanten_JS.webp",
-                "alt": "Elefanten JavaScript",
-                "width": "1520",
-                "height": "1500"
+                "height": "4084"
             }
         ],
-        "download": {
-            "button_link": "courses/aufgaben/files/A_Elefanten.html"
-        }
+        "download": [
+            "courses/aufgaben/files/A_S5.html"
+        ]
     },
     {
-        "title": "Primzahlen",
-        "description": "Dieses Programm überprüft, ob die von Ihnen eingegebene Zahl eine Primzahl ist.",
-        "difficulty": 3,
-        "pictures": [
-            {
-                "heading": "HTML Teil",
-                "src": "courses/aufgaben/pictures/A_Primzahlen_HTML.webp",
-                "alt": "Primzahlen HTML",
-                "width": "1520",
-                "height": "550"
-            },
-            {
-                "heading": "JavaScript Teil",
-                "src": "courses/aufgaben/pictures/A_Primzahlen_JS.webp",
-                "alt": "Primzahlen JavaScript",
-                "width": "1520",
-                "height": "1652"
-            }
-        ],
-        "download": {
-            "button_link": "courses/aufgaben/files/A_Primzahlen.html"
-        }
-    },
-    {
-        "title": "Tage pro Monat",
-        "description": "Dieses Programm rechnet die Tage aller Monate zusammen, welche in einem Array vorliegen.",
+        "title": "(S6) Robbenjagd",
+        "description": "Erstellt eine Prognose, bis zu welchem Zeitpunkt alle Robben gestorben sind.",
         "difficulty": 1,
         "pictures": [
             {
-                "heading": "JavaScript Teil",
-                "src": "courses/aufgaben/pictures/A_Tage_pro_Monat_JS.webp",
-                "alt": "Tage pro Jahr JavaScript",
+                "heading": "Code",
+                "src": "courses/aufgaben/pictures/A_S6.webp",
+                "alt": "Robbenjagd",
                 "width": "1520",
-                "height": "740"
+                "height": "2488"
             }
         ],
-        "download": {
-            "button_link": "courses/aufgaben/files/A_Tage_Monat.html"
-        }
+        "download": [
+            "courses/aufgaben/files/A_S6.html"
+        ]
     },
     {
-        "title": "Sieb des Eratosthenes",
-        "description": "Dieses Programm führt das \"Sieb des Eratosthenes\" aus.",
-        "difficulty": 3,
+        "title": "(S7) Fußgesteuerte Schleifen",
+        "description": "Aufgaben zu fußgesteuerten Schleifen.",
+        "difficulty": 1,
         "pictures": [
             {
-                "heading": "HTML Teil",
-                "src": "courses/aufgaben/pictures/A_Sieb_des_Eratosthenes_HTML.webp",
-                "alt": "Sieb des Eratosthenes HTML",
+                "heading": "S7",
+                "src": "courses/aufgaben/pictures/A_Collatz_HTML.webp",
+                "alt": "Collatz HTML",
                 "width": "1520",
-                "height": "588"
+                "height": "1158"
             },
             {
-                "heading": "JavaScript Teil",
-                "src": "courses/aufgaben/pictures/A_Sieb_des_Eratosthenes_JS.webp",
-                "alt": "Sieb des Eratosthenes JavaScript",
+                "heading": "S5",
+                "src": "courses/aufgaben/pictures/A_S7_S5.webp",
+                "alt": "S5",
                 "width": "1520",
-                "height": "1804"
+                "height": "3970"
+            },
+            {
+                "heading": "S6",
+                "src": "courses/aufgaben/pictures/A_S7_S6.webp",
+                "alt": "S6",
+                "width": "1520",
+                "height": "2260"
             }
         ],
-        "download": {
-            "button_link": "courses/aufgaben/files/A_Sieb_des_Eratosthenes.html"
-        }
+        "download": [
+            "courses/aufgaben/files/A_S7.html",
+            "courses/aufgaben/files/A_S7_S5.html",
+            "courses/aufgaben/files/A_S7_S6.html"
+        ]
+    },
+    {
+        "title": "(S8) Fakultät",
+        "description": "Berechnet die Fakultät einer Zahl.",
+        "difficulty": 1,
+        "pictures": [
+            {
+                "heading": "Code",
+                "src": "courses/aufgaben/pictures/A_S8.webp",
+                "alt": "Fakultät",
+                "width": "1520",
+                "height": "1842"
+            }
+        ],
+        "download": [
+            "courses/aufgaben/files/A_S8.html"
+        ]
+    },
+    {
+        "title": "(S9) Zählen in Zehnerschritten",
+        "description": "Zählen in Zehnerschritten",
+        "difficulty": 1,
+        "pictures": [
+            {
+                "heading": "Kopfgesteuerte Schleife",
+                "src": "courses/aufgaben/pictures/A_S9_KS.webp",
+                "alt": "Kopfgesteuerte Schleife",
+                "width": "1520",
+                "height": "1044"
+            },
+            {
+                "heading": "Fußgesteuerte Schleife",
+                "src": "courses/aufgaben/pictures/A_S9_FS.webp",
+                "alt": "Fußgesteuerte Schleife",
+                "width": "1520",
+                "height": "1044"
+            },
+            {
+                "heading": "Zählergesteuerte Schleife",
+                "src": "courses/aufgaben/pictures/A_S9_ZS.webp",
+                "alt": "Zählergesteuerte Schleife",
+                "width": "1520",
+                "height": "892"
+            }
+        ],
+        "download": [
+            "courses/aufgaben/files/A_S9_KS.html",
+            "courses/aufgaben/files/A_S9_FS.html",
+            "courses/aufgaben/files/A_S9_ZS.html"
+        ]
+    },
+    {
+        "title": "(S10) Primzahlen",
+        "description": "Überprüft ob eine Zahl eine Primzahl ist.",
+        "difficulty": 2,
+        "pictures": [
+            {
+                "heading": "Code",
+                "src": "courses/aufgaben/pictures/A_S10.webp",
+                "alt": "Primzahlen",
+                "width": "1520",
+                "height": "2526"
+            }
+        ],
+        "download": [
+            "courses/aufgaben/files/A_S10.html"
+        ]
     }
 ]

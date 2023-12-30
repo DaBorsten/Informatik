@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Summe über Zahlen</title>
+
+    <script>
+
+        function berechnen() {
+            const zahl1 = Number(document.getElementById("num1").value);
+            const zahl2 = Number(document.getElementById("num2").value);
+
+            let table = document.getElementById('tab');
+            let row = table.insertRow();
+            let cell;
+
+            while (table.rows.length > 1) {
+                table.deleteRow(1);
+            }
+
+            const summeDerZahlenreihe = document.getElementById("summeDerZahlenreihe");
+
+            if (isNaN(zahl1) || isNaN(zahl2)) {
+                return alert('Bitte geben Sie gültige Zahlen ein.');
+            }
+
+            if (zahl1 === zahl2) {
+                return alert('Bitte geben Sie unterschiedliche Zahlen ein.');
+            }
+
+            let kleinereZahl;
+            let groessereZahl;
+
+            if (zahl2 > zahl1) {
+                kleinereZahl = zahl1;
+                groessereZahl = zahl2;
+            } else {
+                kleinereZahl = zahl2;
+                groessereZahl = zahl1;
+            }
+
+            let zwischensumme = 0;
+
+            while (kleinereZahl <= groessereZahl) {
+                zwischensumme = zwischensumme + kleinereZahl;
+
+                row = table.insertRow();
+
+                cell = row.insertCell();
+                cell.innerHTML = kleinereZahl;
+
+                cell = row.insertCell();
+                cell.innerHTML = zwischensumme;
+
+                kleinereZahl++;
+            }
+
+            summeDerZahlenreihe.innerHTML = zwischensumme;
+        }
+
+    </script>
+
+</head>
+
+<body>
+
+    <h1>Summe über Zahlen</h1>
+
+    <p>Dieses Programm berechnet die Summe einer Reihe von Zahlen. Bitte
+        geben Sie die erste und letzte Zahl dieser Reihe an:</p>
+
+
+    <table>
+        <tr>
+            <td>Erste Zahl:</td>
+            <td><input type="text" id="num1"></td>
+        </tr>
+
+        <tr>
+            <td>Zweite Zahl:</td>
+            <td><input type="text" id="num2"></td>
+        </tr>
+    </table>
+
+    <button onclick="berechnen()">Summe berechnen</button>
+
+    <p>Die Summe ist: <span id="summeDerZahlenreihe"></span></p>
+
+    <table id="tab">
+        <tr>
+            <th>Zahl</th>
+            <th>Zwischensumme</th>
+        </tr>
+    </table>
+</body>
+
+</html>

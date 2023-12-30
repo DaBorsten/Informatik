@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zahlen von 2 bis 7</title>
+</head>
+
+<body>
+    <p id="ausgabe"></p>
+</body>
+
+<script>
+    const ausgabe = document.getElementById('ausgabe');
+
+    let anfang = 2;
+    let ende = 7;
+
+    do {
+        ausgabe.innerText += `${anfang}\n`;
+        anfang++;
+    } while (anfang <= ende)
+
+</script>
+
+</html>

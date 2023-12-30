@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robben</title>
+</head>
+
+<body>
+    <h1>Robbenjagd</h1>
+
+    <table id="tab">
+        <tr>
+            <th>Jahr</th>
+            <th>Bestand</th>
+        </tr>
+    </table>
+</body>
+
+<script>
+    let jahr = 2024;
+    let bestand = 2600;
+
+    let table = document.getElementById('tab');
+    let row = table.insertRow();
+    let cell;
+
+    cell = row.insertCell();
+    cell.innerHTML = jahr;
+
+    cell = row.insertCell();
+    cell.innerHTML = bestand;
+
+    while (bestand > 0) {
+        jahr++;
+        bestand *= 1.075;
+        bestand -= 250;
+
+        if (bestand < 0) bestand = 0;
+
+        row = table.insertRow();
+
+        cell = row.insertCell();
+        cell.innerHTML = jahr;
+
+        cell = row.insertCell();
+        cell.innerHTML = bestand.toFixed(0);
+    }
+</script>
+
+</html>
