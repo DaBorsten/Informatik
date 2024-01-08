@@ -296,14 +296,14 @@
         ]
     },
     {
-        "title": "(V5) Tanken in Osterreich",
+        "title": "(V5) Tanken in Österreich",
         "description": "Berechnet, ob sich das Tanken in Österreich lohnt.",
         "difficulty": 2,
         "pictures": [
             {
                 "heading": "Code",
                 "src": "courses/aufgaben/pictures/A_V5.webp",
-                "alt": "Tanken in Osterreich",
+                "alt": "Tanken in Österreich",
                 "width": "1520",
                 "height": "3172"
             }
